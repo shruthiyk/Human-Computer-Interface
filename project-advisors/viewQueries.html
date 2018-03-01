@@ -31,19 +31,20 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarResponsive">
       <ul class="navbar-nav navbar-sidenav" id="exampleAccordion">
-        <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Dashboard">
+        <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Home">
           <a class="nav-link" href="home.html">
             <i class="fa fa-fw fa-dashboard"></i>
             <span class="nav-link-text">Home</span>
           </a>
         </li>
-        <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Charts">
+        <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Recommended Courses">
           <a class="nav-link" href="courses.html">
             <i class="fa fa-fw fa-area-chart"></i>
             <span class="nav-link-text">Recommended Courses</span>
           </a>
         </li>
-        <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Tables">
+
+        <li class="nav-item active" data-toggle="tooltip" data-placement="right" title="Discussion Board">
           <a class="nav-link" href="discussion-board.html">
             <i class="fa fa-fw fa-table"></i>
             <span class="nav-link-text">Discussion Board</span>
@@ -67,6 +68,13 @@
   </nav>
   <div class="content-wrapper">
     <div class="container-fluid">
+     <!-- Breadcrumbs-->
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item">
+          <a href="discussion-board.html">Discussion Board</a>
+        </li>
+         <li class="breadcrumb-item active">Specialization: Database</li>
+      </ol>
       <!-- Breadcrumbs-->
      <!--  <ol class="breadcrumb">
         <li class="breadcrumb-item">
@@ -111,7 +119,7 @@
 							<th>Views</th> 
 						</tr>
 						<tr>
-							<td><a href = "postingNewQuery.html"> Does Data Mining require Python to do assignments</a></td>
+							<td><a href = "question1.html">Does Data Mining require Python to do assignments</a></td>
 							<td>63</td>
 						</tr>
 						<tr>
@@ -161,12 +169,6 @@
         </div>
       </div>
     </div>
-
-  
-
-
-
-
 
     <!-- Bootstrap core JavaScript-->
     <script src="vendor/jquery/jquery.min.js"></script>

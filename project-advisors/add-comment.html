@@ -29,7 +29,8 @@
     <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-     <div class="collapse navbar-collapse" id="navbarResponsive">
+     
+    <div class="collapse navbar-collapse" id="navbarResponsive">
       <ul class="navbar-nav navbar-sidenav" id="exampleAccordion">
         <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Home">
           <a class="nav-link" href="home.html">
@@ -81,49 +82,117 @@
         <li class="breadcrumb-item">
           <a href="viewQueries.html">Specialization: Database</a>
         </li>
-        <li class="breadcrumb-item active">Post Query</li>
+        <li class="breadcrumb-item active">View Query</li>
       </ol>
-  
-      <div class="row">
-        <div class="col-12">
-          <img src="logo.png" alt="logo" class="center-block" />
+
+
+     <div class="card mb-3">
+        <div class="card-header">
+          <p class="thread-heading">Does Data Mining require Python to do assignments?</p> 
+          <div class="media">
+           <div class="media-left media-middle">
+           <img src="https://www.w3schools.com/howto/img_avatar2.png" class="media-object" style="width:80px">
+           </div>
+            <div class="media-body" id="left-pad">
+          <p>I am currently in second semester and I was thinking of enrolling in Data Mining Course under Professor John in Summer 2018. Do I need to be proficient in Python to get a good grade? Please guide.</p>
+          <p><i>Asked by <a href="">Alice</a> on Jan 22, 2018</i></p>
+        </div></div>
+          <a href="#add-comment" class="btn btn-info" role="button">Comment</a>
         </div>
+    </div>     
+
+    <div class="card-header" id="answer-header">3 Comments</div>
+
+      <!-- New Comment test -->
+      <div class="media comment">
+         <div class="media-left media-middle">
+          <figure>
+            <a href="#">
+           <img src="http://emblemsbattlefield.com/uploads/posts/2014/10/facebook-default-photo-male_1.jpg" class="media-object" style="width:80px"></a>
+            <figcaption>
+             <i class="fa fa-star" style="color:yellow"></i>
+           </figcaption>
+         </figure>
+        </div>
+        <div class="media-body" id="left-pad">
+          <p> This is a test comment. </p>
+          <p><i>Replied by <a href="#">Doe</a> on 4 March, 2018 at 10:45pm</i></p>
+           <p><a href="#"><img src="images/thumbs-up.png"></a>5<img src="images/thumbs-down.png">1</p>
+        </div>
+     </div> 
+
+      <div class="media comment">
+         <div class="media-left media-middle">
+          <figure>
+           <img src="http://pixelmesh.com/assets/images/avatar-viola.png" style="width:80px">
+           <figcaption>
+             <i class="fa fa-star" style="color:yellow"></i>
+             <i class="fa fa-star" style="color:yellow"></i>
+             <i class="fa fa-star" style="color:yellow"></i>
+             <i class="fa fa-star" style="color:yellow"></i>
+           </figcaption>
+         </figure>
+        </div>
+        <div class="media-body" id="left-pad">
+          <p > Go for it. Python is a better choice, but you can use any Java also. Learning Python shouldn't take much time.</p>
+         <p><i>Replied by <a href="#">Nat</a> on 21 Feb, 2018 at 11:59pm</i></p>
+          <p><a href="#"><img src="images/thumbs-up.png"></a>2<img src="images/thumbs-down.png">0</p>
+        </div>
+     </div>
+
+      <div class="media comment">
+         <div class="media-left media-middle">
+          <figure>
+           <img src="https://raw.githubusercontent.com/Ashwinvalento/cartoon-avatar/master/lib/images/female/68.png" class="media-object" style="width:80px">
+            <figcaption>
+             <i class="fa fa-star" style="color:yellow"></i>
+             <i class="fa fa-star" style="color:yellow"></i>
+             <i class="fa fa-star" style="color:yellow"></i>
+           </figcaption>
+         </figure>
+        </div>
+        <div class="media-body" id="left-pad">
+          <p > Professor is too good. You should take it. You will learn a lot. </p>
+          <p><i>Replied by <a href="#">Jenifer</a> on 22 Feb, 2018 at 11:59pm</i></p>
+          <p><a href="#"><img src="images/thumbs-up.png"></a>12<img src="images/thumbs-down.png">4</p>
+        </div>
+     </div> 
+    
+     <div class="media comment" id="add-comment">
+       <div class="col-md-12">
+         <form>
+            <div class="form-group">
+              <label for="comment"><strong>Add Your Comment</strong></label>
+              <textarea class="form-control" rows="7" id="comment"></textarea><br>
+              <button type="button" class="btn btn-info center-block" data-toggle="modal" data-target="#myModal">Post</button>
+            </div>
+        </form>
       </div>
-      <div class="row">
-        <div class="col-10">
-			</br>
-			</br>
-			<h1>Specialization: Databases</h1>
-			<div class="card">
-				<div class="card-header">Create a new Thread</div>
-				<div class="card-body">
-				<form>
-					<div class="form-group">
-						<label for="question">Question</label>
-						<input class="form-control" id="question" type="text" aria-describedby="questionHelp" placeholder="Enter your Question">
-					</div>
-					<div class="form-group">
-						<label for="course">Course <input list="subjects" id="myCourse" aria-describedby="questionHelp" class="form-control" type="text" placeholder="Select a Course"</label>
-						<datalist id="subjects" >
-							<option value="DBMS">
-							<option value="IR">
-							<option value="MR">
-							<option value="DM">
-							<option value="ML">
-						</datalist>
-					</div>
-					<div class="form-group">
-						<label for="description">Description</label>
-						<textarea class="form-control" id="description" type="text" cols="40" rows="5" style="width:840px; height:100px;"   aria-describedby="descriptionHelp" placeholder="Enter Description"></textarea>	
-					</div>
-					<a class="btn btn-primary btn-block" href="queryCofirmation.html">Submit</a>
-				</form>
-				</div>
-			</div>
+     </div> 
+
+     <br>
+      <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-body">
+          <p>Your comment has been posted.</p>
+        </div>
+        <div class="modal-footer">
+          <a class="btn btn-primary" href="add-comment.html">Close</a>
         </div>
       </div>
       
     </div>
+  </div>
+  
+  </div>    
+</div>
+
+
+
     <!-- /.container-fluid-->
     <!-- /.content-wrapper-->
     <footer class="sticky-footer">
@@ -155,6 +224,12 @@
         </div>
       </div>
     </div>
+
+  
+
+
+
+
 
     <!-- Bootstrap core JavaScript-->
     <script src="vendor/jquery/jquery.min.js"></script>
