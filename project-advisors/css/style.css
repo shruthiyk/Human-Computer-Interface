@@ -3,3 +3,62 @@
       margin-right: auto;
       margin-left: auto;
     }
+
+    table {
+		font-family: arial, sans-serif;
+		border-collapse: collapse;
+		width: 100%;
+	}
+
+	td, th {
+		border: 1px solid #dddddd;
+		text-align: left;
+		padding: 15px;
+	}
+
+	tr:nth-child(even) {
+		background-color: #dddddd;
+	}
+
+    /*.card-header{
+    	background: lightseagreen;
+    	color: white;
+    	font-weight: bold;
+    }*/
+
+    .no-answer{
+    	background-color: red;
+    	padding: 5px;
+    }
+
+     .answer{
+    	background-color: lightgreen;
+    	padding: 5px;
+    }
+
+    .thread{
+    	color: navy;
+    }
+
+    .thread-heading{
+    	font-size: 20px;
+    	font-weight: bold;
+    }
+
+    #answer-header{
+    	background-color: #2BBBAD;
+    	color: white;
+    	font-weight: bold;
+    }
+
+    .comment{
+    	padding: 12px;
+    	border-bottom: 1px solid gray;
+    	border-left: 1px solid gray;
+    	border-right: 1px solid gray;
+
+    }
+
+    #left-pad{
+        padding-left: 10px;
+    }
