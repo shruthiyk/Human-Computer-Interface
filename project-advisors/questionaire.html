@@ -19,157 +19,18 @@
   <!-- Our custom CSS-->
   <!--Please add your styles here-->
   <link href="css/style.css" rel="stylesheet">
-<style>
-
-.bar-graph {
-  padding: 0;
-  width: 60%;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: flex-end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-  height: 200px;
-  margin: 0;
-}
-
-.bar-graph li {
-  display: block;
-  padding: 0rem 0;
-  position: relative;
-  text-align: center;
-  vertical-align: bottom;
-  border-radius: 4px 4px 0 0;
-  max-width: 20%;
-  height: 100%;
-  margin: 0 1.8% 0 0;
-  -webkit-flex: 1 1 15%;
-      -ms-flex: 1 1 15%;
-          flex: 1 1 15%;
-}
-
-.bar-graph .bar-graph-axis {
-  -webkit-flex: 1 1 0%;
-      -ms-flex: 1 1 0%;
-          flex: 1 1 0%;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-justify-content: space-between;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-.bar-graph .bar-graph-label {
-  margin: 0;
-  background-color: none;
-  color: #8a8a8a;
-  position: relative;
-}
-
-@media print, screen and (min-width: 40em) {
-  .bar-graph .bar-graph-label:before, .bar-graph .bar-graph-label:after {
-    content: "";
-    position: absolute;
-    border-bottom: 1px dashed #8a8a8a;
-    top: 0;
-    left: 0;
-    height: 50%;
-    width: 20%;
+  <style>
+    .button {
+      background-color:		#AFEEEE	;
+      border: none;
+      color:black;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
   }
-}
-
-@media print, screen and (min-width: 40em) and (min-width: 64em) {
-  .bar-graph .bar-graph-label:before, .bar-graph .bar-graph-label:after {
-    width: 30%;
-  }
-}
-
-@media print, screen and (min-width: 40em) {
-  .bar-graph .bar-graph-label:after {
-    left: auto;
-    right: 0;
-  }
-}
-
-.bar-graph .percent {
-  letter-spacing: -3px;
-  opacity: 0.4;
-  width: 100%;
-  font-size: 0.875rem;
-  position: absolute;
-}
-
-@media print, screen and (min-width: 40em) {
-  .bar-graph .percent {
-    font-size: 0.875rem;
-  }
-}
-
-.bar-graph .percent span {
-  font-size: 0.875rem;
-}
-
-.bar-graph .description {
-  font-weight: 800;
-  opacity: 0.5;
-  text-transform: uppercase;
-  width: 100%;
-  font-size: 12px;
-  bottom: 2px;
-  position: absolute;
-
-  overflow: hidden;
-}
-
-.bar-graph .bar.primary {
-  border: 0px solid #1779ba;
-  background: linear-gradient(#2196e3, #1779ba 70%);
-}
-
-.bar-graph .bar.secondary {
-  border: 0px solid #767676;
-  background: linear-gradient(#909090, #767676 70%);
-}
-
-.bar-graph .bar.success {
-  border: 0px solid #3adb76;
-  background: linear-gradient(#65e394, #3adb76 70%);
-}
-
-.bar-graph .bar.warning {
-  border: 0px solid #ffae00;
-  background: linear-gradient(#ffbe33, #ffae00 70%);
-}
-
-.bar-graph .bar.alert {
-  border: 0px solid #cc4b37;
-  background: linear-gradient(#d67060, #cc4b37 40%);
-}
-
-div.transbox {
-  margin: 20px;
-  background-color: #ffffff;
-  border: 1px solid black;
-  opacity: 0.6;
-  filter: alpha(opacity=60); /* For IE8 and earlier */
-}
-
-div.transbox p {
-  margin: 1%;
-  font-weight: bold;
-  color: #000000;
-}
-div.score p {
-  margin-left: 10%;
-  font-weight: bold;
-  color: #000000;
-}
-</style>
+  </style>
 </head>
 
 <body class="fixed-nav sticky-footer bg-dark" id="page-top">
@@ -181,19 +42,19 @@ div.score p {
     </button>
     <div class="collapse navbar-collapse" id="navbarResponsive">
       <ul class="navbar-nav navbar-sidenav" id="exampleAccordion">
-        <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Dashboard">
+        <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Home">
           <a class="nav-link" href="home.html">
             <i class="fa fa-fw fa-dashboard"></i>
             <span class="nav-link-text">Home</span>
           </a>
         </li>
-        <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Charts">
-          <a class="nav-link" href="courses.html">
+        <li class="nav-item active" data-toggle="tooltip" data-placement="right" title="Questionaire">
+          <a class="nav-link" href="questionaire.html">
             <i class="fa fa-fw fa-area-chart"></i>
             <span class="nav-link-text">Recommended Courses</span>
           </a>
         </li>
-        <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Tables">
+        <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Discussion Board">
           <a class="nav-link" href="discussion-board.html">
             <i class="fa fa-fw fa-table"></i>
             <span class="nav-link-text">Discussion Board</span>
@@ -208,6 +69,12 @@ div.score p {
         </li>
       </ul>
       <ul class="navbar-nav ml-auto">
+         <li class="nav-item">
+            <a class="nav-link" href="#">
+              <i class="fa fa-fw fa-user"></i>
+              <span class="nav-link-text">User name</span>
+            </a>
+        </li>
         <li class="nav-item">
           <a class="nav-link" data-toggle="modal" data-target="#exampleModal">
             <i class="fa fa-fw fa-sign-out"></i>Logout</a>
@@ -365,7 +232,7 @@ div.score p {
 </form>
 
 <form action="">
-  <label class="statement">I loving coding</label>
+  <label class="statement">I love coding</label>
 
   <ul class='likert'>
     <li>
@@ -419,8 +286,18 @@ div.score p {
     </li>
   </ul>
 
+
   <div class="buttons">
-   <a class="btn btn-primary btn-block" href="Grades.html">Submit</a>
+   <a class="button" href="Grades.html">Submit</a>
+  <br> </br>
+
+    <div class="buttons">
+       <a href="#add-comment" class="button" role="button">Clear</a>
+       <a href="grades.html" class="button" role="button">Next</a>
+       <p>    </p>
+       <p>   </p>
+
+      <br>        </br>
 
     </div>
 </form>
