@@ -16,9 +16,9 @@
   <link href="css/sb-admin.css" rel="stylesheet">
 
   <link href="css/discussionboard.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
   <!-- Our custom CSS-->
   <!--Please add your styles here-->
-  <link href="css/style.css" rel="stylesheet">
 
 </head>
 
@@ -84,89 +84,117 @@
         <div class="col-12">
           <img src="logo.png" alt="logo" class="center-block" />
         </div>
-      </div>
-
-      <div class="searchbar center-block">
-        <p style = "float:left;margin-left:50px;margin-top:10px">Choose a category</p>
-      <input class="form-control" type="text" placeholder="Search" aria-label="Search" style="height:30px;width:600px;float:left;margin-left:10px">
-       <button type="button" style = "margin-left:10px;height:30px;" class="btn"><i class="fa fa-search" style="align:middle"></i></button>
-    </div>
-
-      <div class="row">
-        <div class="col-12">
-          <div class="container">
-      <div class="row">
-        <div class="col-lg-12 box-shadow">
-          <p>
-            <a href="viewQueries.html" class="btn btn-sq-lg">
-
-              <img src="images/networks2.jpg" style = "height:180px;width:200px;padding:1px;border:1px solid #021a40;" />
-              <br>
-              NETWORKS
-
-            </a>
-            <a href="viewQueries.html" class="btn btn-sq-lg">
-              <img src="images/database.jpg" style = "height:180px;width:200px;" border="3"/>
-              <br>
-              DATABASE
-            </a>
-            <a href="viewQueries.html" class="btn btn-sq-lg">
-              <img src="images/robotics.jpg" style = "height:180px;width:200px;margin-left:0px;" border="3"/>
-              <br>
-              ROBOTICS
-            </a>
-            <a href="viewQueries.html" class="btn btn-sq-lg">
-              <img src="images/graphics.jpg" style = "height:180px;width:200px;margin-left:0px;" border="3"/>
-              <br>
-              GRAPHICS
-            </a>
-
-            <div >
-            </div>
-
-            <a href="viewQueries.html" class="btn btn-sq-lg" >
-              <img src="images/algorithms.jpg" style = "height:180px;width:200px;margin-left:0px;" border="3"/>
-              <br>
-              ALGORITHMS
-            </a>
-            <a href="viewQueries.html" class="btn btn-sq-lg">
-              <img src="images/gamedesign.jpg" style = "height:180px;width:200px;margin-left:0px;" border="3"/>
-              <br>
-              GAME DESIGN
-            </a>
-            <a href="viewQueries.html" class="btn btn-sq-lg">
-              <img src="images/systems.jpg" style = "height:180px;width:200px;margin-left:0px;" border="3"/>
-              <br>
-              SYSTEMS
-            </a>
-            <a href="viewQueries.html" class="btn btn-sq-lg">
-              <img src="images/pl.jpg" style = "height:180px;width:200px;margin-left:0px;" border="3"/>
-              <br>
-              PROGRAMMING LANGUAGES
-            </a>
-
-            <div >
-            </div>
-
-            <a href="viewQueries.html" class="btn btn-sq-lg">
-              <img src="images/ai.jpg" style = "height:180px;width:200px;margin-left:0px;" border="3"/>
-              <br>
-              ARTIFICIAL INTELLIGENCE
-            </a>
-            <a href="#" class="btn btn-sq-lg">
-
-            </a>
-            <a href="#" class="btn btn-sq-lg">
-
-            </a>
-            <a href="#" class="btn btn-sq-lg">
-
-            </a>
-          </p>
+      </div><br>
+    <div class="container">
+     
+       <form class="form-inline">
+          <div class="form-group">
+               <label id="category">Choose a category </label>
+               <input type="text" id="text" class="form-control" id="specializaion" placeholder="Search specializaion...">
+          </div>
+         <button type="submit" class="btn btn-default"><i class="fa fa-search"></i></button>
+      </form> <br>
+    <div class="row flex">
+       <div class="col-md-3 col-sm-6 col-xs-6">
+        <div class="thumbnail">
+          <a href="viewQueries.html"><img src="images/HCI.jpg" alt="Avatar" class="image">
+            <div class="caption">
+              <p class="text-center">HCI</p>
+           </div>
+          </a>
         </div>
-	 </div>
- </div>
-</div>
+      </div>
+       <div class="col-md-3 col-sm-6 col-xs-6">
+        <div class="thumbnail">
+          <a href="viewQueries.html"><img src="images/ai.jpg" alt="Avatar" class="image">
+            <div class="caption">
+              <p class="text-center">AI</p>
+           </div>
+          </a>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6 col-xs-6">
+        <div class="thumbnail">
+          <a href="viewQueries.html"><img src="images/networks2.jpg" alt="Avatar" class="image">
+          <div class="caption">
+              <p class="text-center">Networks</p>
+          </div></a>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6 col-xs-6">
+        <div class="thumbnail">
+          <a href="viewQueries.html"><img src="images/database.png" alt="Avatar" class="image">
+            <div class="caption">
+              <p class="text-center">Database</p>
+           </div>
+          </a>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6 col-xs-6">
+        <div class="thumbnail">
+          <a href="viewQueries.html"><img src="images/algorithms.jpg" alt="Avatar" class="image">
+            <div class="caption">
+              <p class="text-center">Software Engineering</p>
+           </div>
+          </a>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6 col-xs-6">
+        <div class="thumbnail">
+          <a href="viewQueries.html"><img src="images/graphics.jpg" alt="Avatar" class="image">
+            <div class="caption">
+              <p class="text-center">Graphics</p>
+           </div>
+          </a>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6 col-xs-6">
+        <div class="thumbnail">
+          <a href="viewQueries.html"><img src="images/security.jpg" alt="Avatar" class="image">
+             <div class="caption">
+              <p class="text-center">Security</p>
+           </div>
+          </a>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6 col-xs-6">
+        <div class="thumbnail">
+          <a href="viewQueries.html"><img src="images/gamedesign.jpg" alt="Avatar" class="image">
+            <div class="caption">
+              <p class="text-center">Game Design</p>
+           </div>
+          </a>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6 col-xs-6">
+        <div class="thumbnail">
+          <a href="viewQueries.html"><img src="images/systems.jpg" alt="Avatar" class="image">
+          <div class="caption">
+              <p class="text-center">Systems</p>
+           </div>
+         </a>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6 col-xs-6">
+        <div class="thumbnail">
+          <a href="viewQueries.html"><img src="images/pl.jpg" alt="Avatar" class="image">
+           <div class="caption">
+              <p class="text-center">Programming Language</p>
+           </div>
+         </a>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6 col-xs-6">
+        <div class="thumbnail">
+          <a href="viewQueries.html"><img src="images/theory.jpg" alt="Avatar" class="image">
+            <div class="caption">
+              <p class="text-center">Theory</p>
+           </div>
+          </a>
+        </div>
+      </div>
+      
+  </div>
 </div>
 </div>
     <!-- /.container-fluid-->
