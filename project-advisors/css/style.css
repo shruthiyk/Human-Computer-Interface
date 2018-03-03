@@ -4,6 +4,14 @@
       margin-left: auto;
     }
 
+    .login-header{
+      color: white;
+      font-weight: bold;
+      background: #2BBBAD;
+      padding:10px;
+      font-family: 'Arbutus Slab', serif;
+    }
+
    /* table {
 		font-family: arial, sans-serif;
 		border-collapse: collapse;
