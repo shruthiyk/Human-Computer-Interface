@@ -39,7 +39,7 @@
           </a>
         </li>
         <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Recommended Courses">
-          <a class="nav-link" href="courses.html">
+          <a class="nav-link" href="questionaire.html">
             <i class="fa fa-fw fa-area-chart"></i>
             <span class="nav-link-text">Recommended Courses</span>
           </a>
@@ -94,11 +94,12 @@
            <img src="https://www.w3schools.com/howto/img_avatar2.png" class="media-object" style="width:80px">
            </div>
             <div class="media-body" id="left-pad">
-          <p>I am currently in second semester and I was thinking of enrolling in Data Mining Course under Professor John in Summer 2018. Do I need to be proficient in Python to get a good grade? Please guide.</p>
-          <p><i>Asked by <a href="">Alice</a> on Jan 22, 2018</i></p>
-        </div></div>
-          <a href="#add-comment" class="btn btn-info" role="button">Comment</a>
+                <p>I am currently in second semester and I was thinking of enrolling in Data Mining Course under Professor John in Summer 2018. Do I need to be proficient in Python to get a good grade? Please guide.</p>
+                <p><i>Asked by <a href="">Alice</a> on Jan 22, 2018</i></p>
+          </div>
         </div>
+        <a href="#add-comment" class="btn btn-info" role="button">Comment</a>
+      </div>
     </div>     
 
     <div class="card-header" id="answer-header">3 Comments</div>
@@ -117,7 +118,11 @@
         <div class="media-body" id="left-pad">
           <p> This is a test comment. </p>
           <p><i>Replied by <a href="#">Doe</a> on 4 March, 2018 at 10:45pm</i></p>
-           <p><a href="#"><img src="thumbs-up.png"></a>5<img src="thumbs-down.png">1</p>
+          <p><a href="#" onclick="increase2();"><img src="thumbs-up.png"></a>
+            <b id="boldstuff2">0</b>
+            <a href="#" onclick="decrease2();"><img src="thumbs-down.png"></a>
+            <b id="b2">0</b>
+          </p>
         </div>
      </div> 
 
@@ -136,7 +141,11 @@
         <div class="media-body" id="left-pad">
           <p > Go for it. Python is a better choice, but you can use any Java also. Learning Python shouldn't take much time.</p>
          <p><i>Replied by <a href="#">Nat</a> on 21 Feb, 2018 at 11:59pm</i></p>
-          <p><a href="#"><img src="thumbs-up.png"></a>2<img src="thumbs-down.png">0</p>
+         <p><a href="#" onclick="increase();"><img src="thumbs-up.png"></a>
+            <b id="boldstuff">5</b>
+            <a href="#" onclick="decrease();"><img src="thumbs-down.png"></a>
+            <b id="b">0</b>
+          </p>    
         </div>
      </div>
 
@@ -154,7 +163,11 @@
         <div class="media-body" id="left-pad">
           <p > Professor is too good. You should take it. You will learn a lot. </p>
           <p><i>Replied by <a href="#">Jenifer</a> on 22 Feb, 2018 at 11:59pm</i></p>
-          <p><a href="#"><img src="thumbs-up.png"></a>12<img src="thumbs-down.png">4</p>
+          <p><a href="#" onclick="increase1();"><img src="thumbs-up.png"></a>
+            <b id="boldstuff1">2</b>
+            <a href="#" onclick="decrease1();"><img src="thumbs-down.png"></a>
+            <b id="b1">1</b>
+          </p>
         </div>
      </div> 
     
@@ -190,8 +203,6 @@
   
   </div>    
 </div>
-
-
 
     <!-- /.container-fluid-->
     <!-- /.content-wrapper-->
@@ -238,6 +249,45 @@
     <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
     <!-- Custom scripts for all pages-->
     <script src="js/sb-admin.min.js"></script>
+    <script type="text/javascript">
+    // var i=document.getElementById('boldstuff');
+    var i = parseInt(document.getElementById("boldstuff").innerHTML);
+    function increase()
+    {
+      i+=1;
+      document.getElementById('boldstuff').innerHTML= i;
+    }
+    var x = parseInt(document.getElementById("boldstuff1").innerHTML);
+    function increase1()
+    {
+      x+=1;
+      document.getElementById('boldstuff1').innerHTML= x;
+    }
+    var y = parseInt(document.getElementById("boldstuff2").innerHTML);
+    function increase2()
+    {
+      y+=1;
+      document.getElementById('boldstuff2').innerHTML= y;
+    }
+    var a = parseInt(document.getElementById("b").innerHTML);
+    function decrease()
+    {
+      a-=1;
+      document.getElementById('b').innerHTML= a;
+    }
+    var b = parseInt(document.getElementById("b1").innerHTML);
+    function decrease1()
+    {
+      b-=1;
+      document.getElementById('b1').innerHTML= b;
+    }
+    var c = parseInt(document.getElementById("b2").innerHTML);
+    function decrease2()
+    {
+      c-=1;
+      document.getElementById('b2').innerHTML= c;
+    }
+  </script>
   </div>
 </body>
 

@@ -19,18 +19,6 @@
   <!-- Our custom CSS-->
   <!--Please add your styles here-->
   <link href="css/style.css" rel="stylesheet">
-<style>
-  .button {
-    background-color:	#AFEEEE	;
-    border: none;
-    color:black;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-}
-</style>
 
 </head>
 
@@ -41,21 +29,22 @@
     <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
+     
     <div class="collapse navbar-collapse" id="navbarResponsive">
       <ul class="navbar-nav navbar-sidenav" id="exampleAccordion">
-        <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Dashboard">
+        <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Home">
           <a class="nav-link" href="home.html">
             <i class="fa fa-fw fa-dashboard"></i>
             <span class="nav-link-text">Home</span>
           </a>
         </li>
-        <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Charts">
+        <li class="nav-item active" data-toggle="tooltip" data-placement="right" title="Recommended Courses">
          <a class="nav-link" href="questionaire.html">
             <i class="fa fa-fw fa-area-chart"></i>
             <span class="nav-link-text">Recommended Courses</span>
           </a>
         </li>
-        <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Tables">
+        <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Discussion Board">
           <a class="nav-link" href="discussion-board.html">
             <i class="fa fa-fw fa-table"></i>
             <span class="nav-link-text">Discussion Board</span>
@@ -75,7 +64,7 @@
               <i class="fa fa-fw fa-user"></i>
               <span class="nav-link-text">User name</span>
             </a>
-        </li>
+        </li>   
         <li class="nav-item">
           <a class="nav-link" data-toggle="modal" data-target="#exampleModal">
             <i class="fa fa-fw fa-sign-out"></i>Logout</a>
@@ -85,124 +74,140 @@
   </nav>
   <div class="content-wrapper">
     <div class="container-fluid">
-      <!-- Breadcrumbs-->
-     <!--  <ol class="breadcrumb">
+     <ol class="breadcrumb">
         <li class="breadcrumb-item">
-          <a href="index.html">Dashboard</a>
+          <a href="questionaire.html">Questionnaire</a>
         </li>
-        <li class="breadcrumb-item active">Blank Page</li>
-      </ol> -->
+        <li class="breadcrumb-item active">Previous courses info</li>
+      </ol>
       <div class="row">
         <div class="col-12">
           <img src="logo.png" alt="logo" class="center-block" />
+          <h2 class="text-center">Please enter your previous semester course information</h2>
         </div>
       </div>
-      <div class="row">
-		<div class="col-12">
-		<br><br>
-		<p><b>CCIS-Previous Semeter Grades</b></p>
-    <p>Kindly enter your grades of subjects that you studied in your previous semester</p>
-		</div>
-	</div>
-	<div class="row">
-
-        <div class="col-3">
-			<select name="example">
-				<option selected disabled>Course Code 1</option>
-				<option value="A">CS5350</option>
-        <option value="B">CS6530</option>
-        <option value="C">CS5200</option>
-        <option value="D">CS5400</option>
-        <option value="E">CS7530</option>
-
-
-			</select>
-
+     <div class="card mb-3">
+        <div class="card-header">
+          <i class="fa fa-exclamation-triangle"></i> Your grade information will be kept confidential
         </div>
-		<div class="col-3">
-			<select name="example">
-				<option selected disabled>Professor</option>
-				<option value="A">Prof John</option>
-				<option value="B">Prof Ann</option>
-				<option value="C">Prof Alice</option>
-        <option value="D">Prof Ben</option>
-        <option value="E">Prof Ram</option>
+        <div class="table-responsive"> 
+           <table class="table table-striped">
+              <thead>
+                <th>Course Code</th>
+                <th>Professor</th>
+                <th>Grade Range</th>
+                <th>Average Study Time/Week(Hours)</th>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                        <select class="form-control">
+                          <option selected disabled>Course Code</option>
+                          <option value="cs5200">CS5200</option>
+                          <option value="cs5800">CS5800</option>
+                          <option value="cs5610">CS5610</option>
+                          <option value="cs6350">CS6350</option>
+                       </select>
+                  </td>
+                  <td>
+                     <select class="form-control">
+                          <option selected disabled>Professor</option>
+                          <option value="A">Prof John</option>
+                          <option value="B">Prof Ann</option>
+                          <option value="C">Prof Alice</option>
+                          <option value="D">Prof Ben</option>
+                          <option value="E">Prof Ram</option>
+                      </select>
+                  </td>
+                  <td>
+                     <select class="form-control">
+                        <option selected disabled>Grades</option>
+                        <option value="A">A to A-</option>
+                        <option value="B+">B+ to B</option>
+                        <option value="B-">B- to C+</option>
+                        <option value="C">C to C-</option>
+                        <option value="D+">D+ to D-</option>
+                        <option value="others">Others</option>
+                    </select> 
+                  </td>
+                  <td>
+                     <form>
+                        <label class="radio-inline">
+                          <input type="radio" name="optradio">4-8
+                        </label>
+                        <label class="radio-inline">
+                          <input type="radio" name="optradio">8-12
+                        </label>
+                        <label class="radio-inline">
+                          <input type="radio" name="optradio">12-16
+                        </label>
+                        <label class="radio-inline">
+                          <input type="radio" name="optradio">16-20
+                        </label>
+                      </form>
+                  </td>
+                </tr>
 
-			</select>
-
-        </div>
-		<div class="col-5">
-			<select name="example">
-				<option selected disabled>Grades</option>
-				<option value="A">B to A</option>
-				<option value="B">C to B-</option>
-				<option value="C">others</option>
-
-			</select>
-
-        </div>
-      </div>
-
-<br><br>
-
-      <div class="row">
-
-            <div class="col-3">
-    			<select name="example">
-    				<option selected disabled>Course Code 2</option>
-    				<option value="A">CS5350</option>
-            <option value="B">CS6530</option>
-            <option value="C">CS5200</option>
-            <option value="D">CS5400</option>
-            <option value="E">CS7530</option>
-
-
-    			</select>
-
-            </div>
-    		<div class="col-3">
-    			<select name="example">
-    				<option selected disabled>Professor</option>
-    				<option value="A">Prof John</option>
-    				<option value="B">Prof Ann</option>
-    				<option value="C">Prof Alice</option>
-            <option value="D">Prof Ben</option>
-            <option value="E">Prof Ram</option>
-
-    			</select>
-
-            </div>
-    		<div class="col-5">
-    			<select name="example">
-    				<option selected disabled>Grades</option>
-    				<option value="A">B to A</option>
-    				<option value="B">C to B-</option>
-    				<option value="C">others</option>
-
-    			</select>
-
-            </div>
-          </div>
-
-</div>
-
-
-<div><br><br></div>
-
-
-<div class="buttons">
-
-
-  </div>
-
-   <a href="#add-comment" class="button" role="button">Clear</a>
-   <a href="courses.html" class="button" role="button">Submit</a>
-</div>
-
-
-
-
+                 <tr>
+                  <td>
+                        <select class="form-control">
+                          <option selected disabled>Course Code</option>
+                          <option value="cs5200">CS5200</option>
+                          <option value="cs5800">CS5800</option>
+                          <option value="cs5610">CS5610</option>
+                          <option value="cs6350">CS6350</option>
+                       </select>
+                  </td>
+                  <td>
+                     <select class="form-control">
+                          <option selected disabled>Professor</option>
+                          <option value="A">Prof John</option>
+                          <option value="B">Prof Ann</option>
+                          <option value="C">Prof Alice</option>
+                          <option value="D">Prof Ben</option>
+                          <option value="E">Prof Ram</option>
+                      </select>
+                  </td>
+                  <td>
+                     <select class="form-control">
+                        <option selected disabled>Grades</option>
+                        <option value="A">A to A-</option>
+                        <option value="B+">B+ to B</option>
+                        <option value="B-">B- to C+</option>
+                        <option value="C">C to C-</option>
+                        <option value="D+">D+ to D-</option>
+                        <option value="others">Others</option>
+                    </select> 
+                  </td>
+                  <td>
+                     <form>
+                        <label class="radio-inline">
+                          <input type="radio" name="optradio">4-8
+                        </label>
+                        <label class="radio-inline">
+                          <input type="radio" name="optradio">8-12
+                        </label>
+                        <label class="radio-inline">
+                          <input type="radio" name="optradio">12-16
+                        </label>
+                        <label class="radio-inline">
+                          <input type="radio" name="optradio">16-20
+                        </label>
+                      </form>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+        </div>     
     </div>
+    </div>
+    <div class="text-center"> 
+       <!-- <a href="#" class="btn btn-danger" role="button">Clear</a> -->
+       <a href="courses.html" class="btn btn-success" role="button">Submit</a>
+    </div>
+   
+   
+  
     <!-- /.container-fluid-->
     <!-- /.content-wrapper-->
     <footer class="sticky-footer">
@@ -234,13 +239,6 @@
         </div>
       </div>
     </div>
-
-
-
-
-
-
-
     <!-- Bootstrap core JavaScript-->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
