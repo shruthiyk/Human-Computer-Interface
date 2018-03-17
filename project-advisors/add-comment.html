@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="">
   <meta name="author" content="">
-  <title>CCIS Graduate Academic Advisor-Home</title>
+  <title>CCIS Graduate Academic Advisor-Thread</title>
   <!-- Bootstrap core CSS-->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <!-- Custom fonts for this template-->
@@ -19,6 +19,7 @@
   <!-- Our custom CSS-->
   <!--Please add your styles here-->
   <link href="css/style.css" rel="stylesheet">
+  <link href="css/snack-bar.css" rel="stylesheet">
 
 </head>
 
@@ -80,9 +81,9 @@
           <a href="discussion-board.html">Discussion Board</a>
         </li>
         <li class="breadcrumb-item">
-          <a href="viewQueries.html">Specialization: Database</a>
+          <a href="viewThreads.html">Specialization: Database</a>
         </li>
-        <li class="breadcrumb-item active">View Query</li>
+        <li class="breadcrumb-item active">View Thread</li>
       </ol>
 
 
@@ -92,12 +93,17 @@
           <div class="media">
            <div class="media-left media-middle">
            <img src="https://www.w3schools.com/howto/img_avatar2.png" class="media-object" style="width:80px">
+           <figcaption class="text-center">
+              <span class="required-field">45 Points</span><br>
+              <i class="fa fa-star" style="color:yellow"></i>
+              <i class="fa fa-star" style="color:yellow"></i>
+             </figcaption>
            </div>
             <div class="media-body" id="left-pad">
                 <p>I am currently in second semester and I was thinking of enrolling in Data Mining Course under Professor John in Summer 2018. Do I need to be proficient in Python to get a good grade? Please guide.</p>
                 <p><i>Asked by <a href="">Alice</a> on Jan 22, 2018 at 06:45am</i></p>
           </div>
-        </div>
+        </div><br>
         <a href="#add-comment" class="btn btn-info" role="button">Comment</a>
       </div>
     </div>     
@@ -110,7 +116,8 @@
           <figure>
             <a href="#">
            <img src="http://emblemsbattlefield.com/uploads/posts/2014/10/facebook-default-photo-male_1.jpg" class="media-object" style="width:80px"></a>
-            <figcaption>
+            <figcaption class="text-center">
+             <span class="required-field">5 Points</span><br>
              <i class="fa fa-star" style="color:yellow"></i>
            </figcaption>
          </figure>
@@ -118,9 +125,9 @@
         <div class="media-body" id="left-pad">
           <p> This is a test comment. </p>
           <p><i>Replied by <a href="#">Doe</a> on 4 March, 2018 at 10:45pm</i></p>
-          <p><a href="#" onclick="increase2();"><img src="thumbs-up.png"></a>
+          <p><a href="#" onclick="increase2();"><img src="images/thumbs-up.png" id="thumbs-up2"></a>
             <b id="boldstuff2">0</b>
-            <a href="#" onclick="decrease2();"><img src="thumbs-down.png"></a>
+            <a href="#" onclick="decrease2();"><img src="images/thumbs-down.png" id="thumbs-down2"></a>
             <b id="b2">0</b>
           </p>
         </div>
@@ -130,7 +137,8 @@
          <div class="media-left media-middle">
           <figure>
            <img src="http://pixelmesh.com/assets/images/avatar-viola.png" style="width:80px">
-           <figcaption>
+           <figcaption class="text-center">
+             <span class="required-field">255 Points</span><br>
              <i class="fa fa-star" style="color:yellow"></i>
              <i class="fa fa-star" style="color:yellow"></i>
              <i class="fa fa-star" style="color:yellow"></i>
@@ -141,9 +149,9 @@
         <div class="media-body" id="left-pad">
           <p > Go for it. Python is a better choice, but you can use any Java also. Learning Python shouldn't take much time.</p>
          <p><i>Replied by <a href="#">Nat</a> on 21 Feb, 2018 at 11:59pm</i></p>
-         <p><a href="#" onclick="increase();"><img src="thumbs-up.png"></a>
+         <p><a href="#" onclick="increase();"><img src="images/thumbs-up.png" id="thumbs-up"></a>
             <b id="boldstuff">5</b>
-            <a href="#" onclick="decrease();"><img src="thumbs-down.png"></a>
+            <a href="#" onclick="decrease();"><img src="images/thumbs-down.png" id="thumbs-down"></a>
             <b id="b">0</b>
           </p>    
         </div>
@@ -153,53 +161,38 @@
          <div class="media-left media-middle">
           <figure>
            <img src="https://raw.githubusercontent.com/Ashwinvalento/cartoon-avatar/master/lib/images/female/68.png" class="media-object" style="width:80px">
-            <figcaption>
-             <i class="fa fa-star" style="color:yellow"></i>
-             <i class="fa fa-star" style="color:yellow"></i>
-             <i class="fa fa-star" style="color:yellow"></i>
-           </figcaption>
+             <figcaption class="text-center">
+               <span class="required-field">150 Points</span><br>
+               <i class="fa fa-star" style="color:yellow"></i>
+               <i class="fa fa-star" style="color:yellow"></i>
+               <i class="fa fa-star" style="color:yellow"></i>
+            </figcaption>
          </figure>
         </div>
         <div class="media-body" id="left-pad">
           <p > Professor is too good. You should take it. You will learn a lot. </p>
           <p><i>Replied by <a href="#">Jenifer</a> on 22 Feb, 2018 at 11:59pm</i></p>
-          <p><a href="#" onclick="increase1();"><img src="thumbs-up.png"></a>
+          <p><a href="#" onclick="increase1();"><img src="images/thumbs-up.png" id="thumbs-up1"></a>
             <b id="boldstuff1">2</b>
-            <a href="#" onclick="decrease1();"><img src="thumbs-down.png"></a>
+            <a href="#" onclick="decrease1();"><img src="images/thumbs-down.png" id="thumbs-down1"></a>
             <b id="b1">1</b>
           </p>
         </div>
      </div> 
     
      <div class="media comment" id="add-comment">
-       <div class="col-md-12">
-         <form>
+      <div class="col-md-12">
             <div class="form-group">
               <label for="comment"><strong>Add Your Comment</strong></label>
-              <textarea class="form-control" rows="7" id="comment"></textarea><br>
-              <button type="button" class="btn btn-info center-block" data-toggle="modal" data-target="#myModal">Post</button>
+              <form action="add-comment.html">
+                <textarea class="form-control" rows="7" id="comment" required="true"></textarea><br>
+                <button type="button" onclick="myFunction()" class="btn btn-info center-block">Post</button>
+                <div id="snackbar">Your comment is posted!</div>
+              </form>
             </div>
-        </form>
       </div>
      </div> 
-
      <br>
-      <!-- Modal -->
-  <div class="modal fade" id="myModal" role="dialog">
-    <div class="modal-dialog">
-    
-      <!-- Modal content-->
-      <div class="modal-content">
-        <div class="modal-body">
-          <p>Your comment has been posted.</p>
-        </div>
-        <div class="modal-footer">
-          <a class="btn btn-primary" href="add-comment.html">Close</a>
-        </div>
-      </div>
-      
-    </div>
-  </div>
   
   </div>    
 </div>
@@ -236,12 +229,6 @@
       </div>
     </div>
 
-  
-
-
-
-
-
     <!-- Bootstrap core JavaScript-->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -249,45 +236,7 @@
     <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
     <!-- Custom scripts for all pages-->
     <script src="js/sb-admin.min.js"></script>
-    <script type="text/javascript">
-    // var i=document.getElementById('boldstuff');
-    var i = parseInt(document.getElementById("boldstuff").innerHTML);
-    function increase()
-    {
-      i+=1;
-      document.getElementById('boldstuff').innerHTML= i;
-    }
-    var x = parseInt(document.getElementById("boldstuff1").innerHTML);
-    function increase1()
-    {
-      x+=1;
-      document.getElementById('boldstuff1').innerHTML= x;
-    }
-    var y = parseInt(document.getElementById("boldstuff2").innerHTML);
-    function increase2()
-    {
-      y+=1;
-      document.getElementById('boldstuff2').innerHTML= y;
-    }
-    var a = parseInt(document.getElementById("b").innerHTML);
-    function decrease()
-    {
-      a-=1;
-      document.getElementById('b').innerHTML= a;
-    }
-    var b = parseInt(document.getElementById("b1").innerHTML);
-    function decrease1()
-    {
-      b-=1;
-      document.getElementById('b1').innerHTML= b;
-    }
-    var c = parseInt(document.getElementById("b2").innerHTML);
-    function decrease2()
-    {
-      c-=1;
-      document.getElementById('b2').innerHTML= c;
-    }
-  </script>
+    <script src="js/vote-script.js"></script>
   </div>
 </body>
 
