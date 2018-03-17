@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="">
   <meta name="author" content="">
-  <title>CCIS Graduate Academic Advisor-Home</title>
+  <title>CCIS Graduate Academic Advisor-Post Thread</title>
   <!-- Bootstrap core CSS-->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <!-- Custom fonts for this template-->
@@ -96,28 +96,31 @@
 			<h1>Specialization: Databases</h1>
 			<div class="card">
 				<div class="card-header">Create New Thread<br></div>
+
 				<div class="card-body">
           <p class="required-field"><span class="red">*</span> indicates required field</p>
 				 <form>
-					<div class="form-group">
-						<label for="question">Question</label>
+					<div class="form-group col-md-12">
+						<label for="question">Question <span class="red">*</span></label>
 						<input class="form-control" id="question" type="text" aria-describedby="questionHelp" placeholder="Enter your Question">
 					</div>
-					<div class="form-group">
-						<label for="course">Course <input list="subjects" id="myCourse" aria-describedby="questionHelp" class="form-control" type="text" placeholder="Select a Course"</label>
-						<datalist id="subjects" >
-							<option value="DBMS">
-							<option value="IR">
-							<option value="MR">
-							<option value="DM">
-							<option value="ML">
-						</datalist>
+					<div class="form-group col-md-6">
+						<label for="course">Course <span class="red">*</span></label>	
+            <select class="form-control">
+              <option selected disabled>Select Course</option>
+              <option value="cs5200">CS5200 - Database</option>
+              <option value="cs5800">CS6140 - Machine Learning</option>
+              <option value="cs5610">CS6200 - Information Retrieval</option>
+              <option value="cs6350">CS6220 - Data Mining</option>
+            </select>
 					</div>
-					<div class="form-group">
-						<label for="description">Description</label>
+					<div class="form-group col-md-12">
+						<label for="description">Description <span class="red">*</span></label>
 						<textarea class="form-control" id="description" type="text" cols="40" rows="5" aria-describedby="descriptionHelp" placeholder="Enter Description"></textarea>	
 					</div>
-					<a class="btn btn-primary btn-block" href="queryCofirmation.html">Submit</a>
+          <div class="col-md-12">
+					 <a class="btn btn-success btn-block" href="queryCofirmation.html">Submit</a>
+          </div>
 				</form>
 				</div>
 			</div>

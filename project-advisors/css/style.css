@@ -139,6 +139,9 @@ form .buttons .submit:hover {background-color: #14892c;}
 .grade-border{
  border-bottom: 2px solid gray;
 }
-
+.course-text{
+  font-size: 19px;
+  font-family: 'Oswald', sans-serif;
+}
 
 

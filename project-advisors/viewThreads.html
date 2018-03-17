@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="">
   <meta name="author" content="">
-  <title>CCIS Graduate Academic Advisor-Post a Thread</title>
+  <title>CCIS Graduate Academic Advisor-Home</title>
   <!-- Bootstrap core CSS-->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <!-- Custom fonts for this template-->
@@ -29,22 +29,22 @@
     <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
+     
     <div class="collapse navbar-collapse" id="navbarResponsive">
       <ul class="navbar-nav navbar-sidenav" id="exampleAccordion">
-        <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Home">
+        <li class="nav-item active" data-toggle="tooltip" data-placement="right" title="Home">
           <a class="nav-link" href="home.html">
             <i class="fa fa-fw fa-home"></i>
             <span class="nav-link-text">Home</span>
           </a>
         </li>
         <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Recommended Courses">
-          <a class="nav-link" href="questionaire.html">
+         <a class="nav-link" href="questionaire.html">
             <i class="fa fa-fw fa-book"></i>
             <span class="nav-link-text">Recommended Courses</span>
           </a>
         </li>
-
-        <li class="nav-item active" data-toggle="tooltip" data-placement="right" title="Discussion Board">
+        <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Discussion Board">
           <a class="nav-link" href="discussion-board.html">
             <i class="fa fa-fw fa-table"></i>
             <span class="nav-link-text">Discussion Board</span>
@@ -64,7 +64,7 @@
               <i class="fa fa-fw fa-user"></i>
               <span class="nav-link-text">User name</span>
             </a>
-        </li> 
+        </li>   
         <li class="nav-item">
           <a class="nav-link" data-toggle="modal" data-target="#exampleModal">
             <i class="fa fa-fw fa-sign-out"></i>Logout</a>
@@ -81,63 +81,60 @@
         </li>
          <li class="breadcrumb-item active">Specialization: Database</li>
       </ol>
-     
+
       <div class="row">
         <div class="col-12">
           <img src="logo.png" alt="logo" class="center-block" />
+          <h2>Specialization : Databases</h2>
         </div>
       </div>
-      <div class="row">
+
+       <div class="row">
         <div class="col-10">
-			</br>
-			</br>
-			<h1>Specialization: Databases</h1>
-			<div class="card">
-				<!-- <div class="card-header"><strong>All Threads</strong></div> -->
-				<div class="card-body">
-				<form>
-					<div class="form-row">
-						<div class="col-md-6">
-							<div class="form-group">
-								<label for="course">Course <input list="subjects" id="myCourse" aria-describedby="questionHelp" class="form-control" type="text" placeholder="Select a Course" font-family: arial, sans-serif;</label>
-								<datalist id="subjects" >
-									<option value="DBMS">
-									<option value="IR">
-									<option value="MR">
-									<option value="DM">
-									<option value="ML">
-								</datalist>
-							</div>
-						</div>
-						<div class="col-md-6">
-							<a class="btn btn-primary btn-block" href="postingNewThread.html">Create New Thread</a>
-						</div>
-					</div>
-					<table class="table table-striped">
-						<tr>
-							<th>Threads</th>
-							<th>Views</th> 
-						</tr>
-						<tr>
-							 <td><span class="no-answer">0 comments</span> <a href="question1.html" class="thread">Does Data Mining require Python to do assignments? </a></td>
-							<td>63</td>
-						</tr>
-						<tr>
-							 <td><span class="answer">4 comments</span> <a href="question1.html" class="thread">Can I take MR without knowing Scala</a></td>
-							<td>54</td>
-						</tr>
-						<tr>
-							 <td><span class="answer">2 comments</span> <a href="question1.html" class="thread">Are ML assignments are done in R or Python</a></td>
-							<td>10</td>
-						</tr>
-					</table>				
-				</form>
-			</div>
-		</div>
-       </div>
+     <div class="card mb-3">
+        <div class="card-header">
+           <div class="btn-group-vertical pull-right">
+              <a href="postingNewThread.html" class="btn btn-primary" role="button">Create New Thread</a>
+           </div>
+            <div class="pull-left">
+              <div class="form-group row">
+                 <form class="form-inline" action="">
+                  <select class="form-control">
+                      <option selected disabled>Search Threads by Course</option>
+                      <option value="all">All Courses</option>
+                      <option value="cs5200">CS5200 - Database</option>
+                      <option value="cs5800">CS6140 - Machine Learning</option>
+                      <option value="cs5610">CS6200 - Information Retrieval</option>
+                      <option value="cs6350">CS6220 - Data Mining</option>
+                  </select>
+                  <a href="viewThreads-dbms.html" type="submit" class="btn btn-secondary"><i class="fa fa-search" aria-hidden="true"></i></a>
+                </form> 
+              </div>
+           </div>
+        </div>
+        <div class="table-responsive">
+          <table class="table table-striped">
+            <tr>
+              <th>Threads</th>
+              <th>Views</th> 
+            </tr>
+            <tr>
+               <td><span class="no-answer">0 comments</span> <a href="question1.html" class="thread">Does Data Mining require Python to do assignments? </a></td>
+              <td>63</td>
+            </tr>
+            <tr>
+               <td><span class="answer">4 comments</span> <a href="question1.html" class="thread">Can I take MR without knowing Scala</a></td>
+              <td>54</td>
+            </tr>
+            <tr>
+               <td><span class="answer">2 comments</span> <a href="question1.html" class="thread">Are ML assignments are done in R or Python</a></td>
+              <td>10</td>
+            </tr>
+          </table>        
+        </div>        
     </div>
-     <br> 
-    </div>
+    </div></div></div>
+
     <!-- /.container-fluid-->
     <!-- /.content-wrapper-->
     <footer class="sticky-footer">
@@ -169,7 +166,6 @@
         </div>
       </div>
     </div>
-
     <!-- Bootstrap core JavaScript-->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
