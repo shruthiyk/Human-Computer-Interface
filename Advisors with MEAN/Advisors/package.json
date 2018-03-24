@@ -1,7 +1,7 @@
 {
   "name": "Advisors",
   "version": "1.0.0",
-  "description": "HCI Project",
+  "description": "Advisors - HCI Project",
   "main": "server.js",
   "dependencies": {
     "bcrypt-nodejs": "0.0.3",
