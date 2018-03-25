@@ -5,17 +5,22 @@
     function Config($routeProvider){
         $routeProvider
             .when("/login",{
-                templateUrl: "/project/views/login.html"
-                //controller: "LoginController",
-                //controllerAs: "model"
+                templateUrl: "/project/views/login.html",
+                controller: "LoginController",
+                controllerAs: "model"
+            })
+            .when("/register",{
+                templateUrl: "/project/views/register.html",
+                controller: "RegisterController",
+                controllerAs: "model"
+            })
+            .when("/user/:userId",{
+                templateUrl : "/project/views/home.html",
+                controller: "HomeController",
+                controllerAs: "model"
             })
             .when("/home",{
                 templateUrl: "/project/views/home.html"
-                //controller: "LoginController",
-                //controllerAs: "model"
-            })
-            .when("/register",{
-                templateUrl: "/project/views/register.html"
                 //controller: "LoginController",
                 //controllerAs: "model"
             })

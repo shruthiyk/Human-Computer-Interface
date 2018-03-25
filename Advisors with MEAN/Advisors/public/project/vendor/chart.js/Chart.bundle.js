@@ -3769,7 +3769,7 @@ function configFromRFC2822(config) {
     var timezone, timezoneIndex;
 
     string = config._i
-        .replace(/\([^\)]*\)|[\n\t]/g, ' ') // Remove comments and folding whitespace
+        .replace(/\([^\)]*\)|[\n\t]/g, ' ') // Remove comment and folding whitespace
         .replace(/(\s\s+)/g, ' ') // Replace multiple-spaces with a single space
         .replace(/^\s|\s$/g, ''); // Remove leading and trailing spaces
     match = basicRfcRegex.exec(string);
@@ -9911,7 +9911,7 @@ module.exports = function(Chart) {
 		}
 
 		// Scale mouse coordinates into canvas coordinates
-		// by following the pattern laid out by 'jerryj' in the comments of
+		// by following the pattern laid out by 'jerryj' in the comment of
 		// http://www.html5canvastutorials.com/advanced/html5-canvas-mouse-coordinates/
 		var paddingLeft = parseFloat(helpers.getStyle(canvas, 'padding-left'));
 		var paddingTop = parseFloat(helpers.getStyle(canvas, 'padding-top'));

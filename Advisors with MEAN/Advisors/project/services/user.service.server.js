@@ -120,6 +120,8 @@ module.exports = function(app, models) {
     function register(req, res){
         var username = req.body.username;
         var password = req.body.password;
+        var firstName = req.body.firstName;
+        var lastName = req.body.lastName;
         userModel
             .findUserByUsername(username)
             .then(

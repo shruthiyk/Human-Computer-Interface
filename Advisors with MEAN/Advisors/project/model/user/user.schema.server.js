@@ -8,12 +8,14 @@ module.exports = function() {
         lastName: String,
         email: String,
         phone: String,
+        reputationPoints: Number,
+
         facebook: {
             token: String,
             id: String,
             displayName: String
         },
-        websites: [{type: mongoose.Schema.ObjectId, ref: "Website"}],
+        threads: [{type: mongoose.Schema.ObjectId, ref: "Thread"}],
         dateCreated: {type: Date, default: Date.now}
     }, {collection: "assignment.user"});
 

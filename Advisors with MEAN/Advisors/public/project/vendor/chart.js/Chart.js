@@ -5448,7 +5448,7 @@ module.exports = function(Chart) {
 		}
 
 		// Scale mouse coordinates into canvas coordinates
-		// by following the pattern laid out by 'jerryj' in the comments of
+		// by following the pattern laid out by 'jerryj' in the comment of
 		// http://www.html5canvastutorials.com/advanced/html5-canvas-mouse-coordinates/
 		var paddingLeft = parseFloat(helpers.getStyle(canvas, 'padding-left'));
 		var paddingTop = parseFloat(helpers.getStyle(canvas, 'padding-top'));
