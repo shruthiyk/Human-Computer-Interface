@@ -24,6 +24,7 @@ module.exports = function(app, models) {
     }
 
     function findAllThreadsForUser(req, res) {
+        Console.log("In server");
         var userId = req.params.userId;
         threadModel
             .findAllThreadsForUser(userId)

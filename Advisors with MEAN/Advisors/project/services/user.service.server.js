@@ -1,13 +1,22 @@
+var passport = require('passport');
+var LocalStrategy = require('passport-local').Strategy;
+var FacebookStrategy = require('passport-facebook').Strategy;
 var bcrypt = require('bcrypt-nodejs');
 
 module.exports = function(app, models) {
 
     var userModel = models.userModel;
 
+    app.get('/auth/facebook/callback',
+        passport.authenticate('facebook', {
+            successRedirect: '/assignment/#/user',
+            failureRedirect: '/assignment/#/login'
+        }));
 
+    app.get ('/auth/facebook', passport.authenticate('facebook'));
     app.post("/api/user", createUser);
     app.post("/api/register", register);
-    app.post("/api/login", login);
+    app.post("/api/login", passport.authenticate('local'), login);
     app.post("/api/logout", logout);
     app.get ('/api/loggedIn', loggedIn);
     app.get("/api/user", getUsers);
@@ -15,7 +24,80 @@ module.exports = function(app, models) {
     app.put("/api/user/:userId", updateUser);
     app.delete("/api/user/:userId", deleteUser);
 
+    passport.use(new LocalStrategy(localStrategy));
+    passport.serializeUser(serializeUser);
+    passport.deserializeUser(deserializeUser);
 
+    var facebookConfig = {
+        clientID     : process.env.FACEBOOK_ASSGN_CLIENT_ID,
+        clientSecret : process.env.FACEBOOK_ASSGN_CLIENT_SECRET,
+        callbackURL  : process.env.FACEBOOK_ASSGN_CALLBACK_URL
+    };
+
+    passport.use('facebook', new FacebookStrategy(facebookConfig, facebookLogin));
+
+
+    function facebookLogin(token, refreshToken, profile, done){
+        userModel
+            .findFacebookUser(profile.id)
+            .then(
+                function(facebookUser){
+                    if(facebookUser){
+                        return done(null, facebookUser);
+                    }else{
+                        facebookUser ={
+                            username: profile.displayName.replace(/ /g, ''),
+                            facebook: {
+                                token: token,
+                                id: profile.id,
+                                displayName: profile.displayName
+                            }
+                        }
+                        return userModel
+                            .createUser(facebookUser)
+                            .then(
+                                function(user){
+                                    done(null, user);
+                                }
+                            )
+                    }
+                }
+            )
+    }
+
+    function localStrategy(username, password, done) {
+        userModel
+            .findUserByUsername(username)
+            .then(
+                function(user) {
+                    if(user && bcrypt.compareSync(password, user.password)){
+                        done(null, user);
+                    } else {
+                        done(null, false);
+                    }
+                },
+                function(err) {
+                    done(err);
+                }
+            );
+    }
+
+    function serializeUser(user, done) {
+        done(null, user);
+    }
+
+    function deserializeUser(user, done) {
+        userModel
+            .findUserById(user._id)
+            .then(
+                function(user){
+                    done(null, user);
+                },
+                function(err){
+                    done(err, null);
+                }
+            );
+    }
 
     function logout(req, res) {
         req.logout();
@@ -23,19 +105,8 @@ module.exports = function(app, models) {
     }
 
     function login(req, res) {
-        var username = req.body.username;
-        var password = req.body.password;
-        userModel
-            .findUserByUsername(username)
-            .then(
-                function (user) {
-                        req.session.currentUser = user;
-                        res.json(user);
-                },
-                function(error){
-                    res.status(400).send(error);
-                }
-            )
+        var user = req.user;
+        res.json(user);
     }
 
     function loggedIn(req, res) {

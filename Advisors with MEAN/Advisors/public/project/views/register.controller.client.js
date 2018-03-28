@@ -2,16 +2,16 @@
     angular
         .module("CCISAdvisor")
         .controller("RegisterController", RegisterController);
-    
+
     function RegisterController($location, UserService){
-       var vm = this;
-        
+        var vm = this;
+
         vm.register = register;
-        
-        function register(username, password, passwordVerify, firstName, lastName){
+
+        function register(username, password, passwordVerify, firstName, lastName, semester){
             if(username != null && password != null && passwordVerify != null) {
                 if(password == passwordVerify){
-                    var user = {"username": username, "password": password, "firstName": firstName, "lastName": lastName, "reputationPoints": 0};
+                    var user = {"username": username, "password": password, "firstName": firstName, "lastName": lastName, "reputationPoints": 0, "semester": semester};
                     UserService
                         .register(user)
                         .then(

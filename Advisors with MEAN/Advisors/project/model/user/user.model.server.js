@@ -11,10 +11,13 @@ module.exports = function() {
         findUserByUsername: findUserByUsername,
         updateUser: updateUser,
         deleteUser: deleteUser,
-        
+        findFacebookUser: findFacebookUser
     };
     return api;
 
+    function findFacebookUser(id) {
+        return User.findOne({"facebook.id" : id});
+    }
 
     function createUser(user) {
         return User.create(user);
@@ -34,14 +37,13 @@ module.exports = function() {
 
     function updateUser(userId, user) {
         return User
-                .update({_id: userId},{
-                    $set: {
-                        firstName: user.firstName,
-                        lastName: user.lastName,
-                        email: user.email,
-                        reputationPoints: user.reputationPoints
-                    }
-                });
+            .update({_id: userId},{
+                $set: {
+                    firstName: user.firstName,
+                    lastName: user.lastName,
+                    email: user.email
+                }
+            });
     }
 
     function deleteUser(userId) {

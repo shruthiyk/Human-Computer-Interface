@@ -9,7 +9,7 @@ module.exports = function() {
         dislikes: Number,
         dateCreated: {type: Date, default: Date.now},
         order: {type: Number, default: 0}
-    }, {collection: "assignment.comment"});
+    }, {collection: "hci.comment"});
 
     return CommentSchema;
 };

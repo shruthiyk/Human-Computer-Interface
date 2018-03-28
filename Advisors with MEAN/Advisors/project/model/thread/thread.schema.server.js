@@ -9,7 +9,7 @@ module.exports = function() {
         comments: [{type: mongoose.Schema.ObjectId, ref: "Comment"}],
         views: Number,
         dateCreated: {type: Date, default: Date.now}
-    }, {collection: "assignment.thread"});
+    }, {collection: "hci.thread"});
 
     return ThreadSchema;
 };

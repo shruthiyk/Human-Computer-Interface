@@ -40,7 +40,7 @@
          <li class="nav-item">
             <a class="nav-link" href="#">
               <i class="fa fa-fw fa-user"></i>
-              <span class="nav-link-text">{{model.userId}}</span>
+              <span class="nav-link-text">{{model.threads.username}}</span>
             </a>
         </li>   
         <li class="nav-item">
@@ -63,7 +63,7 @@
       <div class="row">
         <div class="col-12">
           <img ng-src="../project/images/logo.png" alt="logo" class="center-block" />
-          <h2 class="text-center">Your Reputation Points : 45</h2>
+          <h2 class="text-center">Your Reputation Points : {{model.threads.reputationPoints}}</h2>
         </div>
       </div>
       {{scope}}
@@ -78,11 +78,9 @@
              {{thread.query}}
            </a>
 
-           <a href="#/user/{{website._user}}/website/{{website._id}}" class="pull-right">
-             <span class="glyphicon glyphicon-cog"></span>
-           </a>
          </li>
        </ul>
+
     </div>
     </div>
 

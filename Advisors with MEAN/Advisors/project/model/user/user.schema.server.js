@@ -6,10 +6,8 @@ module.exports = function() {
         password: String,
         firstName: String,
         lastName: String,
-        email: String,
-        phone: String,
+        semester: Number,
         reputationPoints: Number,
-
         facebook: {
             token: String,
             id: String,
@@ -17,7 +15,7 @@ module.exports = function() {
         },
         threads: [{type: mongoose.Schema.ObjectId, ref: "Thread"}],
         dateCreated: {type: Date, default: Date.now}
-    }, {collection: "assignment.user"});
+    }, {collection: "hci.user"});
 
     return UserSchema;
 };

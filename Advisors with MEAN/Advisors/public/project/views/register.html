@@ -39,7 +39,7 @@
 
                         <div class="col-xs-5 selectContainer">
                             <label class="col-xs-3 control-label">Semester <span class="red">*</span></label>
-                            <select class="form-control" name="color">
+                            <select class="form-control" name="semester">
                                 <option value="1">1</option>
                                 <option value="2">2</option>
                                 <option value="3">3</option>
@@ -79,7 +79,7 @@
                     <p class="required-field"><span class="red">*</span> indicates required field</p>
 
                     <button class="btn btn-primary btn-block"
-                            ng-click="model.register(username,password,passwordVerify,firstName,lastName)">
+                            ng-click="model.register(username,password,passwordVerify,firstName,lastName, semester)">
                         Register
                     </button>
                 </form>

@@ -18,5 +18,5 @@
         }
         init();
 
-    }HomeController.$inject = ['$scope', '$http'];
+    }
 })();

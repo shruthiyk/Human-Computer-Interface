@@ -2,69 +2,72 @@
     angular.module("CCISAdvisor")
         .config(Config);
     
-    function Config($routeProvider){
+    function Config($routeProvider) {
         $routeProvider
-            .when("/login",{
+            .when("/login", {
                 templateUrl: "/project/views/login.html",
                 controller: "LoginController",
                 controllerAs: "model"
             })
-            .when("/register",{
+            .when("/register", {
                 templateUrl: "/project/views/register.html",
                 controller: "RegisterController",
                 controllerAs: "model"
             })
-            .when("/user/:userId",{
-                templateUrl : "/project/views/home.html",
+            .when("/user/:userId", {
+                templateUrl: "/project/views/home.html",
                 controller: "HomeController",
-                controllerAs: "model"
+                controllerAs: "model",
+                resolve: {
+                    loggedIn: checkLoggedIn
+                }
             })
-            .when("/home",{
+            .when("/home", {
                 templateUrl: "/project/views/home.html"
                 //controller: "LoginController",
                 //controllerAs: "model"
             })
-            .when("/forgotPassword",{
+            .when("/forgotPassword", {
                 templateUrl: "/project/views/forgot-password.html"
                 //controller: "LoginController",
                 //controllerAs: "model"
             })
-            .when("/questionnare",{
+            .when("/questionnare", {
                 templateUrl: "/project/views/questionaire.html"
                 //controller: "LoginController",
                 //controllerAs: "model"
             })
-            .when("/grades",{
+            .when("/grades", {
                 templateUrl: "/project/views/grades.html"
                 //controller: "LoginController",
                 //controllerAs: "model"
             })
-            .when("/courses",{
+            .when("/courses", {
                 templateUrl: "/project/views/courses.html"
                 //controller: "LoginController",
                 //controllerAs: "model"
             })
-            .when("/discussionBoard",{
+            .when("/discussionBoard", {
                 templateUrl: "/project/views/discussion-board.html"
                 //controller: "LoginController",
                 //controllerAs: "model"
             })
-            .when("/viewThreads",{
+            .when("/viewThreads", {
                 templateUrl: "/project/views/viewThreads.html"
                 //controller: "LoginController",
                 //controllerAs: "model"
             })
-            .when("/postingNewThread",{
+            .when("/postingNewThread", {
                 templateUrl: "/project/views/postingNewThread.html"
                 //controller: "LoginController",
                 //controllerAs: "model"
             })
-            .when("/queryConfirmation",{
+            .when("/queryConfirmation", {
                 templateUrl: "/project/views/queryCofirmation.html"
                 //controller: "LoginController",
                 //controllerAs: "model"
             })
-            .when("/question1",{
+            .when("/question1", {
                 templateUrl: "/project/views/question1.html"
                 //controller: "LoginController",
                 //controllerAs: "model"
@@ -73,4 +76,27 @@
                 redirectTo: "/login"
             });
     }
+
+function checkLoggedIn(UserService, $location, $q, $rootScope) {
+    var deferred = $q.defer();
+    UserService
+        .checkLoggedIn()
+        .then(
+            function(response) {
+                var user = response.data;
+                if(user == '0') {
+                    $rootScope.currentUser = null;
+                    deferred.reject();
+                    $location.url("/login");
+                } else {
+                    $rootScope.currentUser = user;
+                    deferred.resolve();
+                }
+            },
+            function(err) {
+                $location.url("/login");
+            }
+        );
+    return deferred.promise;
+}
 })();
