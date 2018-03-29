@@ -1,148 +1,135 @@
 
 
 <div class="fixed-nav sticky-footer bg-dark" id="page-top">
-  <!-- Navigation-->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
-    <a class="navbar-brand" href="#/home">CCIS Graduate Academic Advisor</a>
-    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-     
-    <div class="collapse navbar-collapse" id="navbarResponsive">
-      <ul class="navbar-nav navbar-sidenav" id="exampleAccordion">
-        <li class="nav-item active" data-toggle="tooltip" data-placement="right" title="Home">
-          <a class="nav-link" href="#/home">
-            <i class="fa fa-fw fa-home"></i>
-            <span class="nav-link-text">Home</span>
-          </a>
-        </li>
-        <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Recommended Courses">
-         <a class="nav-link" href="#/questionnare">
-            <i class="fa fa-fw fa-book"></i>
-            <span class="nav-link-text">Recommended Courses</span>
-          </a>
-        </li>
-        <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Discussion Board">
-          <a class="nav-link" href="#/discussionBoard">
-            <i class="fa fa-fw fa-table"></i>
-            <span class="nav-link-text">Discussion Board</span>
-          </a>
-        </li>
-      </ul>
-      <ul class="navbar-nav sidenav-toggler">
-        <li class="nav-item">
-          <a class="nav-link text-center" id="sidenavToggler">
-            <i class="fa fa-fw fa-angle-left"></i>
-          </a>
-        </li>
-      </ul>
-      <ul class="navbar-nav ml-auto">
-         <li class="nav-item">
-            <a class="nav-link" href="#">
-              <i class="fa fa-fw fa-user"></i>
-              <span class="nav-link-text">User name</span>
-            </a>
-        </li>   
-        <li class="nav-item">
-          <a class="nav-link" data-toggle="modal" data-target="#exampleModal">
-            <i class="fa fa-fw fa-sign-out"></i>Logout</a>
-        </li>
-      </ul>
-    </div>
-  </nav>
-  <div class="content-wrapper">
-    <div class="container-fluid">
-     <!-- Breadcrumbs-->
-      <ol class="breadcrumb">
-        <li class="breadcrumb-item">
-          <a href="#/discussionBoard">Discussion Board</a>
-        </li>
-         <li class="breadcrumb-item active">Specialization: Database</li>
-      </ol>
+    <!-- Navigation-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
+        <a class="navbar-brand" href="#/user/{{model.userId}}">CCIS Graduate Academic Advisor</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
-      <div class="row">
-        <div class="col-12">
-            <img ng-src="../project/images/logo.png" alt="logo" class="center-block" />
-          <h2>Specialization : Databases</h2>
-        </div>
-      </div>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav navbar-sidenav" id="exampleAccordion">
+                <li class="nav-item active" data-toggle="tooltip" data-placement="right" title="Home">
+                    <a class="nav-link" href="#/user/{{model.userId}}">
+                        <i class="fa fa-fw fa-home"></i>
+                        <span class="nav-link-text">Home</span>
+                    </a>
+                </li>
+                <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Recommended Courses">
+                    <a class="nav-link" href="#/user/{{model.userId}}/questionnare">
+                        <i class="fa fa-fw fa-book"></i>
+                        <span class="nav-link-text">Recommended Courses</span>
+                    </a>
+                </li>
+                <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Discussion Board">
+                    <a class="nav-link" href="#/user/{{model.userId}}/discussionBoard">
+                        <i class="fa fa-fw fa-table"></i>
+                        <span class="nav-link-text">Discussion Board</span>
+                    </a>
+                </li>
+            </ul>
 
-       <div class="row">
-        <div class="col-10">
-     <div class="card mb-3">
-        <div class="card-header">
-           <div class="btn-group-vertical pull-right">
-              <a href="#/postingNewThread" class="btn btn-primary" role="button">Create New Thread</a>
-           </div>
-            <div class="pull-left">
-              <div class="form-group row">
-                 <form class="form-inline" action="">
-                  <select class="form-control">
-                      <option selected disabled>Search Threads by Course</option>
-                      <option value="all">All Courses</option>
-                      <option value="cs5200">CS5200 - Database</option>
-                      <option value="cs5800">CS6140 - Machine Learning</option>
-                      <option value="cs5610">CS6200 - Information Retrieval</option>
-                      <option value="cs6350">CS6220 - Data Mining</option>
-                  </select>
-                  <a href="viewThreads-dbms.html" type="submit" class="btn btn-secondary"><i class="fa fa-search" aria-hidden="true"></i></a>
-                </form> 
-              </div>
-           </div>
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        <i class="fa fa-fw fa-user"></i>
+                        <span class="nav-link-text">{{model.user.username}}</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-toggle="modal" data-target="#exampleModal">
+                        <i class="fa fa-fw fa-sign-out"></i>Logout</a>
+                </li>
+            </ul>
         </div>
-        <div class="table-responsive">
-          <table class="table table-striped">
-            <tr>
-              <th>Threads</th>
-              <th>Views</th> 
-            </tr>
-            <tr>
-               <td><span class="no-answer">0 comments</span> <a href="question1.html" class="thread">Does Data Mining require Python to do assignments? </a></td>
-              <td>63</td>
-            </tr>
-            <tr>
-               <td><span class="answer">4 comments</span> <a href="question1.html" class="thread">Can I take MR without knowing Scala</a></td>
-              <td>54</td>
-            </tr>
-            <tr>
-               <td><span class="answer">2 comments</span> <a href="question1.html" class="thread">Are ML assignments are done in R or Python</a></td>
-              <td>10</td>
-            </tr>
-          </table>        
-        </div>        
-    </div>
-    </div></div></div>
+    </nav>
+    <div class="content-wrapper">
+        <div class="container-fluid">
+            <!-- Breadcrumbs-->
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item">
+                    <a href="#/user/{{model.userId}}/discussionBoard">Discussion Board</a>
+                </li>
+                <li class="breadcrumb-item active">Specialization: {{model.courseCategory}}</li>
+            </ol>
 
-    <!-- /.container-fluid-->
-    <!-- /.content-wrapper-->
-    <footer class="sticky-footer">
-      <div class="container">
-        <div class="text-center">
-          <small>Copyright © The Advisors 2018</small>
+            <div class="row">
+                <div class="col-12">
+                    <img ng-src="../project/images/logo.png" alt="logo" class="center-block" />
+                    <h2>Specialization : {{model.courseCategory}}</h2>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-10">
+                    <div class="card mb-3">
+                        <div class="card-header">
+                            <div class="btn-group-vertical pull-right">
+                                <a href="#/user/{{model.userId}}/discussionBoard/{{model.courseCategory}}/viewThreads/postingNewThread" class="btn btn-primary" role="button">Create New Thread</a>
+                            </div>
+                            <div class="pull-left">
+                                <div class="form-group row">
+                                    <form class="form-inline" action="">
+
+
+
+                                        <div class="col-xs-5 selectContainer">
+
+                                            <select ng-model= "course" class="form-control" id = "course" name="course" required ng-options="x for x in courses" placeholder="Select Course">
+                                            </select>
+
+
+                                        </div>
+                                        <a href="#/user/{{model.userId}}/discussionBoard/{{model.courseCategory}}/viewThreads/{{model.course = course}}" class="btn btn-secondary" type="submit"><i class="fa fa-search" aria-hidden="true"></i></a>
+
+
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="table-responsive">
+                            <table class="table table-striped">
+                                <tr>
+                                    <th>Your Threads</th>
+                                    <th>Views</th>
+                                </tr>
+                                <tr ng-repeat="thread in model.threads">
+                                    <td><span class="answer">{{ thread.numberOfComments }} comments</span><a href="question1.html" class="thread"> {{ thread.query }} </a></td>
+                                    <td>{{ thread.views }}</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div></div></div>
+
+        <!-- /.container-fluid-->
+        <!-- /.content-wrapper-->
+        <footer class="sticky-footer">
+            <div class="container">
+                <div class="text-center">
+                    <small>Copyright © The Advisors 2018</small>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Logout Modal-->
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
+                        <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">×</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
+                    <div class="modal-footer">
+                        <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+                        <a class="btn btn-primary" href="#/login">Logout</a>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-    </footer>
-    <!-- Scroll to Top Button-->
-    <a class="scroll-to-top rounded" href="#page-top">
-      <i class="fa fa-angle-up"></i>
-    </a>
-    <!-- Logout Modal-->
-    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
-            <button class="close" type="button" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">×</span>
-            </button>
-          </div>
-          <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
-          <div class="modal-footer">
-            <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
-            <a class="btn btn-primary" href="#/login">Logout</a>
-          </div>
-        </div>
-      </div>
     </div>
-  </div>
 </div>

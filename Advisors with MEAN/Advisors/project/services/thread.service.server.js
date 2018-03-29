@@ -3,7 +3,9 @@ module.exports = function(app, models) {
     var threadModel = models.threadModel;
 
     app.post("/api/user/:userId/thread", createThread);
-    app.get("/api/user/:userId", findAllThreadsForUser);
+    app.get("/api/user/:userId/thread", findAllThreadsForUser);
+    app.get("/api/:courseCategory/thread", findThreadsForcourseCategory);
+    app.get("/api/:course/courseThread", findThreadsForCourse);
     app.get("/api/thread/:threadId", findThreadById);
     app.put("/api/thread/:threadId", updateThread);
     app.delete("/api/thread/:threadId", deleteThread);
@@ -24,10 +26,37 @@ module.exports = function(app, models) {
     }
 
     function findAllThreadsForUser(req, res) {
-        Console.log("In server");
         var userId = req.params.userId;
         threadModel
             .findAllThreadsForUser(userId)
+            .then(
+                function (threads) {
+                    res.json(threads);
+                },
+                function (error) {
+                    res.statusCode(404).send(error);
+                }
+            )
+    }
+
+    function findThreadsForcourseCategory(req, res) {
+        var courseCategory = req.params.courseCategory;
+        threadModel
+            .findThreadsForcourseCategory(courseCategory)
+            .then(
+                function (threads) {
+                    res.json(threads);
+                },
+                function (error) {
+                    res.statusCode(404).send(error);
+                }
+            )
+    }
+
+    function findThreadsForCourse(req, res) {
+        var course = req.params.course;
+        threadModel
+            .findThreadsForCourse(course)
             .then(
                 function (threads) {
                     res.json(threads);

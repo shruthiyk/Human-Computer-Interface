@@ -10,6 +10,8 @@
             findThreadById: findThreadById,
             updateThread: updateThread,
             deleteThread: deleteThread,
+            findThreadsForcourseCategory: findThreadsForcourseCategory,
+            findThreadsForCourse: findThreadsForCourse
         };
         return api;
 
@@ -19,7 +21,17 @@
         }
 
         function findThreadsForUser(userId) {
-            var url = "/api/user/"+userId;
+            var url = "/api/user/"+userId+"/thread";
+            return $http.get(url);
+        }
+
+        function findThreadsForcourseCategory(courseCategory) {
+            var url = "/api/"+courseCategory+"/thread";
+            return $http.get(url);
+        }
+
+        function findThreadsForCourse(course) {
+            var url = "/api/"+course+"/courseThread";
             return $http.get(url);
         }
 

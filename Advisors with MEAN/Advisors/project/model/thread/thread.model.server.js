@@ -9,7 +9,9 @@ module.exports = function() {
         findAllThreadsForUser: findAllThreadsForUser,
         findThreadById: findThreadById,
         updateThread: updateThread,
-        deleteThread: deleteThread
+        deleteThread: deleteThread,
+        findThreadsForcourseCategory: findThreadsForcourseCategory,
+        findThreadsForCourse: findThreadsForCourse
     };
     return api;
 
@@ -19,7 +21,15 @@ module.exports = function() {
     }
 
     function findAllThreadsForUser(userId) {
-        return Thread.find({_user: userId});
+        return Thread.find({_user: userId}).sort( { dateCreated: -1 } );
+    }
+
+    function findThreadsForcourseCategory(courseCategory) {
+        return Thread.find({courseCategory: courseCategory}).sort( { dateCreated: -1 } );
+    }
+
+    function findThreadsForCourse(course) {
+        return Thread.find({course: course}).sort( { dateCreated: -1 } );
     }
 
     function findThreadById(threadId) {

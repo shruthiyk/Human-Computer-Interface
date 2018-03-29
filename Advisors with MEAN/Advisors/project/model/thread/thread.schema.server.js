@@ -5,8 +5,10 @@ module.exports = function() {
         _user: {type: mongoose.Schema.ObjectId, ref: "User"},
         query: String,
         course: String,
+        courseCategory: String,
         description: String,
         comments: [{type: mongoose.Schema.ObjectId, ref: "Comment"}],
+        numberOfComments : Number,
         views: Number,
         dateCreated: {type: Date, default: Date.now}
     }, {collection: "hci.thread"});

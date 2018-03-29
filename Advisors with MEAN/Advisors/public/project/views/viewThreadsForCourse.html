@@ -1,6 +1,6 @@
 
 
-<div class="fixed-nav sticky-footer bg-dark " id="page-top">
+<div class="fixed-nav sticky-footer bg-dark" id="page-top">
   <!-- Navigation-->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
     <a class="navbar-brand" href="#/user/{{model.userId}}">CCIS Graduate Academic Advisor</a>
@@ -46,43 +46,53 @@
   </nav>
   <div class="content-wrapper">
     <div class="container-fluid">
-      <!-- Breadcrumbs-->
-     <!--  <ol class="breadcrumb">
+     <!-- Breadcrumbs-->
+      <ol class="breadcrumb">
         <li class="breadcrumb-item">
-          <a href="index.html">Dashboard</a>
+          <a href="#/user/{{model.userId}}/discussionBoard">Discussion Board</a>
         </li>
-        <li class="breadcrumb-item active">Blank Page</li>
-      </ol> -->
+          <li class="breadcrumb-item">
+              <a href="#/user/{{model.userId}}/discussionBoard/{{model.courseCategory}}/viewThreads">Specialization: {{model.courseCategory}}</a>
+          </li>
+         <li class="breadcrumb-item active">Course : {{model.course}}</li>
+      </ol>
 
       <div class="row">
         <div class="col-12">
-          <img ng-src="../project/images/logo.png" alt="logo" class="center-block" />
-          <h2 class="text-center">Your Reputation Points : {{model.user.reputationPoints}}</h2>
+            <img ng-src="../project/images/logo.png" alt="logo" class="center-block" />
+          <h2>Specialization : {{model.courseCategory}}</h2>
+            <h5>Course : {{model.course}}</h5>
         </div>
       </div>
 
+       <div class="row">
+        <div class="col-10">
      <div class="card mb-3">
-        <!-- <div class="card-header">
-          <i class="fa fa-question-circle"></i> Your Threads
-        </div> -->
+        <div class="card-header">
+           <div class="btn-group-vertical pull-right">
+              <a href="#/user/{{model.userId}}/discussionBoard/{{model.courseCategory}}/viewThreads/postingNewThread" class="btn btn-primary" role="button">Create New Thread</a>
+           </div>
+            <div class="pull-left">
+              <div class="form-group row">
 
-
-       <div class="table-responsive">
-         <table class="table table-striped">
-           <tr>
-             <th>Your Threads</th>
-             <th>Views</th>
-           </tr>
-           <tr ng-repeat="thread in model.threads">
-             <td><span class="answer">{{ thread.numberOfComments }} comments</span><a href="question1.html" class="thread"> {{ thread.query }} </a></td>
-             <td>{{ thread.views }}</td>
-           </tr>
-         </table>
-       </div>
-
-     </div>
+              </div>
+           </div>
+        </div>
+         <div class="table-responsive">
+             <table class="table table-striped">
+                 <tr>
+                     <th>Your Threads</th>
+                     <th>Views</th>
+                 </tr>
+                 <tr ng-repeat="thread in model.threads">
+                     <td><span class="answer">{{ thread.numberOfComments }} comments</span><a href="question1.html" class="thread"> {{ thread.query }} </a></td>
+                     <td>{{ thread.views }}</td>
+                 </tr>
+             </table>
+         </div>
     </div>
-</div>
+    </div></div></div>
+
     <!-- /.container-fluid-->
     <!-- /.content-wrapper-->
     <footer class="sticky-footer">
@@ -111,7 +121,5 @@
         </div>
       </div>
     </div>
-
-
+  </div>
 </div>
-

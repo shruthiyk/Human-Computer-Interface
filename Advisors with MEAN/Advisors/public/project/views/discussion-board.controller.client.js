@@ -1,9 +1,9 @@
 (function(){
     angular
         .module("CCISAdvisor")
-        .controller("HomeController", HomeController);
+        .controller("DiscussionBoardController", DiscussionBoardController);
 
-    function HomeController($routeParams, ThreadService, UserService, $scope, $http) {
+    function DiscussionBoardController($routeParams, $scope, $http, UserService) {
         var vm = this;
         vm.userId = $routeParams.userId;
 
@@ -15,16 +15,7 @@
                         vm.user = response.data;
                     }
                 )
-
-            ThreadService
-                .findThreadsForUser(vm.userId)
-                .then(
-                    function(response){
-                        vm.threads = response.data;
-                    }
-                )
         }
         init();
-
     }
 })();

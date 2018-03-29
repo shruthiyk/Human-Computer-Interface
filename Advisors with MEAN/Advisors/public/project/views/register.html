@@ -39,12 +39,11 @@
 
                         <div class="col-xs-5 selectContainer">
                             <label class="col-xs-3 control-label">Semester <span class="red">*</span></label>
-                            <select class="form-control" name="semester">
-                                <option value="1">1</option>
-                                <option value="2">2</option>
-                                <option value="3">3</option>
-                                <option value="4">4</option>
+                            <select ng-model= "semester" class="form-control" id = "semester" name="semester" required ng-options="x for x in semesters" placeholder="Select Semester">
                             </select>
+                  <span ng-show="registerForm.$submitted && registerForm.semester.$invalid">
+                    Semester is required
+                    </span>
                         </div>
                     </div>
                     <div class="form-group">
@@ -79,7 +78,7 @@
                     <p class="required-field"><span class="red">*</span> indicates required field</p>
 
                     <button class="btn btn-primary btn-block"
-                            ng-click="model.register(username,password,passwordVerify,firstName,lastName, semester)">
+                            ng-click="model.register(username,password,passwordVerify,firstName,lastName,semester)">
                         Register
                     </button>
                 </form>

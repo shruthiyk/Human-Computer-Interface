@@ -22,45 +22,45 @@
                     loggedIn: checkLoggedIn
                 }
             })
-            .when("/home", {
-                templateUrl: "/project/views/home.html"
-                //controller: "LoginController",
-                //controllerAs: "model"
-            })
             .when("/forgotPassword", {
                 templateUrl: "/project/views/forgot-password.html"
                 //controller: "LoginController",
                 //controllerAs: "model"
             })
-            .when("/questionnare", {
+            .when("/user/:userId/questionnare", {
                 templateUrl: "/project/views/questionaire.html"
                 //controller: "LoginController",
                 //controllerAs: "model"
             })
-            .when("/grades", {
+            .when("/user/:userId/grades", {
                 templateUrl: "/project/views/grades.html"
                 //controller: "LoginController",
                 //controllerAs: "model"
             })
-            .when("/courses", {
+            .when("/user/:userId/courses", {
                 templateUrl: "/project/views/courses.html"
                 //controller: "LoginController",
                 //controllerAs: "model"
             })
-            .when("/discussionBoard", {
-                templateUrl: "/project/views/discussion-board.html"
-                //controller: "LoginController",
-                //controllerAs: "model"
+            .when("/user/:userId/discussionBoard", {
+                templateUrl: "/project/views/discussion-board.html",
+                controller: "DiscussionBoardController",
+                controllerAs: "model"
             })
-            .when("/viewThreads", {
-                templateUrl: "/project/views/viewThreads.html"
-                //controller: "LoginController",
-                //controllerAs: "model"
+            .when("/user/:userId/discussionBoard/:courseCategory/viewThreads", {
+                templateUrl: "/project/views/viewThreads.html",
+                controller: "viewThreadController",
+                controllerAs: "model"
             })
-            .when("/postingNewThread", {
-                templateUrl: "/project/views/postingNewThread.html"
-                //controller: "LoginController",
-                //controllerAs: "model"
+            .when("/user/:userId/discussionBoard/:courseCategory/viewThreads/postingNewThread", {
+                templateUrl: "/project/views/postingNewThread.html",
+                controller: "postingNewThreadController",
+                controllerAs: "model"
+            })
+            .when("/user/:userId/discussionBoard/:courseCategory/viewThreads/:course", {
+                templateUrl: "/project/views/viewThreadsForCourse.html",
+                controller: "viewCourseThreadController",
+                controllerAs: "model"
             })
             .when("/queryConfirmation", {
                 templateUrl: "/project/views/queryCofirmation.html"
