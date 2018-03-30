@@ -8,8 +8,11 @@ module.exports = function() {
         courseCategory: String,
         description: String,
         comments: [{type: mongoose.Schema.ObjectId, ref: "Comment"}],
-        numberOfComments : Number,
         views: Number,
+        numberOfComments: Number,
+        username: String,
+        userReputationPoints: Number,
+        dateTime: String,
         dateCreated: {type: Date, default: Date.now}
     }, {collection: "hci.thread"});
 

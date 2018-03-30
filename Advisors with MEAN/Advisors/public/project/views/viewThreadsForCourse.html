@@ -85,7 +85,7 @@
                      <th>Views</th>
                  </tr>
                  <tr ng-repeat="thread in model.threads">
-                     <td><span class="answer">{{ thread.numberOfComments }} comments</span><a href="question1.html" class="thread"> {{ thread.query }} </a></td>
+                     <td><span class="answer">{{ thread.numberOfComments }} comments</span><a href="#/user/{{model.userId}}/thread/{{thread._id}}"> {{ thread.query }} </a></td>
                      <td>{{ thread.views }}</td>
                  </tr>
              </table>

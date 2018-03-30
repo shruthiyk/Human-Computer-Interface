@@ -95,7 +95,7 @@
                 <div class="form-group col-md-12">
                   <label for="description">Description <span class="red">*</span></label>
                   <textarea class="form-control" ng-model= "description" name="description" required id="description" type="text" cols="40" rows="5" aria-describedby="descriptionHelp" placeholder="Enter Description"></textarea>
-					<span ng-show="postingNewThread.$submitted && postingNewThread.description.$invalid">
+					<span ng-show="postingThread.$submitted && postingThread.description.$invalid">
                     Description is required
                 </span>
                 </div>

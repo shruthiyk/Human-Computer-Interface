@@ -5,7 +5,7 @@ module.exports = function() {
     var Comment = mongoose.model("Comment", CommentSchema);
 
     var api = {
-        createCommentForThread: createCommentForThread,
+        createComment: createComment,
         findAllCommentsForThread: findAllCommentsForThread,
         findCommentById: findCommentById,
         updateComment: updateComment,
@@ -13,7 +13,7 @@ module.exports = function() {
     };
     return api;
 
-    function createCommentForThread(threadId, comment) {
+    function createComment(threadId, comment) {
         comment._thread = threadId;
         return Comment.create(comment);
     }

@@ -62,16 +62,22 @@
                 controller: "viewCourseThreadController",
                 controllerAs: "model"
             })
+            .when("/user/:userId/thread/:threadId", {
+                templateUrl: "/project/views/thread.html",
+                controller: "ThreadController",
+                controllerAs: "model"
+            })
+            .when("/user/:userId/thread/:threadId/comments", {
+                templateUrl: "/project/views/threadCommenting.html",
+                controller: "ThreadCommentingController",
+                controllerAs: "model"
+            })
             .when("/queryConfirmation", {
                 templateUrl: "/project/views/queryCofirmation.html"
                 //controller: "LoginController",
                 //controllerAs: "model"
             })
-            .when("/question1", {
-                templateUrl: "/project/views/question1.html"
-                //controller: "LoginController",
-                //controllerAs: "model"
-            })
+
             .otherwise({
                 redirectTo: "/login"
             });

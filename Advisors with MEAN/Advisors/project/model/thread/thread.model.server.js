@@ -42,7 +42,8 @@ module.exports = function() {
                     $set: {
                         query: thread.query,
                         description: thread.description,
-                        views: thread.views
+                        views: thread.views,
+                        numberOfComments: thread.numberOfComments
                     }
                 });
     }

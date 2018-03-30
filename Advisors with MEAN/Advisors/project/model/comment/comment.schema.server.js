@@ -7,6 +7,9 @@ module.exports = function() {
         comments: String,
         likes: Number,
         dislikes: Number,
+        dateTime: String,
+        username: String,
+        userReputationPoints: Number,
         dateCreated: {type: Date, default: Date.now},
         order: {type: Number, default: 0}
     }, {collection: "hci.comment"});
