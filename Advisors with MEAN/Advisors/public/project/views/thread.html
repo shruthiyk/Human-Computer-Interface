@@ -74,34 +74,43 @@
                     <a href="#/user/{{model.userId}}/thread/{{model.thread._id}}/comments" class="btn btn-info" role="button">Comment</a>
                 </div>
             </div>
-
+            {{$scope}}
             <div class="table-responsive">
                 <div class="card-header" id="answer-header">{{model.thread.numberOfComments}} Comments</div>
                 <table class="table">
 
                     <tr ng-repeat="comment in model.comments">
                         <td>
-                        <div class="media comment">
-                            <div class="media-left media-middle">
-                                <figure>
-                                    <img src="http://pixelmesh.com/assets/images/avatar-viola.png" style="width:80px">
-                                    <figcaption class="text-center">
-                                        <span class="required-field">{{ comment.userReputationPoints }} Points</span><br>
+                            <div class="media comment">
+                                <div class="media-left media-middle">
+                                    <figure>
+                                        <img src="http://pixelmesh.com/assets/images/avatar-viola.png" style="width:80px">
+                                        <figcaption class="text-center">
+                                            <span class="required-field">{{ comment.userReputationPoints }} Points</span><br>
 
 
-                                    </figcaption>
-                                </figure>
+                                        </figcaption>
+                                    </figure>
+                                </div>
+                                <div class="media-body" id="left-pad">
+                                    <p > {{ comment.comments }}</p>
+                                    <p><i>Replied by {{ comment.username }} on {{ comment.dateTime }}</i></p>
+                                    <p>
+                                        <button ng-click="model.updateThreadForUpVote(comment._id)"> <img src="../project/images/thumbs-up.png"></button>
+
+                                        <b id="boldstuff">{{ comment.likes }}</b>
+
+
+                                        <button ng-click="model.updateThreadForDownVote(comment._id)"> <img src="../project/images/thumbs-down.png"></button>
+
+                                        <b id="b">{{ comment.dislikes }}</b>
+
+
+
+
+                                    </p>
+                                </div>
                             </div>
-                            <div class="media-body" id="left-pad">
-                                <p > {{ comment.comments }}</p>
-                                <p><i>Replied by {{ comment.username }} on {{ comment.dateTime }}</i></p>
-                                <p><a href="#" onclick="increase();"><img src="../project/images/thumbs-up.png" id="thumbs-up"></a>
-                                    <b id="boldstuff">{{ comment.likes }}</b>
-                                    <a href="#" onclick="decrease();"><img src="../project/images/thumbs-down.png" id="thumbs-down"></a>
-                                    <b id="b">{{ comment.dislikes }}</b>
-                                </p>
-                            </div>
-                        </div>
                         </td>
                     </tr>
                 </table>

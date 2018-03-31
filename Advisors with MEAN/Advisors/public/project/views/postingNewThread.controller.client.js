@@ -10,6 +10,7 @@
 
         vm.createThread = createThread;
         vm.fullDateTime = fullDateTime;
+        
 
         if(vm.courseCategory === "Human Computer Interaction")
             $scope.courses = ["CS5340 - Computer/Human Interaction", "CS5350 - Applied Geometric Representation and Computation", "CS6350 - Empirical Research Methods"];
@@ -83,5 +84,6 @@
             var n = d.toLocaleString([], { hour12: true});
             return n;
         }
+
     }
 })();

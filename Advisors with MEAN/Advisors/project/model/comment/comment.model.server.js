@@ -32,7 +32,8 @@ module.exports = function() {
                 $set: {
                     comments: comment.comments,
                     likes: comment.likes,
-                    dislikes: comment.dislikes
+                    dislikes: comment.dislikes,
+                    userReputationPoints: comment.userReputationPoints
                 }
             });
     }

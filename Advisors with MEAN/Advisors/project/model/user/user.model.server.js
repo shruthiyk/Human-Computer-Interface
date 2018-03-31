@@ -39,9 +39,7 @@ module.exports = function() {
         return User
             .update({_id: userId},{
                 $set: {
-                    firstName: user.firstName,
-                    lastName: user.lastName,
-                    email: user.email
+                    reputationPoints: user.reputationPoints
                 }
             });
     }

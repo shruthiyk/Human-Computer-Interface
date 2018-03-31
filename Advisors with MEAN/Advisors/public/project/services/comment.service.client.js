@@ -30,6 +30,7 @@
         }
 
         function updateComment(commentId, comment) {
+            console.log(comment);
             var url = "/api/comment/"+commentId;
             return $http.put(url, comment);
         }

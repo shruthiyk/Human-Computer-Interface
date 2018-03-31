@@ -3,13 +3,15 @@
         .module("CCISAdvisor")
         .controller("ThreadCommentingController", ThreadCommentingController);
 
-    function ThreadCommentingController($routeParams, ThreadService, UserService, $scope, $http, CommentService, $location) {
+    function ThreadCommentingController($routeParams, ThreadService, UserService, $scope, $http, CommentService, $location, $window) {
         var vm = this;
         vm.userId = $routeParams.userId;
         vm.threadId = $routeParams.threadId;
 
         vm.createComment = createComment;
         vm.fullDateTime = fullDateTime;
+        vm.updateThreadForUpVote = updateThreadForUpVote;
+        vm.updateThreadForDownVote = updateThreadForDownVote;
 
         function init() {
             UserService
@@ -81,6 +83,74 @@
             var d = new Date();
             var n = d.toLocaleString([], { hour12: true});
             return n;
+        }
+
+        function updateThreadForUpVote(commentId){
+            CommentService
+                .findCommentById(commentId)
+                .then(
+                    function(response){
+                        vm.getComment = response.data;
+
+                        var newComment = {"comments": vm.getComment.comments, "user": vm.getComment.user, "likes": vm.getComment.likes + 1, "dislikes": vm.getComment.dislikes, "dateTime": vm.getComment.dateTime, "username": vm.getComment.username, "userReputationPoints": vm.getComment.userReputationPoints};
+
+                        CommentService
+                            .updateComment(commentId, newComment)
+                            .then(
+                                function (response) {
+                                    $window.location.reload();
+                                    var newUser = {"reputationPoints": vm.user.reputationPoints + 1};
+                                    UserService
+                                        .updateUser(vm.userId, newUser)
+                                        .then(
+                                            function(response){
+
+                                            },
+                                            function(error){
+                                                vm.error = error.data;
+                                            }
+                                        )
+                                },
+                                function (error) {
+                                    vm.error = error.data;
+                                }
+                            )
+                    }
+                )
+        }
+
+        function updateThreadForDownVote(commentId){
+            CommentService
+                .findCommentById(commentId)
+                .then(
+                    function(response){
+                        vm.getComment = response.data;
+
+                        var newComment = {"comments": vm.getComment.comments, "user": vm.getComment.user, "likes": vm.getComment.likes, "dislikes": vm.getComment.dislikes + 1, "dateTime": vm.getComment.dateTime, "username": vm.getComment.username, "userReputationPoints": vm.getComment.userReputationPoints};
+
+                        CommentService
+                            .updateComment(commentId, newComment)
+                            .then(
+                                function (response) {
+                                    $window.location.reload();
+                                    var newUser = {"reputationPoints": vm.user.reputationPoints - 1};
+                                    UserService
+                                        .updateUser(vm.userId, newUser)
+                                        .then(
+                                            function(response){
+
+                                            },
+                                            function(error){
+                                                vm.error = error.data;
+                                            }
+                                        )
+                                },
+                                function (error) {
+                                    vm.error = error.data;
+                                }
+                            )
+                    }
+                )
         }
 
     }

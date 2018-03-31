@@ -40,8 +40,6 @@ module.exports = function() {
         return Thread
                 .update({_id: threadId},{
                     $set: {
-                        query: thread.query,
-                        description: thread.description,
                         views: thread.views,
                         numberOfComments: thread.numberOfComments
                     }

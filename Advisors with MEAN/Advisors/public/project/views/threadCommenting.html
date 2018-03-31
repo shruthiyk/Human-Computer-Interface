@@ -51,7 +51,10 @@
                 <li class="breadcrumb-item">
                     <a href="#/user/{{model.userId}}/discussionBoard">Discussion Board</a>
                 </li>
-                <li class="breadcrumb-item active">View Thread</li>
+                <li class="breadcrumb-item">
+                    <a href="#/user/{{model.userId}}/thread/{{model.thread._id}}">View Thread</a>
+                </li>
+                <li class="breadcrumb-item active">Add Comment</li>
             </ol>
 
             <div class="card mb-3">
@@ -91,15 +94,27 @@
                                         </figcaption>
                                     </figure>
                                 </div>
+
+
                                 <div class="media-body" id="left-pad">
                                     <p > {{ comment.comments }}</p>
                                     <p><i>Replied by {{ comment.username }} on {{ comment.dateTime }}</i></p>
-                                    <p><a href="#" onclick="increase();"><img src="../project/images/thumbs-up.png" id="thumbs-up"></a>
+                                    <p>
+                                        <button ng-click="model.updateThreadForUpVote(comment._id)"> <img src="../project/images/thumbs-up.png"></button>
+
                                         <b id="boldstuff">{{ comment.likes }}</b>
-                                        <a href="#" onclick="decrease();"><img src="../project/images/thumbs-down.png" id="thumbs-down"></a>
+
+
+                                        <button ng-click="model.updateThreadForDownVote(comment._id)"> <img src="../project/images/thumbs-down.png"></button>
+
                                         <b id="b">{{ comment.dislikes }}</b>
+
+
+
+
                                     </p>
                                 </div>
+
                             </div>
                         </td>
                     </tr>
