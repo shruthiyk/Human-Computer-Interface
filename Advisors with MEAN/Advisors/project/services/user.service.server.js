@@ -29,7 +29,7 @@ module.exports = function(app, models) {
     passport.deserializeUser(deserializeUser);
 
     var facebookConfig = {
-        clientID     : process.env.FACEBOOK_ASSGN_CLIENT_ID,
+        clientID     : 123,
         clientSecret : process.env.FACEBOOK_ASSGN_CLIENT_SECRET,
         callbackURL  : process.env.FACEBOOK_ASSGN_CALLBACK_URL
     };

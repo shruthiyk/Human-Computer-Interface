@@ -16,7 +16,8 @@ module.exports = function() {
     var models = {
         userModel: require("./user/user.model.server")(),
         threadModel: require("./thread/thread.model.server")(),
-        commentModel: require("./comment/comment.model.server")()
+        commentModel: require("./comment/comment.model.server")(),
+        recommendModel: require("./recommend/recommend.model.server")()
     };
     return models;
 };

@@ -28,9 +28,9 @@
                 //controllerAs: "model"
             })
             .when("/user/:userId/questionnare", {
-                templateUrl: "/project/views/questionaire.html"
-                //controller: "LoginController",
-                //controllerAs: "model"
+                templateUrl: "/project/views/questionaire.html",
+                controller: "questionaireControllerClient",
+                controllerAs: "model"
             })
             .when("/user/:userId/grades", {
                 templateUrl: "/project/views/grades.html"
@@ -77,7 +77,16 @@
                 //controller: "LoginController",
                 //controllerAs: "model"
             })
-
+            .when("/:userId/grades", {
+                templateUrl: "/project/views/grades.html"
+                //controller: "LoginController",
+                //controllerAs: "model"
+            })
+            .when("/:userId/courses", {
+                templateUrl: "/project/views/courses.html"
+                //controller: "LoginController",
+                //controllerAs: "model"
+            })
             .otherwise({
                 redirectTo: "/login"
             });
