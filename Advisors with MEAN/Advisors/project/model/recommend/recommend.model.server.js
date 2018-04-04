@@ -8,7 +8,7 @@ module.exports = function() {
         createRecommendModelForUser: createRecommendModelForUser,
         findRecommendById: findRecommendById,
         updateRecommend: updateRecommend,
-        deleteThread: deleteThread
+        deleteRecommendThread: deleteRecommendThread
     };
     return api;
 
@@ -19,7 +19,7 @@ module.exports = function() {
 
 
     function findRecommendById(recommendId) {
-        return Recommend.findById(recommendId);
+        return Recommend.find({_user:recommendId});
     }
 
     function updateRecommend(recommendId, thread) {
@@ -32,7 +32,7 @@ module.exports = function() {
             });
     }
 
-    function deleteThread(recommendId) {
-        return Recommend.remove({_id: recommendId});
+    function deleteRecommendThread(recommendId) {
+        return Recommend.remove({_user: recommendId});
     }
 };

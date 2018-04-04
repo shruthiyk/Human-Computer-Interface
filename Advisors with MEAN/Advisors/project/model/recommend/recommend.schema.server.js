@@ -6,6 +6,7 @@ module.exports = function() {
         project_like: String,
         team_like: String,
         exam_or_assignment: String,
+        textbook_like:String,
         research_paper: String,
     }, {collection: "hci.recommend"});
 

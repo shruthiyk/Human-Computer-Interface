@@ -1,12 +1,12 @@
 (function() {
     angular
         .module("CCISAdvisor")
-        .controller("questionaireControllerClient", questionaireControllerClient);
+        .controller("gradesControllerClient", gradesControllerClient);
 
-    function questionaireControllerClient($routeParams, $scope, $http, UserService, ThreadService,RecommendService, $location) {
+    function gradesControllerClient($routeParams, $scope, $http, UserService, ThreadService,RecommendService, $location) {
         var vm = this;
         vm.userId = $routeParams.userId;
-        vm.setData = setData;
+        vm.setGradeData = setGradeData;
 
         function init() {
             console.log("PPPP"+vm.userId);
@@ -16,25 +16,33 @@
                     function(response){
                         vm.user = response.data;
                     }
+                );
+            RecommendService
+                .fetchRecommend(vm.userId)
+                .then(
+                    function(response){
+                        vm.recommendData=response.data;
+                        console.log("Received data::"+JSON.stringify(vm.recommendData));
+                    }
                 )
+
 
         }
         init();
 
 
-        function setData(){
+        function setGradeData(){
 
             var recdata = {"project_like": vm.result,
-                "team_like": vm.result1,
-                "exam_or_assignment": vm.result2,
-                "textbook_like":vm.result3,
+                "team_like": vm.result2,
+                "exams_or_assignments": vm.result3,
                 "research_paper": vm.result4};
             console.log("Pranav:::"+ JSON.stringify(recdata));
             RecommendService
                 .createRecommend(vm.userId, recdata)
                 .then(
                     function (response) {
-                        $location.url("/user/" + vm.userId+"/grades");
+                        $location.url("/user/" + vm.userId+"/courses");
                     },
                     function (error) {
                         vm.error = error.data;
