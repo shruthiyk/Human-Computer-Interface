@@ -34,7 +34,11 @@
                                     Lecture_Hours:"5:00pm-7:00pm",
                                     Location:"Snell Library 125",
                                     Type:"Database,Airtificial intelligence",
-                                    Hours:8
+                                    Hours:8,
+                                    T1:55,
+                                    T2:35,
+                                    T3:9,
+                                    T4:1
 
                                 },
                                     {
@@ -43,7 +47,11 @@
                                         Lecture_Hours:"5:00pm-7:00pm",
                                         Location:"Snell Library 135",
                                         Type:"Networks",
-                                        Hours:12
+                                        Hours:12,
+                                        T1:70,
+                                        T2:30,
+                                        T3:0,
+                                        T4:0
 
                                     },
                                     {
@@ -52,7 +60,11 @@
                                         Lecture_Hours:"5:00pm-7:00pm",
                                         Location:"Snell Library 155",
                                         Type:"Software Engineering,Database",
-                                        Hours:10
+                                        Hours:10,
+                                        T1:55,
+                                        T2:35,
+                                        T3:9,
+                                        T4:1
 
                                     }
                                 ]
@@ -68,7 +80,11 @@
                                     Lecture_Hours:"5:00pm-7:00pm",
                                     Location:"Snell Library 125",
                                     Type:"Database,Airtificial intelligence",
-                                    Hours:8
+                                    Hours:8,
+                                    T1:55,
+                                    T2:35,
+                                    T3:9,
+                                    T4:1
 
                                 },
                                     {
@@ -77,7 +93,11 @@
                                         Lecture_Hours:"5:00pm-7:00pm",
                                         Location:"Snell Library 135",
                                         Type:"Networks",
-                                        Hours:12
+                                        Hours:12,
+                                        T1:55,
+                                        T2:35,
+                                        T3:9,
+                                        T4:1
 
                                     },
                                     {
@@ -86,7 +106,11 @@
                                         Lecture_Hours:"5:00pm-7:00pm",
                                         Location:"Snell Library 155",
                                         Type:"Software Engineering,Database",
-                                        Hours:10
+                                        Hours:10,
+                                        T1:55,
+                                        T2:35,
+                                        T3:9,
+                                        T4:1
 
                                     }
                                 ]
@@ -101,7 +125,11 @@
                                     Lecture_Hours:"5:00pm-7:00pm",
                                     Location:"Snell Library 125",
                                     Type:"Database,Airtificial intelligence",
-                                    Hours:8
+                                    Hours:8,
+                                    T1:55,
+                                    T2:35,
+                                    T3:9,
+                                    T4:1
 
                                 },
                                     {
@@ -110,7 +138,11 @@
                                         Lecture_Hours:"5:00pm-7:00pm",
                                         Location:"Snell Library 135",
                                         Type:"Networks",
-                                        Hours:12
+                                        Hours:12,
+                                        T1:55,
+                                        T2:35,
+                                        T3:9,
+                                        T4:1
 
                                     },
                                     {
@@ -119,7 +151,11 @@
                                         Lecture_Hours:"5:00pm-7:00pm",
                                         Location:"Snell Library 155",
                                         Type:"Software Engineering,Database",
-                                        Hours:10
+                                        Hours:10,
+                                        T1:55,
+                                        T2:35,
+                                        T3:9,
+                                        T4:1
 
                                     }
                                 ]
@@ -134,7 +170,11 @@
                                     Lecture_Hours:"5:00pm-7:00pm",
                                     Location:"Snell Library 125",
                                     Type:"Database,Airtificial intelligence",
-                                    Hours:8
+                                    Hours:8,
+                                    T1:55,
+                                    T2:35,
+                                    T3:9,
+                                    T4:1
 
                                 },
                                     {
@@ -143,7 +183,11 @@
                                         Lecture_Hours:"5:00pm-7:00pm",
                                         Location:"Snell Library 135",
                                         Type:"Networks",
-                                        Hours:12
+                                        Hours:12,
+                                        T1:55,
+                                        T2:35,
+                                        T3:9,
+                                        T4:1
 
                                     },
                                     {
@@ -152,7 +196,11 @@
                                         Lecture_Hours:"5:00pm-7:00pm",
                                         Location:"Snell Library 155",
                                         Type:"Software Engineering,Database",
-                                        Hours:10
+                                        Hours:10,
+                                        T1:55,
+                                        T2:35,
+                                        T3:9,
+                                        T4:1
 
                                     }
                                 ]
@@ -166,7 +214,11 @@
                                     Lecture_Hours:"5:00pm-7:00pm",
                                     Location:"Snell Library 125",
                                     Type:"Database,Airtificial intelligence",
-                                    Hours:8
+                                    Hours:8,
+                                    T1:55,
+                                    T2:35,
+                                    T3:9,
+                                    T4:1
 
                                 },
                                     {
@@ -175,7 +227,11 @@
                                         Lecture_Hours:"5:00pm-7:00pm",
                                         Location:"Snell Library 135",
                                         Type:"Networks",
-                                        Hours:12
+                                        Hours:12,
+                                        T1:55,
+                                        T2:35,
+                                        T3:9,
+                                        T4:1
 
                                     },
                                     {
@@ -184,7 +240,11 @@
                                         Lecture_Hours:"5:00pm-7:00pm",
                                         Location:"Snell Library 155",
                                         Type:"Software Engineering,Database",
-                                        Hours:10
+                                        Hours:10,
+                                        T1:55,
+                                        T2:35,
+                                        T3:9,
+                                        T4:1
 
                                     }
                                 ]
@@ -197,7 +257,11 @@
                                     Lecture_Hours:"5:00pm-7:00pm",
                                     Location:"Snell Library 125",
                                     Type:"Database,Airtificial intelligence",
-                                    Hours:8
+                                    Hours:8,
+                                    T1:55,
+                                    T2:35,
+                                    T3:9,
+                                    T4:1
 
                                 },
                                     {
@@ -206,7 +270,11 @@
                                         Lecture_Hours:"5:00pm-7:00pm",
                                         Location:"Snell Library 135",
                                         Type:"Networks",
-                                        Hours:12
+                                        Hours:12,
+                                        T1:55,
+                                        T2:35,
+                                        T3:9,
+                                        T4:1
 
                                     },
                                     {
@@ -215,7 +283,11 @@
                                         Lecture_Hours:"5:00pm-7:00pm",
                                         Location:"Snell Library 155",
                                         Type:"Software Engineering,Database",
-                                        Hours:10
+                                        Hours:10,
+                                        T1:55,
+                                        T2:35,
+                                        T3:9,
+                                        T4:1
 
                                     }
                                 ]

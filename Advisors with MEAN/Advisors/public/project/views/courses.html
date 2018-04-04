@@ -112,7 +112,6 @@
 
 </div>
 
-    <p>Hello</p>
       <div class="opbox" ng-repeat="item in model.courseData|limitTo:2">
           {{item.Course}}
           <p>Course : {{item.Course}}</p>
@@ -131,19 +130,19 @@
                   <div class="bar-graph-label">25%</div>
                   <div class="bar-graph-label">0%</div>
               </li>
-              <li class="bar primary" style="height: 55%;" title="55">
+              <li class="bar primary" ng-style="{height: item.T1+'%'}" title="{{item.T1}}">
 
                   <div class="description">A/A-</div>
               </li>
-              <li class="bar secondary" style="height: 35%;" title="35">
+              <li class="bar secondary" ng-style="{height: item.T2+'%'}" title="{{item.T2}}">
 
                   <div class="description">B+/B</div>
               </li>
-              <li class="bar success" style="height: 9%;" title="9">
+              <li class="bar success" ng-style="{height: item.T3+'%'}"  title="{{item.T3}}">
 
                   <div class="description">B-/C+</div>
               </li>
-              <li class="bar alert" style="height: 1%;" title="1">
+              <li class="bar alert" ng-style="{height: item.T4+'%'}" title="{{item.T4}}">
 
                   <div class="description">C+</div>
               </li>
