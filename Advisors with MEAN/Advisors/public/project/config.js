@@ -38,9 +38,9 @@
                 controllerAs: "model"
             })
             .when("/user/:userId/courses", {
-                templateUrl: "/project/views/courses.html"
-                //controller: "LoginController",
-                //controllerAs: "model"
+                templateUrl: "/project/views/courses.html",
+                controller: "coursesControllerClient",
+                controllerAs: "model"
             })
             .when("/user/:userId/discussionBoard", {
                 templateUrl: "/project/views/discussion-board.html",
