@@ -75,8 +75,8 @@
 	<div class="row">
 		<div class="col-3">
 
-      <select class="form-control">
-            <option selected disabled>Filter by Specialization</option>
+      <select class="form-control" ng-model="filterItem.store" ng-options="item.name for item in filterOptions.stores">
+            <!--<option selected disabled>Filter by Specialization</option>
             <option value="AI">AI</option>
             <option value="DB">Database</option>
             <option value="Networks">Networks</option>
@@ -85,17 +85,17 @@
             <option value="HCI">HCI</option>
             <option value="Graphics">Graphics</option>
             <option value="Security">Security</option>
-            <option value="Game Design">Game Design</option>
+            <option value="Game Design">Game Design</option>-->
      </select>
           
         </div>
 		<div class="col-3">
-			 <select class="form-control">
-            <option selected disabled>Filter by Study Time(Hours/Week)</option>
+			 <select class="form-control" ng-model="filterItem1.store1" ng-options="item.name for item in filterOptions1.stores1">
+            <!--<option selected disabled>Filter by Study Time(Hours/Week)</option>
             <option value="AI">4-8</option>
             <option value="DB">8-12</option>
             <option value="Networks">12-16</option>
-            <option value="Theory">16-20</option>
+            <option value="Theory">16-20</option>-->
        </select>
           
         </div>
@@ -112,7 +112,7 @@
 
 </div>
 
-      <div class="opbox" ng-repeat="item in model.courseData|limitTo:2">
+      <div class="opbox" ng-repeat="item in model.courseData|limitTo:2|filter:customFilter|filter:customFilter1">
           {{item.Course}}
           <p>Course : {{item.Course}}</p>
           <p>Professor : {{item.Professor}}</p>

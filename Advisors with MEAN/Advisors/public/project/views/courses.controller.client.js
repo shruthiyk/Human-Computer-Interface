@@ -7,6 +7,57 @@
         var vm = this;
         vm.userId = $routeParams.userId;
         //vm.setGradeData = setGradeData;
+        //Filter 1 for types of courses
+        $scope.filterOptions = {
+            stores: [
+                {id : 2, name : 'Show all', ID: 6 },
+                {id : 3, name : 'Database', ID: 5 },
+                {id : 4, name : 'Networks', ID: 4 },
+                {id : 5, name : 'Software Engineering', ID: 3 },
+                {id : 6, name : 'Security', ID: 2 },
+                {id : 7, name : 'AI', ID: 1 }
+            ]
+        };
+
+        $scope.filterItem = {
+            store: $scope.filterOptions.stores[0]
+        };
+
+        $scope.customFilter = function (data) {
+            if (data.ID === $scope.filterItem.store.ID) {
+                return true;
+            } else if ($scope.filterItem.store.ID === 6) {
+                return true;
+            } else {
+                return false;
+            }
+        };
+
+
+        //Filter 2 for hours
+        $scope.filterOptions1 = {
+            stores1: [
+                {id : 2, name : 'Show all', ID: 99 },
+                {id : 3, name : '4-8 Hours', ID: 8 },
+                {id : 4, name : '8-12 Hours', ID: 12 },
+                {id : 5, name : '12-16 hours', ID: 16 }
+            ]
+        };
+
+        $scope.filterItem1 = {
+            store1: $scope.filterOptions1.stores1[0]
+        };
+
+        $scope.customFilter1 = function (data) {
+            if (data.Hours <= $scope.filterItem1.store1.ID && data.Hours>=(($scope.filterItem1.store1.ID)-4)) {
+                return true;
+            } else if ($scope.filterItem1.store1.ID === 99) {
+                return true;
+            } else {
+                return false;
+            }
+        };
+
 
         function init() {
             console.log("courses page"+vm.userId);
@@ -38,7 +89,8 @@
                                     T1:55,
                                     T2:35,
                                     T3:9,
-                                    T4:1
+                                    T4:1,
+                                    ID:5
 
                                 },
                                     {
@@ -51,7 +103,8 @@
                                         T1:70,
                                         T2:30,
                                         T3:0,
-                                        T4:0
+                                        T4:0,
+                                        ID:1
 
                                     },
                                     {
@@ -64,7 +117,8 @@
                                         T1:55,
                                         T2:35,
                                         T3:9,
-                                        T4:1
+                                        T4:1,
+                                        ID:5
 
                                     }
                                 ]
@@ -84,7 +138,8 @@
                                     T1:55,
                                     T2:35,
                                     T3:9,
-                                    T4:1
+                                    T4:1,
+                                    ID:5
 
                                 },
                                     {
@@ -97,7 +152,8 @@
                                         T1:55,
                                         T2:35,
                                         T3:9,
-                                        T4:1
+                                        T4:1,
+                                        ID:1
 
                                     },
                                     {
@@ -110,7 +166,8 @@
                                         T1:55,
                                         T2:35,
                                         T3:9,
-                                        T4:1
+                                        T4:1,
+                                        ID:5
 
                                     }
                                 ]
@@ -129,7 +186,8 @@
                                     T1:55,
                                     T2:35,
                                     T3:9,
-                                    T4:1
+                                    T4:1,
+                                    ID:5
 
                                 },
                                     {
@@ -142,7 +200,8 @@
                                         T1:55,
                                         T2:35,
                                         T3:9,
-                                        T4:1
+                                        T4:1,
+                                        ID:5
 
                                     },
                                     {
@@ -155,7 +214,8 @@
                                         T1:55,
                                         T2:35,
                                         T3:9,
-                                        T4:1
+                                        T4:1,
+                                        ID:5
 
                                     }
                                 ]
@@ -174,7 +234,8 @@
                                     T1:55,
                                     T2:35,
                                     T3:9,
-                                    T4:1
+                                    T4:1,
+                                    ID:5
 
                                 },
                                     {
@@ -187,7 +248,8 @@
                                         T1:55,
                                         T2:35,
                                         T3:9,
-                                        T4:1
+                                        T4:1,
+                                        ID:5
 
                                     },
                                     {
@@ -200,7 +262,8 @@
                                         T1:55,
                                         T2:35,
                                         T3:9,
-                                        T4:1
+                                        T4:1,
+                                        ID:5
 
                                     }
                                 ]
@@ -218,7 +281,8 @@
                                     T1:55,
                                     T2:35,
                                     T3:9,
-                                    T4:1
+                                    T4:1,
+                                    ID:5
 
                                 },
                                     {
@@ -231,7 +295,8 @@
                                         T1:55,
                                         T2:35,
                                         T3:9,
-                                        T4:1
+                                        T4:1,
+                                        ID:5
 
                                     },
                                     {
@@ -244,7 +309,8 @@
                                         T1:55,
                                         T2:35,
                                         T3:9,
-                                        T4:1
+                                        T4:1,
+                                        ID:5
 
                                     }
                                 ]
@@ -261,7 +327,8 @@
                                     T1:55,
                                     T2:35,
                                     T3:9,
-                                    T4:1
+                                    T4:1,
+                                    ID:5
 
                                 },
                                     {
@@ -274,7 +341,8 @@
                                         T1:55,
                                         T2:35,
                                         T3:9,
-                                        T4:1
+                                        T4:1,
+                                        ID:5
 
                                     },
                                     {
@@ -287,7 +355,8 @@
                                         T1:55,
                                         T2:35,
                                         T3:9,
-                                        T4:1
+                                        T4:1,
+                                        ID:5
 
                                     }
                                 ]
