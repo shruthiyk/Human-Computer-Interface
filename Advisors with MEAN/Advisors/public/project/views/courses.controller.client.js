@@ -6,8 +6,11 @@
     function coursesControllerClient($routeParams, $scope, $http, UserService, ThreadService,RecommendService, $location) {
         var vm = this;
         vm.userId = $routeParams.userId;
+        vm.clearFilter=clearFilter;
         //vm.setGradeData = setGradeData;
         //Filter 1 for types of courses
+
+
         $scope.filterOptions = {
             stores: [
                 {id : 2, name : 'Show all', ID: 6 },
@@ -342,7 +345,7 @@
                                         T2:35,
                                         T3:9,
                                         T4:1,
-                                        ID:5
+                                        ID:1
 
                                     },
                                     {
@@ -372,6 +375,19 @@
         init();
 
 
+        function clearFilter(){
+
+            console.log("xxx"+$scope.filterOptions.stores[0]);
+            $scope.filterItem = {
+                store: $scope.filterOptions.stores[0]
+            };
+            //store: $scope.filterOptions.stores[0]
+            $scope.filterItem1 = {
+                store1: $scope.filterOptions1.stores1[0]
+            };
+
+
+        }
         function setGradeData(){
 
             var recdata = {"project_like": vm.result,

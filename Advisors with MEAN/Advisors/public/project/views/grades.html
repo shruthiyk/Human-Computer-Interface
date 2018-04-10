@@ -10,19 +10,19 @@
     <div class="collapse navbar-collapse" id="navbarResponsive">
       <ul class="navbar-nav navbar-sidenav" id="exampleAccordion">
         <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Home">
-          <a class="nav-link" href="#/home">
+          <a class="nav-link" href="#/user/{{model.userId}}">
             <i class="fa fa-fw fa-home"></i>
             <span class="nav-link-text">Home</span>
           </a>
         </li>
         <li class="nav-item active" data-toggle="tooltip" data-placement="right" title="Recommended Courses">
-         <a class="nav-link" href="#/questionnare">
+         <a class="nav-link" href="#/user/{{model.userId}}/questionnare">
             <i class="fa fa-fw fa-book"></i>
             <span class="nav-link-text">Recommended Courses</span>
           </a>
         </li>
         <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Discussion Board">
-          <a class="nav-link" href="#/discussionBoard">
+          <a class="nav-link" href="#/user/{{model.userId}}/discussionBoard">
             <i class="fa fa-fw fa-table"></i>
             <span class="nav-link-text">Discussion Board</span>
           </a>
@@ -37,9 +37,9 @@
       </ul>
       <ul class="navbar-nav ml-auto">
          <li class="nav-item">
-            <a class="nav-link" href="#">
+            <a class="nav-link" href="#/user/{{model.userId}}">
               <i class="fa fa-fw fa-user"></i>
-              <span class="nav-link-text">User name</span>
+              <span class="nav-link-text">{{model.user.username}}</span>
             </a>
         </li>
         <li class="nav-item">
@@ -209,7 +209,7 @@
 
      <div class="text-center"> 
        <a href="#/:userId/questionnare" class="btn btn-secondary" role="button"><i class="fa fa-arrow-left" aria-hidden="true"></i> Back</a>
-       <a href="#/user/{{model.userId}}/courses" class="btn btn-success" role="button" > {{model.userId}}Submit</a>
+       <a href="#/user/{{model.userId}}/courses" class="btn btn-success" role="button" > Submit</a>
     </div>
     </div>
    <br>
