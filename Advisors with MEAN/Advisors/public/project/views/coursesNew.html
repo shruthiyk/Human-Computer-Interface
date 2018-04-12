@@ -1,28 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <title>CCIS Graduate Academic Advisor-Course</title>
+  <!-- Bootstrap core CSS-->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom fonts for this template-->
+  <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  <!-- Custom styles for this template-->
+  <link href="css/sb-admin.css" rel="stylesheet">
 
 
-<div class="fixed-nav sticky-footer bg-dark" id="page-top">
-  <!-- Navigation-->
+  <!-- Our custom CSS-->
+  <!--Please add your styles here-->
+  <link href="css/style.css" rel="stylesheet">
+  <link href="css/stylerecommendcourse.css" rel="stylesheet">
+</head>
+
+<body class="fixed-nav sticky-footer bg-dark" id="page-top">
+    <!-- Navigation-->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
-    <a class="navbar-brand" href="#/home">CCIS Graduate Academic Advisor</a>
+    <a class="navbar-brand" href="home.html">CCIS Graduate Academic Advisor</a>
     <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
+     
     <div class="collapse navbar-collapse" id="navbarResponsive">
       <ul class="navbar-nav navbar-sidenav" id="exampleAccordion">
-        <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Dashboard">
-          <a class="nav-link" href="#/user/{{model.userId}}">
+        <li class="nav-item active" data-toggle="tooltip" data-placement="right" title="Home">
+          <a class="nav-link" href="home.html">
             <i class="fa fa-fw fa-home"></i>
             <span class="nav-link-text">Home</span>
           </a>
         </li>
-        <li class="nav-item active" data-toggle="tooltip" data-placement="right" title="Charts">
-         <a class="nav-link" ng-click="model.hasData1()">
+        <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Recommended Courses">
+         <a class="nav-link" href="coursesNew.html">
             <i class="fa fa-fw fa-book"></i>
             <span class="nav-link-text">Recommended Courses</span>
           </a>
         </li>
-        <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Tables">
-          <a class="nav-link" href="#/user/{{model.userId}}/discussionBoard">
+        <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Discussion Board">
+          <a class="nav-link" href="discussion-board.html">
             <i class="fa fa-fw fa-table"></i>
             <span class="nav-link-text">Discussion Board</span>
           </a>
@@ -37,11 +60,9 @@
       </ul>
       <ul class="navbar-nav ml-auto">
          <li class="nav-item">
-            <a class="nav-link" href="#/user/{{model.userId}}">
-              <i class="fa fa-fw fa-user"></i>
-              <span class="nav-link-text">{{model.user.username}}</span>
-            </a>
-        </li> 
+            <a href="profile.html" class="nav-link">
+            <i class="fa fa-fw fa-user"></i>emailaddress@gmail.com</a>
+        </li>   
         <li class="nav-item">
           <a class="nav-link" data-toggle="modal" data-target="#exampleModal">
             <i class="fa fa-fw fa-sign-out"></i>Logout</a>
@@ -51,36 +72,30 @@
   </nav>
   <div class="content-wrapper">
     <div class="container-fluid">
-     <ol class="breadcrumb">
+     <!-- <ol class="breadcrumb">
         <li class="breadcrumb-item">
-          <a href="#/questionnare">Questionnaire</a>
+          <a href="questionaire.html">Questionnaire</a>
         </li>
         <li class="breadcrumb-item">
-          <a href="#/grades">Previous courses info</a>
+          <a href="grades.html">Previous courses info</a>
         </li>
         <li class="breadcrumb-item active">Recommended Courses</li>
-      </ol>
+      </ol> -->
       <div class="row">
         <div class="col-12">
            <h2 class="text-center">Recommended Courses</h2>
         </div>
       </div>
-
-
       <div class="row">
-	       	<div class="col-12">
-                <div class="row">
-                    <div ng-if="model.hasData" class="col-3">
-                        <a href="#/user/{{model.userId}}/questionnare" class="btn btn-info" role="button">Update Your Preferences</a>
-                    </div>
-                </div><br>
-		      </div>
-	</div>
-	<div class="row">
-		<div class="col-3">
+          <div class="col-3">
+              <a href="preference-edit.html" class="btn btn-info" role="button">Update Your Preferences</a>
+          </div>
+      </div><br>
+	  <div class="row">
+		  <div class="col-3">
 
-      <select class="form-control" ng-model="filterItem.store" ng-options="item.name for item in filterOptions.stores">
-            <!--<option selected disabled>Filter by Specialization</option>
+      <select class="form-control">
+            <option selected disabled>Filter by Specialization</option>
             <option value="AI">AI</option>
             <option value="DB">Database</option>
             <option value="Networks">Networks</option>
@@ -89,22 +104,22 @@
             <option value="HCI">HCI</option>
             <option value="Graphics">Graphics</option>
             <option value="Security">Security</option>
-            <option value="Game Design">Game Design</option>-->
+            <option value="Game Design">Game Design</option>
      </select>
           
         </div>
 		<div class="col-3">
-			 <select class="form-control" ng-model="filterItem1.store1" ng-options="item.name for item in filterOptions1.stores1">
-            <!--<option selected disabled>Filter by Study Time(Hours/Week)</option>
+			 <select class="form-control">
+            <option selected disabled>Filter by Study Time(Hours/Week)</option>
             <option value="AI">4-8</option>
             <option value="DB">8-12</option>
             <option value="Networks">12-16</option>
-            <option value="Theory">16-20</option>-->
+            <option value="Theory">16-20</option>
        </select>
           
         </div>
-        <div class="btn btn-secondary" role="button" ng-click="model.clearFilter()">
-          Reset Filter
+        <div class="col-3">
+          <a href="#" class="btn btn-secondary" role="button">Reset Filter</a>
           
         </div>
       </div>
@@ -115,48 +130,9 @@
 
 
 </div>
-
-      <div class="opbox" ng-repeat="item in model.courseData|limitTo:2|filter:customFilter|filter:customFilter1">
-          {{item.Course}}
-          <p>Course : {{item.Course}}</p>
-          <p>Professor : {{item.Professor}}</p>
-          <p>Lecture Hours : {{item.Lecture_Hours}}</p>
-          <p>Location : {{item.Location}}</p>
-
-          <div class="score">
-              <p > Average student grades under professor {{item.Professor}}</p>
-          </div>
-          <ul class="bar-graph">
-              <li class="bar-graph-axis">
-                  <div class="bar-graph-label">100%</div>
-                  <div class="bar-graph-label">75%</div>
-                  <div class="bar-graph-label">50%</div>
-                  <div class="bar-graph-label">25%</div>
-                  <div class="bar-graph-label">0%</div>
-              </li>
-              <li class="bar primary" ng-style="{height: item.T1+'%'}" title="{{item.T1}}">
-
-                  <div class="description">A/A-</div>
-              </li>
-              <li class="bar secondary" ng-style="{height: item.T2+'%'}" title="{{item.T2}}">
-
-                  <div class="description">B+/B</div>
-              </li>
-              <li class="bar success" ng-style="{height: item.T3+'%'}"  title="{{item.T3}}">
-
-                  <div class="description">B-/C+</div>
-              </li>
-              <li class="bar alert" ng-style="{height: item.T4+'%'}" title="{{item.T4}}">
-
-                  <div class="description">C+</div>
-              </li>
-          </ul></div>
-      </div>
-
 <div>
-
- <!-- <div class="opbox">
-  <p>Course : {{model.courseData[0].Course}}</p>
+  <div class="transbox">
+  <p>Course : CS5200- Database Management Systems</p>
 	<p>Professor : John Doe</p>
 	<p>Lecture Hours : MR 6:00pm-7:30pm</p>
   <p>Location : Snell Library 125</p>
@@ -193,7 +169,6 @@
   </li>
 </ul></div>
 </div>
-
 <div>
   <div class="transbox">
   <p>Course : CS6200- Information Retrieval</p>
@@ -233,7 +208,7 @@
   </li>
 </ul></div>
 
--->
+
 <div><br><br></div>
 
 
@@ -252,7 +227,7 @@
       </div>
     </footer>
     <!-- Scroll to Top Button-->
-    <a class="scroll-to-top rounded" href="#/courses">
+    <a class="scroll-to-top rounded" href="#page-top">
       <i class="fa fa-angle-up"></i>
     </a>
     <!-- Logout Modal-->
@@ -268,7 +243,7 @@
           <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
           <div class="modal-footer">
             <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
-            <a class="btn btn-primary" href="#/login">Logout</a>
+            <a class="btn btn-primary" href="login.html">Logout</a>
           </div>
         </div>
       </div>
@@ -280,7 +255,14 @@
 
 
 
-
+    <!-- Bootstrap core JavaScript-->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- Core plugin JavaScript-->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+    <!-- Custom scripts for all pages-->
+    <script src="js/sb-admin.min.js"></script>
   </div>
-</div>
+</body>
 
+</html>

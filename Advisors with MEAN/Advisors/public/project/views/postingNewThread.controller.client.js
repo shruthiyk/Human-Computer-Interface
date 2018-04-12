@@ -3,10 +3,11 @@
         .module("CCISAdvisor")
         .controller("postingNewThreadController", postingNewThreadController);
 
-    function postingNewThreadController($routeParams, $scope, $http, UserService, ThreadService, $location) {
+    function postingNewThreadController($routeParams, $scope, $http, UserService, ThreadService,RecommendService, $location) {
         var vm = this;
         vm.userId = $routeParams.userId;
         vm.courseCategory = $routeParams.courseCategory;
+        vm.hasData1=hasData1;
 
         vm.createThread = createThread;
         vm.fullDateTime = fullDateTime;
@@ -83,6 +84,22 @@
             var d = new Date();
             var n = d.toLocaleString([], { hour12: true});
             return n;
+        }
+        function hasData1() {
+            RecommendService
+                .fetchRecommend(vm.userId)
+                .then(
+                    function(response){
+                        vm.recommendData=response.data;
+                        if(vm.recommendData.length<0){
+                            $location.url("/user/"+ vm.userId+"/questionnare" );
+                        }else
+                        {
+                            $location.url("/user/"+ vm.userId+"/courses" );
+                        }
+
+                    })
+
         }
 
     }

@@ -3,10 +3,11 @@
         .module("CCISAdvisor")
         .controller("ThreadController", ThreadController);
 
-    function ThreadController($routeParams, ThreadService, UserService, $scope, $http, CommentService, $location, $window) {
+    function ThreadController($routeParams, RecommendService,ThreadService, UserService, $scope, $http, CommentService, $location, $window) {
         var vm = this;
         vm.userId = $routeParams.userId;
         vm.threadId = $routeParams.threadId;
+        vm.hasData1=hasData1;
 
         vm.updateThreadForUpVote = updateThreadForUpVote;
         vm.updateThreadForDownVote = updateThreadForDownVote;
@@ -52,6 +53,22 @@
 
         }
         init();
+        function hasData1() {
+            RecommendService
+                .fetchRecommend(vm.userId)
+                .then(
+                    function(response){
+                        vm.recommendData=response.data;
+                        if(vm.recommendData.length<0){
+                            $location.url("/user/"+ vm.userId+"/questionnare" );
+                        }else
+                        {
+                            $location.url("/user/"+ vm.userId+"/courses" );
+                        }
+
+                    })
+
+        }
 
 
         function updateThreadForUpVote(commentId){

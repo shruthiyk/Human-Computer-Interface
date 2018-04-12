@@ -7,6 +7,7 @@
         var vm = this;
         vm.userId = $routeParams.userId;
         vm.setGradeData = setGradeData;
+        vm.hasData1=hasData1;
 
         function init() {
             console.log("PPPP"+vm.userId);
@@ -49,6 +50,23 @@
                     }
                 )
 
+
+        }
+
+        function hasData1() {
+            RecommendService
+                .fetchRecommend(vm.userId)
+                .then(
+                    function(response){
+                        vm.recommendData=response.data;
+                        if(vm.recommendData.length<0){
+                            $location.url("/user/"+ vm.userId+"/questionnare" );
+                        }else
+                        {
+                            $location.url("/user/"+ vm.userId+"/courses" );
+                        }
+
+                    })
 
         }
     }

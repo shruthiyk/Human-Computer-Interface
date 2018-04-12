@@ -3,11 +3,12 @@
         .module("CCISAdvisor")
         .controller("viewCourseThreadController", viewCourseThreadController);
 
-    function viewCourseThreadController($routeParams, $scope, $http, UserService, ThreadService) {
+    function viewCourseThreadController($routeParams, $scope, $http, UserService, ThreadService,RecommendService,$location) {
         var vm = this;
         vm.userId = $routeParams.userId;
         vm.courseCategory = $routeParams.courseCategory;
         vm.course = $routeParams.course;
+        vm.hasData1=hasData1;
 
         if(vm.courseCategory === "Human Computer Interaction")
             $scope.courses = ["CS5340 - Computer/Human Interaction", "CS5350 - Applied Geometric Representation and Computation", "CS6350 - Empirical Research Methods"];
@@ -49,5 +50,21 @@
                 )
         }
         init();
+        function hasData1() {
+            RecommendService
+                .fetchRecommend(vm.userId)
+                .then(
+                    function(response){
+                        vm.recommendData=response.data;
+                        if(vm.recommendData.length<0){
+                            $location.url("/user/"+ vm.userId+"/questionnare" );
+                        }else
+                        {
+                            $location.url("/user/"+ vm.userId+"/courses" );
+                        }
+
+                    })
+
+        }
     }
 })();

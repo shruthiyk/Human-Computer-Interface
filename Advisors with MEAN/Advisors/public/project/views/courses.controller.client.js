@@ -7,6 +7,8 @@
         var vm = this;
         vm.userId = $routeParams.userId;
         vm.clearFilter=clearFilter;
+        vm.hasData=false;
+        vm.hasData1=hasData1;
         //vm.setGradeData = setGradeData;
         //Filter 1 for types of courses
 
@@ -63,6 +65,7 @@
 
 
         function init() {
+
             console.log("courses page"+vm.userId);
             UserService
                 .findUserById(vm.userId)
@@ -79,6 +82,7 @@
                         console.log("Received data::"+JSON.stringify(vm.recommendData));
                         if(vm.recommendData.length>0)
                         {
+                            vm.hasData=true;
                             if(vm.recommendData[0].project_like==="Strong_agree"||
                                 vm.recommendData[0].project_like==="Agree")
                             {
@@ -406,6 +410,22 @@
                     }
                 )
 
+
+        }
+        function hasData1() {
+            RecommendService
+                .fetchRecommend(vm.userId)
+                .then(
+                    function(response){
+                        vm.recommendData=response.data;
+                        if(vm.recommendData.length<0){
+                            $location.url("/user/"+ vm.userId+"/questionnare" );
+                        }else
+                        {
+                            $location.url("/user/"+ vm.userId+"/courses" );
+                        }
+
+                    })
 
         }
     }
