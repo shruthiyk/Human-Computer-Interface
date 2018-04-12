@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="">
   <meta name="author" content="">
-  <title>CCIS Graduate Academic Advisor-Home</title>
+  <title>CCIS Graduate Academic Advisor-Course</title>
   <!-- Bootstrap core CSS-->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <!-- Custom fonts for this template-->
@@ -15,11 +15,11 @@
   <!-- Custom styles for this template-->
   <link href="css/sb-admin.css" rel="stylesheet">
 
-  <link href="css/discussionboard.css" rel="stylesheet">
-  <link href="css/style.css" rel="stylesheet">
+
   <!-- Our custom CSS-->
   <!--Please add your styles here-->
-
+  <link href="css/style.css" rel="stylesheet">
+  <link href="css/stylerecommendcourse.css" rel="stylesheet">
 </head>
 
 <body class="fixed-nav sticky-footer bg-dark" id="page-top">
@@ -72,123 +72,151 @@
   </nav>
   <div class="content-wrapper">
     <div class="container-fluid">
-      <!-- Breadcrumbs-->
-     <!--  <ol class="breadcrumb">
+     <!-- <ol class="breadcrumb">
         <li class="breadcrumb-item">
-          <a href="index.html">Dashboard</a>
+          <a href="questionaire.html">Questionnaire</a>
         </li>
-        <li class="breadcrumb-item active">Blank Page</li>
+        <li class="breadcrumb-item">
+          <a href="grades.html">Previous courses info</a>
+        </li>
+        <li class="breadcrumb-item active">Recommended Courses</li>
       </ol> -->
       <div class="row">
         <div class="col-12">
-          <img src="logo.png" alt="logo" class="center-block" />
-          <h2 class="text-center">Choose One of the Below Categories</h2>
+           <h2 class="text-center">Recommended Courses</h2>
         </div>
+      </div>
+      <div class="row">
+          <div class="col-3">
+              <a href="preference-edit.html" class="btn btn-info" role="button">Update Your Preferences</a>
+          </div>
       </div><br>
-    <div class="container">
-    <div class="row flex">
-       <div class="col-md-3 col-sm-6 col-xs-6">
-        <div class="thumbnail">
-          <a href="viewThreads.html"><img src="images/HCI.jpg" alt="Avatar" class="image">
-            <div class="caption">
-              <p class="text-center">HCI</p>
-           </div>
-          </a>
+	  <div class="row">
+		  <div class="col-3">
+
+      <select class="form-control">
+            <option selected disabled>Filter by Specialization</option>
+            <option value="AI">AI</option>
+            <option value="DB">Database</option>
+            <option value="Networks">Networks</option>
+            <option value="Theory">Theory</option>
+            <option value="SE">Software Engineering</option>
+            <option value="HCI">HCI</option>
+            <option value="Graphics">Graphics</option>
+            <option value="Security">Security</option>
+            <option value="Game Design">Game Design</option>
+     </select>
+          
+        </div>
+		<div class="col-3">
+			 <select class="form-control">
+            <option selected disabled>Filter by Study Time(Hours/Week)</option>
+            <option value="AI">4-8</option>
+            <option value="DB">8-12</option>
+            <option value="Networks">12-16</option>
+            <option value="Theory">16-20</option>
+       </select>
+          
+        </div>
+        <div class="col-3">
+          <a href="#" class="btn btn-secondary" role="button">Reset Filter</a>
+          
         </div>
       </div>
-       <div class="col-md-3 col-sm-6 col-xs-6">
-        <div class="thumbnail">
-          <a href="viewThreads.html"><img src="images/ai.jpg" alt="Avatar" class="image">
-            <div class="caption">
-              <p class="text-center">AI</p>
-           </div>
-          </a>
-        </div>
-      </div>
-      <div class="col-md-3 col-sm-6 col-xs-6">
-        <div class="thumbnail">
-          <a href="viewThreads.html"><img src="images/networks2.jpg" alt="Avatar" class="image">
-          <div class="caption">
-              <p class="text-center">Networks</p>
-          </div></a>
-        </div>
-      </div>
-      <div class="col-md-3 col-sm-6 col-xs-6">
-        <div class="thumbnail">
-          <a href="viewThreads.html"><img src="images/database.png" alt="Avatar" class="image">
-            <div class="caption">
-              <p class="text-center">Database</p>
-           </div>
-          </a>
-        </div>
-      </div>
-      <div class="col-md-3 col-sm-6 col-xs-6">
-        <div class="thumbnail">
-          <a href="viewThreads.html"><img src="images/algorithms.jpg" alt="Avatar" class="image">
-            <div class="caption">
-              <p class="text-center">Software Engineering</p>
-           </div>
-          </a>
-        </div>
-      </div>
-      <div class="col-md-3 col-sm-6 col-xs-6">
-        <div class="thumbnail">
-          <a href="viewThreads.html"><img src="images/graphics.jpg" alt="Avatar" class="image">
-            <div class="caption">
-              <p class="text-center">Graphics</p>
-           </div>
-          </a>
-        </div>
-      </div>
-      <div class="col-md-3 col-sm-6 col-xs-6">
-        <div class="thumbnail">
-          <a href="viewThreads.html"><img src="images/security.jpg" alt="Avatar" class="image">
-             <div class="caption">
-              <p class="text-center">Security</p>
-           </div>
-          </a>
-        </div>
-      </div>
-      <div class="col-md-3 col-sm-6 col-xs-6">
-        <div class="thumbnail">
-          <a href="viewThreads.html"><img src="images/gamedesign.jpg" alt="Avatar" class="image">
-            <div class="caption">
-              <p class="text-center">Game Design</p>
-           </div>
-          </a>
-        </div>
-      </div>
-      <div class="col-md-3 col-sm-6 col-xs-6">
-        <div class="thumbnail">
-          <a href="viewThreads.html"><img src="images/systems.jpg" alt="Avatar" class="image">
-          <div class="caption">
-              <p class="text-center">Systems</p>
-           </div>
-         </a>
-        </div>
-      </div>
-      <div class="col-md-3 col-sm-6 col-xs-6">
-        <div class="thumbnail">
-          <a href="viewThreads.html"><img src="images/pl.jpg" alt="Avatar" class="image">
-           <div class="caption">
-              <p class="text-center">Programming Language</p>
-           </div>
-         </a>
-        </div>
-      </div>
-      <div class="col-md-3 col-sm-6 col-xs-6">
-        <div class="thumbnail">
-          <a href="viewThreads.html"><img src="images/theory.jpg" alt="Avatar" class="image">
-            <div class="caption">
-              <p class="text-center">Theory</p>
-           </div>
-          </a>
-        </div>
-      </div>
-      
+	<div><br>
+	</div>
+
+
+
+
+</div>
+<div>
+  <div class="transbox">
+  <p>Course : CS5200- Database Management Systems</p>
+	<p>Professor : John Doe</p>
+	<p>Lecture Hours : MR 6:00pm-7:30pm</p>
+  <p>Location : Snell Library 125</p>
+  <p><a href="viewThreads-dbms.html" style="color:navy; text-decoration: underline;">View CS5200 Discussions</a></p>
   </div>
+
+<div class="opbox">
+<div class="score">
+<p > Average student grades under professor John Doe</p>
 </div>
+<ul class="bar-graph">
+  <li class="bar-graph-axis">
+    <div class="bar-graph-label">100%</div>
+    <div class="bar-graph-label">75%</div>
+    <div class="bar-graph-label">50%</div>
+    <div class="bar-graph-label">25%</div>
+    <div class="bar-graph-label">0%</div>
+  </li>
+  <li class="bar primary" style="height: 55%;" title="55">
+    
+    <div class="description">A/A-</div>
+  </li>
+  <li class="bar secondary" style="height: 35%;" title="35">
+    
+    <div class="description">B+/B</div>
+  </li>
+  <li class="bar success" style="height: 9%;" title="9">
+    
+    <div class="description">B-/C+</div>
+  </li>
+  <li class="bar alert" style="height: 1%;" title="1">
+    
+    <div class="description">C+</div>
+  </li>
+</ul></div>
 </div>
+<div>
+  <div class="transbox">
+  <p>Course : CS6200- Information Retrieval</p>
+	<p>Professor : Alice Wonderland</p>
+  <p>Lecture Hours : TF 1:30pm-3:30pm</p>
+  <p>Location : Cargill 90</p>
+  <p><a href="viewThreads-dbms.html" style="color:navy; text-decoration: underline;">View CS6200 Discussions</a></p>
+  </div>
+
+<div class="opbox">
+<div class="score">
+<p > Average student grades under professor Alice Wonderland</p>
+</div>
+<ul class="bar-graph">
+  <li class="bar-graph-axis">
+    <div class="bar-graph-label">100%</div>
+    <div class="bar-graph-label">75%</div>
+    <div class="bar-graph-label">50%</div>
+    <div class="bar-graph-label">25%</div>
+    <div class="bar-graph-label">0%</div>
+  </li>
+  <li class="bar primary" style="height: 70%;" title="70">
+    
+    <div class="description">A/A-</div>
+  </li>
+  <li class="bar secondary" style="height: 30%;" title="30">
+    
+    <div class="description">B+/B</div>
+  </li>
+  <li class="bar success" style="height: 0%;" title="0">
+    
+    <div class="description">B-/C+</div>
+  </li>
+  <li class="bar alert" style="height: 0%;" title="0">
+    
+    <div class="description">C+</div>
+  </li>
+</ul></div>
+
+
+<div><br><br></div>
+
+
+
+
+
+      
+    </div>
     <!-- /.container-fluid-->
     <!-- /.content-wrapper-->
     <footer class="sticky-footer">
@@ -221,8 +249,7 @@
       </div>
     </div>
 
-
-
+  
 
 
 
