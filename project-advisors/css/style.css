@@ -144,4 +144,23 @@ form .buttons .submit:hover {background-color: #14892c;}
   font-family: 'Oswald', sans-serif;
 }
 
+.profileImg{
+  width: 200px;
+  border: 2px solid black;
+}
 
+.position{
+  margin-top: 20px;
+}
+
+#position{
+  margin-top:20px;
+}
+
+#emailSize{
+  font-size: 20px;
+}
+
+.tableHeader{
+  background-color: lightgrey;
+}
