@@ -50,7 +50,7 @@
                 .then(
                     function(response){
                         vm.recommendData=response.data;
-                        if(vm.recommendData.length<0){
+                        if(vm.recommendData.length<=0){
                             $location.url("/user/"+ vm.userId+"/questionnare" );
                         }else
                         {

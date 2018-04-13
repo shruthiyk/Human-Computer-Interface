@@ -6,7 +6,7 @@
     function HomeController($location,$routeParams, ThreadService, UserService,RecommendService, $scope, $http) {
         var vm = this;
         vm.userId = $routeParams.userId;
-        vm.hasData=hasData;
+        vm.hasData1=hasData1;
 
         function init() {
             UserService
@@ -27,13 +27,16 @@
         }
         init();
 
-        function hasData() {
+        function hasData1() {
+            console.log("inside home hasdata1");
             RecommendService
                 .fetchRecommend(vm.userId)
                 .then(
                     function(response){
                         vm.recommendData=response.data;
-                        if(vm.recommendData.length<0){
+                        console.log(vm.recommendData.length);
+                        console.log("===>"+JSON.stringify(response));
+                        if(vm.recommendData.length<=0){
                             $location.url("/user/"+ vm.userId+"/questionnare" );
                         }else
                         {
