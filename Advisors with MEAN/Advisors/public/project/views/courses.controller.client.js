@@ -87,25 +87,25 @@
                                 vm.recommendData[0].project_like==="Agree")
                             {
                                 vm.courseData=[{
-                                    Course:"Map reduce0",
+                                    Course:"Map reduce",
                                     Professor:"Prof Jon",
                                     Lecture_Hours:"5:00pm-7:00pm",
                                     Location:"Snell Library 125",
                                     Type:"Database,Airtificial intelligence",
                                     Hours:8,
-                                    T1:55,
-                                    T2:35,
-                                    T3:9,
-                                    T4:1,
+                                    T1:95,
+                                    T2:5,
+                                    T3:0,
+                                    T4:0,
                                     ID:5
 
                                 },
                                     {
-                                        Course:"Machine learning0",
+                                        Course:"Machine learning",
                                         Professor:"Prof Jon",
                                         Lecture_Hours:"5:00pm-7:00pm",
                                         Location:"Snell Library 135",
-                                        Type:"Networks",
+                                        Type:"Artificial Intelligence",
                                         Hours:12,
                                         T1:70,
                                         T2:30,
@@ -115,16 +115,30 @@
 
                                     },
                                     {
-                                        Course:"Cloud computing0",
+                                        Course:"Cloud computing",
                                         Professor:"Prof Jon",
                                         Lecture_Hours:"5:00pm-7:00pm",
-                                        Location:"Snell Library 155",
+                                        Location:"Snell Library 101",
                                         Type:"Software Engineering,Database",
                                         Hours:10,
                                         T1:55,
                                         T2:35,
                                         T3:9,
                                         T4:1,
+                                        ID:5
+
+                                    },
+                                    {
+                                        Course:"Information Retrieval",
+                                        Professor:"Prof Kendall",
+                                        Lecture_Hours:"5:00pm-7:00pm",
+                                        Location:"Snell Engineering 355",
+                                        Type:"Databases",
+                                        Hours:10,
+                                        T1:55,
+                                        T2:45,
+                                        T3:0,
+                                        T4:0,
                                         ID:5
 
                                     }

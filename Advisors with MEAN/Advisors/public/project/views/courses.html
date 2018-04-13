@@ -116,8 +116,8 @@
 
 </div>
 
-      <div class="opbox" ng-repeat="item in model.courseData|limitTo:2|filter:customFilter|filter:customFilter1">
-          {{item.Course}}
+      <div class="opbox" ng-repeat="item in model.courseData|filter:customFilter|filter:customFilter1|limitTo:2">
+          
           <p>Course : {{item.Course}}</p>
           <p>Professor : {{item.Professor}}</p>
           <p>Lecture Hours : {{item.Lecture_Hours}}</p>
