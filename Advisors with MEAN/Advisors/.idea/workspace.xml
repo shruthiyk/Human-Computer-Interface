@@ -19,104 +19,67 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="discussion-board.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/project/views/discussion-board.html">
+      <file leaf-file-name="courses.controller.client.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/project/views/courses.controller.client.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="127">
-              <caret line="18" column="30" lean-forward="true" selection-start-line="18" selection-start-column="30" selection-end-line="18" selection-end-column="57" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="viewThreads.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/project/views/viewThreads.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="76">
-              <caret line="19" column="67" lean-forward="false" selection-start-line="19" selection-start-column="67" selection-end-line="19" selection-end-column="67" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="courses.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/public/project/views/courses.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="76">
-              <caret line="18" column="29" lean-forward="false" selection-start-line="18" selection-start-column="29" selection-end-line="18" selection-end-column="56" />
+            <state relative-caret-position="714">
+              <caret line="420" column="52" lean-forward="false" selection-start-line="420" selection-start-column="52" selection-end-line="420" selection-end-column="52" />
               <folding>
-                <element signature="n#ol#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="false" />
+                <element signature="e#526#896#0" expanded="false" />
+                <element signature="e#927#988#0" expanded="false" />
+                <element signature="e#1037#1288#0" expanded="false" />
+                <element signature="e#1353#1621#0" expanded="false" />
+                <element signature="e#1653#1717#0" expanded="false" />
+                <element signature="e#1767#2075#0" expanded="false" />
+                <element signature="e#2103#16622#0" expanded="false" />
+                <element signature="e#2733#16569#0" expanded="false" />
+                <element signature="e#16671#17010#0" expanded="false" />
+                <element signature="e#17042#17681#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="threadCommenting.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/project/views/threadCommenting.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="127">
-              <caret line="19" column="64" lean-forward="false" selection-start-line="19" selection-start-column="64" selection-end-line="19" selection-end-column="64" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="thread.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/project/views/thread.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="127">
-              <caret line="19" column="40" lean-forward="true" selection-start-line="19" selection-start-column="40" selection-end-line="19" selection-end-column="67" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="questionaire.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="questionaire.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/public/project/views/questionaire.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="76">
-              <caret line="18" column="54" lean-forward="false" selection-start-line="18" selection-start-column="54" selection-end-line="18" selection-end-column="54" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="postingNewThread.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/project/views/postingNewThread.html">
-          <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="127">
-              <caret line="18" column="54" lean-forward="false" selection-start-line="18" selection-start-column="54" selection-end-line="18" selection-end-column="54" />
+              <caret line="179" column="34" lean-forward="false" selection-start-line="179" selection-start-column="34" selection-end-line="179" selection-end-column="34" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="home.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/project/views/home.html">
+      <file leaf-file-name="config.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/project/config.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="184">
-              <caret line="19" column="53" lean-forward="false" selection-start-line="19" selection-start-column="45" selection-end-line="19" selection-end-column="53" />
+            <state relative-caret-position="110">
+              <caret line="39" column="40" lean-forward="false" selection-start-line="39" selection-start-column="33" selection-end-line="39" selection-end-column="40" />
+              <folding>
+                <marker date="1522803157349" expanded="true" signature="112:4529" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="questionaire.controller.client.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/project/views/questionaire.controller.client.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-218">
+              <caret line="59" column="74" lean-forward="false" selection-start-line="59" selection-start-column="74" selection-end-line="59" selection-end-column="74" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="grades.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/project/views/grades.html">
+      <file leaf-file-name="courses.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/project/views/courses.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="127">
-              <caret line="18" column="56" lean-forward="false" selection-start-line="18" selection-start-column="56" selection-end-line="18" selection-end-column="56" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="postingNewThread.controller.client.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/project/views/postingNewThread.controller.client.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="299">
-              <caret line="93" column="52" lean-forward="false" selection-start-line="93" selection-start-column="52" selection-end-line="93" selection-end-column="52" />
-              <folding />
+            <state relative-caret-position="110">
+              <caret line="72" column="46" lean-forward="false" selection-start-line="72" selection-start-column="25" selection-end-line="72" selection-end-column="46" />
+              <folding>
+                <element signature="n#ol#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -132,9 +95,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>ques</find>
-      <find>grad</find>
-      <find>home</find>
       <find>clientID</find>
       <find>submi</find>
       <find>reset</find>
@@ -143,7 +103,6 @@
       <find>user</find>
       <find>user.</find>
       <find>cour</find>
-      <find>courses</find>
       <find>rese</find>
       <find>course</find>
       <find>ng-click</find>
@@ -162,6 +121,10 @@
       <find>recomm</find>
       <find>hasda</find>
       <find>Rec</find>
+      <find>Plea</find>
+      <find>ng-i</find>
+      <find>courses</find>
+      <find>next</find>
     </findStrings>
   </component>
   <component name="IdeDocumentHistory">
@@ -202,7 +165,6 @@
         <option value="$PROJECT_DIR$/public/project/views/discussion-board.html" />
         <option value="$PROJECT_DIR$/public/project/views/grades.html" />
         <option value="$PROJECT_DIR$/public/project/views/thread.html" />
-        <option value="$PROJECT_DIR$/public/project/views/questionaire.html" />
         <option value="$PROJECT_DIR$/public/project/views/threadCommenting.html" />
         <option value="$PROJECT_DIR$/public/project/views/viewThreads.html" />
         <option value="$PROJECT_DIR$/public/project/views/viewThreadsForCourse.html" />
@@ -212,12 +174,13 @@
         <option value="$PROJECT_DIR$/public/project/views/discussion-board.controller.client.js" />
         <option value="$PROJECT_DIR$/public/project/views/grades.controller.client.js" />
         <option value="$PROJECT_DIR$/public/project/views/postingNewThread.controller.client.js" />
-        <option value="$PROJECT_DIR$/public/project/views/questionaire.controller.client.js" />
         <option value="$PROJECT_DIR$/public/project/views/thread.controller.client.js" />
         <option value="$PROJECT_DIR$/public/project/views/threadCommenting.controller.client.js" />
         <option value="$PROJECT_DIR$/public/project/views/viewThreads.controller.client.js" />
         <option value="$PROJECT_DIR$/public/project/views/viewThreadsForCourse.controller.client.js" />
         <option value="$PROJECT_DIR$/public/project/views/postingNewThread.html" />
+        <option value="$PROJECT_DIR$/public/project/views/questionaire.controller.client.js" />
+        <option value="$PROJECT_DIR$/public/project/views/questionaire.html" />
       </list>
     </option>
   </component>
@@ -401,12 +364,12 @@
       <workItem from="1522106887601" duration="3446000" />
       <workItem from="1522188272909" duration="94739000" />
       <workItem from="1523325344265" duration="4878000" />
-      <workItem from="1523555051392" duration="6673000" />
+      <workItem from="1523555051392" duration="7785000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="214625000" />
+    <option name="totallyTimeSpent" value="215737000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -630,16 +593,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/project/config.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="39" column="37" lean-forward="false" selection-start-line="39" selection-start-column="33" selection-end-line="39" selection-end-column="37" />
-          <folding>
-            <marker date="1522803157349" expanded="true" signature="112:4529" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/project/views/login.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="127">
@@ -671,25 +624,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/project/views/courses.controller.client.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="226">
-          <caret line="420" column="52" lean-forward="false" selection-start-line="420" selection-start-column="52" selection-end-line="420" selection-end-column="52" />
-          <folding>
-            <element signature="e#526#896#0" expanded="false" />
-            <element signature="e#927#988#0" expanded="false" />
-            <element signature="e#1037#1288#0" expanded="false" />
-            <element signature="e#1353#1621#0" expanded="false" />
-            <element signature="e#1653#1717#0" expanded="false" />
-            <element signature="e#1767#2075#0" expanded="false" />
-            <element signature="e#2103#16622#0" expanded="false" />
-            <element signature="e#2733#16569#0" expanded="false" />
-            <element signature="e#16671#17010#0" expanded="false" />
-            <element signature="e#17042#17681#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/project/views/discussion-board.controller.client.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="199">
@@ -711,16 +645,6 @@
         <state relative-caret-position="187">
           <caret line="38" column="52" lean-forward="false" selection-start-line="38" selection-start-column="52" selection-end-line="38" selection-end-column="52" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/project/views/questionaire.controller.client.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="173">
-          <caret line="52" column="52" lean-forward="false" selection-start-line="52" selection-start-column="52" selection-end-line="52" selection-end-column="52" />
-          <folding>
-            <element signature="e#736#1416#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -802,14 +726,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/project/views/questionaire.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="18" column="54" lean-forward="false" selection-start-line="18" selection-start-column="54" selection-end-line="18" selection-end-column="54" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/project/views/postingNewThread.controller.client.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="299">
@@ -850,13 +766,58 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/public/project/views/courses.controller.client.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="714">
+          <caret line="420" column="52" lean-forward="false" selection-start-line="420" selection-start-column="52" selection-end-line="420" selection-end-column="52" />
+          <folding>
+            <element signature="e#526#896#0" expanded="false" />
+            <element signature="e#927#988#0" expanded="false" />
+            <element signature="e#1037#1288#0" expanded="false" />
+            <element signature="e#1353#1621#0" expanded="false" />
+            <element signature="e#1653#1717#0" expanded="false" />
+            <element signature="e#1767#2075#0" expanded="false" />
+            <element signature="e#2103#16622#0" expanded="false" />
+            <element signature="e#2733#16569#0" expanded="false" />
+            <element signature="e#16671#17010#0" expanded="false" />
+            <element signature="e#17042#17681#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/public/project/views/courses.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="18" column="29" lean-forward="false" selection-start-line="18" selection-start-column="29" selection-end-line="18" selection-end-column="56" />
+        <state relative-caret-position="110">
+          <caret line="72" column="46" lean-forward="false" selection-start-line="72" selection-start-column="25" selection-end-line="72" selection-end-column="46" />
           <folding>
             <element signature="n#ol#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/project/config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="39" column="40" lean-forward="false" selection-start-line="39" selection-start-column="33" selection-end-line="39" selection-end-column="40" />
+          <folding>
+            <marker date="1522803157349" expanded="true" signature="112:4529" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/project/views/questionaire.controller.client.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-218">
+          <caret line="59" column="74" lean-forward="false" selection-start-line="59" selection-start-column="74" selection-end-line="59" selection-end-column="74" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/project/views/questionaire.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="127">
+          <caret line="179" column="34" lean-forward="false" selection-start-line="179" selection-start-column="34" selection-end-line="179" selection-end-column="34" />
+          <folding />
         </state>
       </provider>
     </entry>

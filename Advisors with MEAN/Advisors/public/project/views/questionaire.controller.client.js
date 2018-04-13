@@ -8,6 +8,8 @@
         vm.userId = $routeParams.userId;
         vm.setData = setData;
         vm.hasData1=hasData1;
+        vm.buttonname="Next"
+        vm.heading="Please Select Your Preferences";
 
         function init() {
             console.log("PPPP"+vm.userId);
@@ -17,7 +19,23 @@
                     function(response){
                         vm.user = response.data;
                     }
-                )
+                );
+
+            RecommendService
+                .fetchRecommend(vm.userId)
+                .then(
+                    function(response){
+                        vm.recommendData=response.data;
+                        if(vm.recommendData.length<=0){
+                            vm.heading="Please Select Your Preferences";
+                            vm.buttonname="Next";
+
+                        }else{
+                            vm.heading="Please Edit Your Preferences";
+                            vm.buttonname="Update";
+
+                        }
+                    })
 
         }
         init();
@@ -35,7 +53,13 @@
                 .createRecommend(vm.userId, recdata)
                 .then(
                     function (response) {
-                        $location.url("/user/" + vm.userId+"/grades");
+                        if(vm.buttonname=="Update"){
+                            $location.url("/user/" + vm.userId+"/courses");
+                        }
+                        else{
+                            $location.url("/user/" + vm.userId+"/grades");
+                        }
+
                     },
                     function (error) {
                         vm.error = error.data;
