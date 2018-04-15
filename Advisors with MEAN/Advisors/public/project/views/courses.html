@@ -16,7 +16,7 @@
           </a>
         </li>
         <li class="nav-item active" data-toggle="tooltip" data-placement="right" title="Charts">
-         <a class="nav-link" href="#/user/{{model.userId}}/questionnare">
+         <a class="nav-link" ng-click="model.hasData1()">
             <i class="fa fa-fw fa-book"></i>
             <span class="nav-link-text">Recommended Courses</span>
           </a>
@@ -51,7 +51,7 @@
   </nav>
   <div class="content-wrapper">
     <div class="container-fluid">
-    <!--  <ol class="breadcrumb">
+     <!-- <ol class="breadcrumb">
         <li class="breadcrumb-item">
           <a href="#/questionnare">Questionnaire</a>
         </li>
@@ -69,7 +69,11 @@
 
       <div class="row">
 	       	<div class="col-12">
-	       	<br><br>
+                <div class="row">
+                    <div ng-if="model.hasData" class="col-3">
+                        <a href="#/user/{{model.userId}}/questionnare" class="btn btn-info" role="button">Update Your Preferences</a>
+                    </div>
+                </div><br>
 		      </div>
 	</div>
 	<div class="row">
@@ -112,8 +116,8 @@
 
 </div>
 
-      <div class="opbox" ng-repeat="item in model.courseData|limitTo:2|filter:customFilter|filter:customFilter1">
-          {{item.Course}}
+      <div class="opbox" ng-repeat="item in model.courseData|filter:customFilter|filter:customFilter1|limitTo:2">
+          
           <p>Course : {{item.Course}}</p>
           <p>Professor : {{item.Professor}}</p>
           <p>Lecture Hours : {{item.Lecture_Hours}}</p>
