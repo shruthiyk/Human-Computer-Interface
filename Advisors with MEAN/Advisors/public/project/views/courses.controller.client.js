@@ -7,8 +7,6 @@
         var vm = this;
         vm.userId = $routeParams.userId;
         vm.clearFilter=clearFilter;
-        vm.hasData=false;
-        vm.hasData1=hasData1;
         //vm.setGradeData = setGradeData;
         //Filter 1 for types of courses
 
@@ -20,7 +18,9 @@
                 {id : 4, name : 'Networks', ID: 4 },
                 {id : 5, name : 'Software Engineering', ID: 3 },
                 {id : 6, name : 'Security', ID: 2 },
-                {id : 7, name : 'AI', ID: 1 }
+                {id : 7, name : 'AI', ID: 1 },
+                {id : 8, name : 'HCI', ID: 7 },
+                {id : 9, name : 'Game Design ', ID: 8}
             ]
         };
 
@@ -65,7 +65,6 @@
 
 
         function init() {
-
             console.log("courses page"+vm.userId);
             UserService
                 .findUserById(vm.userId)
@@ -82,7 +81,6 @@
                         console.log("Received data::"+JSON.stringify(vm.recommendData));
                         if(vm.recommendData.length>0)
                         {
-                            vm.hasData=true;
                             if(vm.recommendData[0].project_like==="Strong_agree"||
                                 vm.recommendData[0].project_like==="Agree")
                             {
@@ -93,19 +91,19 @@
                                     Location:"Snell Library 125",
                                     Type:"Database,Airtificial intelligence",
                                     Hours:8,
-                                    T1:95,
-                                    T2:5,
-                                    T3:0,
-                                    T4:0,
+                                    T1:55,
+                                    T2:35,
+                                    T3:9,
+                                    T4:1,
                                     ID:5
 
                                 },
                                     {
                                         Course:"Machine learning",
-                                        Professor:"Prof Jon",
+                                        Professor:"Prof David",
                                         Lecture_Hours:"5:00pm-7:00pm",
                                         Location:"Snell Library 135",
-                                        Type:"Artificial Intelligence",
+                                        Type:"Networks",
                                         Hours:12,
                                         T1:70,
                                         T2:30,
@@ -116,29 +114,15 @@
                                     },
                                     {
                                         Course:"Cloud computing",
-                                        Professor:"Prof Jon",
+                                        Professor:"Prof Mike",
                                         Lecture_Hours:"5:00pm-7:00pm",
-                                        Location:"Snell Library 101",
+                                        Location:"Snell Library 155",
                                         Type:"Software Engineering,Database",
                                         Hours:10,
                                         T1:55,
                                         T2:35,
                                         T3:9,
                                         T4:1,
-                                        ID:5
-
-                                    },
-                                    {
-                                        Course:"Information Retrieval",
-                                        Professor:"Prof Kendall",
-                                        Lecture_Hours:"5:00pm-7:00pm",
-                                        Location:"Snell Engineering 355",
-                                        Type:"Databases",
-                                        Hours:10,
-                                        T1:55,
-                                        T2:45,
-                                        T3:0,
-                                        T4:0,
                                         ID:5
 
                                     }
@@ -150,22 +134,22 @@
                             {
 
                                 vm.courseData=[{
-                                    Course:"Map reduce",
-                                    Professor:"Prof Jon",
-                                    Lecture_Hours:"5:00pm-7:00pm",
+                                    Course:"Web Development",
+                                    Professor:"Prof Peter",
+                                    Lecture_Hours:"4:00pm-7:00pm",
                                     Location:"Snell Library 125",
-                                    Type:"Database,Airtificial intelligence",
+                                    Type:"Software Engineering",
                                     Hours:8,
                                     T1:55,
                                     T2:35,
                                     T3:9,
                                     T4:1,
-                                    ID:5
+                                    ID:3
 
                                 },
                                     {
-                                        Course:"Machine learning",
-                                        Professor:"Prof Jon",
+                                        Course:"Information Visualization",
+                                        Professor:"Prof Michelle",
                                         Lecture_Hours:"5:00pm-7:00pm",
                                         Location:"Snell Library 135",
                                         Type:"Networks",
@@ -174,11 +158,11 @@
                                         T2:35,
                                         T3:9,
                                         T4:1,
-                                        ID:1
+                                        ID:7
 
                                     },
                                     {
-                                        Course:"Cloud computing",
+                                        Course:"Computer Graphics",
                                         Professor:"Prof Jon",
                                         Lecture_Hours:"5:00pm-7:00pm",
                                         Location:"Snell Library 155",
@@ -188,7 +172,7 @@
                                         T2:35,
                                         T3:9,
                                         T4:1,
-                                        ID:5
+                                        ID:8
 
                                     }
                                 ]
@@ -198,23 +182,23 @@
                             {
 
                                 vm.courseData=[{
-                                    Course:"Map reduce2",
+                                    Course:"Empirical Research Method",
                                     Professor:"Prof Jon",
-                                    Lecture_Hours:"5:00pm-7:00pm",
-                                    Location:"Snell Library 125",
+                                    Lecture_Hours:"1:45pm-3:30pm",
+                                    Location:"Shilman Hall 310",
                                     Type:"Database,Airtificial intelligence",
                                     Hours:8,
                                     T1:55,
                                     T2:35,
                                     T3:9,
                                     T4:1,
-                                    ID:5
+                                    ID:7
 
                                 },
                                     {
-                                        Course:"Machine learning2",
-                                        Professor:"Prof Jon",
-                                        Lecture_Hours:"5:00pm-7:00pm",
+                                        Course:"Database Management System",
+                                        Professor:"Prof Jose",
+                                        Lecture_Hours:"6:00pm-9:00pm",
                                         Location:"Snell Library 135",
                                         Type:"Networks",
                                         Hours:12,
@@ -226,9 +210,9 @@
 
                                     },
                                     {
-                                        Course:"Cloud computing2",
+                                        Course:"Robotics Science and Systems",
                                         Professor:"Prof Jon",
-                                        Lecture_Hours:"5:00pm-7:00pm",
+                                        Lecture_Hours:"1:00pm-4:00pm",
                                         Location:"Snell Library 155",
                                         Type:"Software Engineering,Database",
                                         Hours:10,
@@ -236,7 +220,7 @@
                                         T2:35,
                                         T3:9,
                                         T4:1,
-                                        ID:5
+                                        ID:1
 
                                     }
                                 ]
@@ -246,8 +230,8 @@
                             {
 
                                 vm.courseData=[{
-                                    Course:"Map reduce3",
-                                    Professor:"Prof Jon",
+                                    Course:"Information Retrieval",
+                                    Professor:"Prof Nazi",
                                     Lecture_Hours:"5:00pm-7:00pm",
                                     Location:"Snell Library 125",
                                     Type:"Database,Airtificial intelligence",
@@ -260,8 +244,8 @@
 
                                 },
                                     {
-                                        Course:"Machine learning3",
-                                        Professor:"Prof Jon",
+                                        Course:"Advanced Software Development",
+                                        Professor:"Prof Jose",
                                         Lecture_Hours:"5:00pm-7:00pm",
                                         Location:"Snell Library 135",
                                         Type:"Networks",
@@ -270,12 +254,12 @@
                                         T2:35,
                                         T3:9,
                                         T4:1,
-                                        ID:5
+                                        ID:3
 
                                     },
                                     {
-                                        Course:"Cloud computing3",
-                                        Professor:"Prof Jon",
+                                        Course:"Network Security",
+                                        Professor:"Prof Peter",
                                         Lecture_Hours:"5:00pm-7:00pm",
                                         Location:"Snell Library 155",
                                         Type:"Software Engineering,Database",
@@ -293,8 +277,8 @@
                                 vm.recommendData[0].research_paper==="Agree")
                             {
                                 vm.courseData=[{
-                                    Course:"Map reduce4",
-                                    Professor:"Prof Jon",
+                                    Course:"Fundamentals of Computer Networks",
+                                    Professor:"Prof Fred",
                                     Lecture_Hours:"5:00pm-7:00pm",
                                     Location:"Snell Library 125",
                                     Type:"Database,Airtificial intelligence",
@@ -307,8 +291,8 @@
 
                                 },
                                     {
-                                        Course:"Machine learning4",
-                                        Professor:"Prof Jon",
+                                        Course:"Foundations of Artificial Intelligence",
+                                        Professor:"Prof Plat",
                                         Lecture_Hours:"5:00pm-7:00pm",
                                         Location:"Snell Library 135",
                                         Type:"Networks",
@@ -317,11 +301,11 @@
                                         T2:35,
                                         T3:9,
                                         T4:1,
-                                        ID:5
+                                        ID:1
 
                                     },
                                     {
-                                        Course:"Cloud computing4",
+                                        Course:"Distributed Systems",
                                         Professor:"Prof Jon",
                                         Lecture_Hours:"5:00pm-7:00pm",
                                         Location:"Snell Library 155",
@@ -339,8 +323,8 @@
                             }
                             else{
                                 vm.courseData=[{
-                                    Course:"Map reduce5",
-                                    Professor:"Prof Jon",
+                                    Course:"Special Topics of Theory",
+                                    Professor:"Prof Raj",
                                     Lecture_Hours:"5:00pm-7:00pm",
                                     Location:"Snell Library 125",
                                     Type:"Database,Airtificial intelligence",
@@ -349,12 +333,12 @@
                                     T2:35,
                                     T3:9,
                                     T4:1,
-                                    ID:5
+                                    ID:4
 
                                 },
                                     {
-                                        Course:"Machine learning5",
-                                        Professor:"Prof Jon",
+                                        Course:"Special Topics of Database",
+                                        Professor:"Prof David",
                                         Lecture_Hours:"5:00pm-7:00pm",
                                         Location:"Snell Library 135",
                                         Type:"Networks",
@@ -363,12 +347,12 @@
                                         T2:35,
                                         T3:9,
                                         T4:1,
-                                        ID:1
+                                        ID:5
 
                                     },
                                     {
-                                        Course:"Cloud computing5",
-                                        Professor:"Prof Jon",
+                                        Course:"Building Game Engines",
+                                        Professor:"Prof Mike",
                                         Lecture_Hours:"5:00pm-7:00pm",
                                         Location:"Snell Library 155",
                                         Type:"Software Engineering,Database",
@@ -377,7 +361,7 @@
                                         T2:35,
                                         T3:9,
                                         T4:1,
-                                        ID:5
+                                        ID:8
 
                                     }
                                 ]
@@ -424,22 +408,6 @@
                     }
                 )
 
-
-        }
-        function hasData1() {
-            RecommendService
-                .fetchRecommend(vm.userId)
-                .then(
-                    function(response){
-                        vm.recommendData=response.data;
-                        if(vm.recommendData.length<=0){
-                            $location.url("/user/"+ vm.userId+"/questionnare" );
-                        }else
-                        {
-                            $location.url("/user/"+ vm.userId+"/courses" );
-                        }
-
-                    })
 
         }
     }
