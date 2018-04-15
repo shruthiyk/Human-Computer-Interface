@@ -31,7 +31,7 @@
                             vm.buttonname="Next";
 
                         }else{
-                            vm.heading="Please Edit Your Preferences";
+                            vm.heading="Edit Your Preferences";
                             vm.buttonname="Update";
 
                         }

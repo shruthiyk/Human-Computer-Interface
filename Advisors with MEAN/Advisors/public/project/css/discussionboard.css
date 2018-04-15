@@ -3,7 +3,22 @@
   flex-wrap: wrap;
 }
 
+.bgclr{
+  background-color: whitesmoke;
+  padding:18px;
+  font-family: 'Pathway Gothic One', sans-serif;
+}
 
+.bgclr2{
+  background-color: whitesmoke;
+  padding:18px;
+  font-family: 'Pathway Gothic One', sans-serif;
+}
+
+.note{
+ font-weight: bold;
+ color: dimgray;
+}
 .image {
   opacity: 1;
   display: block; 

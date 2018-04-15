@@ -2,10 +2,18 @@ html{
     background-color: #343a40;
 }
 
+
 .container-fluid {
   margin-top: 50px;
   margin-bottom: 50px;
 }
+.tag{
+  background: powderblue;
+  color: navy;
+  border-radius: 15%;
+  padding:2px;
+}
+
 
   .center-block {
       display: block;
@@ -127,6 +135,13 @@ form .buttons .submit:hover {background-color: #14892c;}
 
 
 .required-field{
+  size: 9px;
+  font-style: italic;
+  color: gray;
+  margin-left: 3%;
+}
+
+.required-field2{
   size: 9px;
   font-style: italic;
   color: gray;
