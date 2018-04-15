@@ -31,7 +31,7 @@
                         )
                 }
                 else{
-                    vm.error = "Both passwords must be same";
+                    vm.error = "Passwords do not match";
                 }
 
             }
