@@ -117,12 +117,12 @@
 </div>
 
       <div class="opbox" ng-repeat="item in model.courseData|filter:customFilter|filter:customFilter1|limitTo:2">
-          <div>
-          <p>{{item.Course}}</p>
-          <p>Instructor: {{item.Professor}}</p>
-          <p>Lecture Hours : {{item.Lecture_Hours}}</p>
-          <p>Location : {{item.Location}}</p>
-          <p>Course Link</strong> : <a href="">Spring 2018</a></p>
+          <div class="course">
+          <p><h4>{{item.Course}}</h4></p>
+          <p><i class="fa fa-user" aria-hidden="true"></i> <strong>Instructor</strong> : {{item.Professor}}</p>
+          <p><i class="fa fa-clock-o" aria-hidden="true"></i> <strong>Lecture Hours</strong> : {{item.Lecture_Hours}}</p>
+          <p><i class="fa fa-map-marker" aria-hidden="true"></i> <strong>Location</strong> : {{item.Location}}</p>
+          <p><i class="fa fa-book" aria-hidden="true"></i> <strong>Course Link</strong> : <a href="https://sites.google.com/site/is4300sp18/schedule" target="_blank">Spring 2018</a></p>
           <p><a href="">View {{item.Course}} Discussions</a></p>
          </div>
 
