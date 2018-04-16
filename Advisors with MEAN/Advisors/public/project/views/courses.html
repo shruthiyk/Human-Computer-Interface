@@ -28,13 +28,13 @@
           </a>
         </li>
       </ul>
-      <ul class="navbar-nav sidenav-toggler">
+      <!-- <ul class="navbar-nav sidenav-toggler">
         <li class="nav-item">
           <a class="nav-link text-center" id="sidenavToggler">
             <i class="fa fa-fw fa-angle-left"></i>
           </a>
         </li>
-      </ul>
+      </ul> -->
       <ul class="navbar-nav ml-auto">
          <li class="nav-item">
             <a class="nav-link" href="#/user/{{model.userId}}">
@@ -117,11 +117,14 @@
 </div>
 
       <div class="opbox" ng-repeat="item in model.courseData|filter:customFilter|filter:customFilter1|limitTo:2">
-          
-          <p>Course : {{item.Course}}</p>
-          <p>Professor : {{item.Professor}}</p>
-          <p>Lecture Hours : {{item.Lecture_Hours}}</p>
-          <p>Location : {{item.Location}}</p>
+          <div class="course">
+          <p><h4>{{item.Course}}</h4></p>
+          <p><i class="fa fa-user" aria-hidden="true"></i> <strong>Instructor</strong> : {{item.Professor}}</p>
+          <p><i class="fa fa-clock-o" aria-hidden="true"></i> <strong>Lecture Hours</strong> : {{item.Lecture_Hours}}</p>
+          <p><i class="fa fa-map-marker" aria-hidden="true"></i> <strong>Location</strong> : {{item.Location}}</p>
+          <p><i class="fa fa-book" aria-hidden="true"></i> <strong>Course Link</strong> : <a href="#">Spring 2018</a></p>
+          <p><a href="">View {{item.Course}} Discussions</a></p>
+         </div>
 
           <div class="score">
               <p > Average student grades under professor {{item.Professor}}</p>
@@ -252,9 +255,9 @@
       </div>
     </footer>
     <!-- Scroll to Top Button-->
-    <a class="scroll-to-top rounded" href="#/courses">
+   <!--  <a class="scroll-to-top rounded" href="#/courses">
       <i class="fa fa-angle-up"></i>
-    </a>
+    </a> -->
     <!-- Logout Modal-->
     <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
       <div class="modal-dialog" role="document">

@@ -53,7 +53,7 @@
   .bar-graph .bar-graph-label:before, .bar-graph .bar-graph-label:after {
     content: "";
     position: absolute;
-    border-bottom: 1px dashed #8a8a8a;
+    /*border-bottom: 1px dashed #8a8a8a;*/
     top: 0;
     left: 0;
     height: 50%;
@@ -140,7 +140,7 @@ div.transbox {
 div.opbox {
   margin: 20px;
   background-color: #ffffff;
-  border: 1px solid black;
+  border: 2px solid gray;
   opacity: 1;
   filter: alpha(opacity=60); /* For IE8 and earlier */
 }
@@ -154,5 +154,10 @@ div.score p {
   margin-left: 10%;
   font-weight: bold;
   color: #000000;
+}
+
+.course{
+  padding: 15px;
+  padding-top: 0px;
 }
 

@@ -87,10 +87,10 @@
                                 vm.recommendData[0].project_like==="Agree")
                             {
                                 vm.courseData=[{
-                                    Course:"Map reduce",
-                                    Professor:"Prof Jon",
+                                    Course:"CS5320 - Digital Image Processing",
+                                    Professor:"Jon Williams",
                                     Lecture_Hours:"5:00pm-7:00pm",
-                                    Location:"Snell Library 125",
+                                    Location:"Cargill Hall 125",
                                     Type:"Database,Airtificial intelligence",
                                     Hours:8,
                                     T1:95,
@@ -101,10 +101,10 @@
 
                                 },
                                     {
-                                        Course:"Machine learning",
-                                        Professor:"Prof Jon",
+                                        Course:"CS6140 - Machine Learning",
+                                        Professor:"Jenny Parker",
                                         Lecture_Hours:"5:00pm-7:00pm",
-                                        Location:"Snell Library 135",
+                                        Location:"Shillman Hall 135",
                                         Type:"Artificial Intelligence",
                                         Hours:12,
                                         T1:70,
@@ -115,10 +115,10 @@
 
                                     },
                                     {
-                                        Course:"Cloud computing",
-                                        Professor:"Prof Jon",
+                                        Course:"CS6610 - Parallel Computing",
+                                        Professor:"Sarah Dutile",
                                         Lecture_Hours:"5:00pm-7:00pm",
-                                        Location:"Snell Library 101",
+                                        Location:"Cargill Hall 125",
                                         Type:"Software Engineering,Database",
                                         Hours:10,
                                         T1:55,
@@ -129,8 +129,8 @@
 
                                     },
                                     {
-                                        Course:"Information Retrieval",
-                                        Professor:"Prof Kendall",
+                                        Course:"CS6200 - Information Retrieval",
+                                        Professor:"Kendall Borkin",
                                         Lecture_Hours:"5:00pm-7:00pm",
                                         Location:"Snell Engineering 355",
                                         Type:"Databases",
@@ -150,10 +150,10 @@
                             {
 
                                 vm.courseData=[{
-                                    Course:"Map reduce",
-                                    Professor:"Prof Jon",
+                                    Course:"CS5340 - Computer/Human Interaction",
+                                    Professor:"David Williams",
                                     Lecture_Hours:"5:00pm-7:00pm",
-                                    Location:"Snell Library 125",
+                                    Location:"Shillman Hall 78",
                                     Type:"Database,Airtificial intelligence",
                                     Hours:8,
                                     T1:55,
@@ -164,10 +164,10 @@
 
                                 },
                                     {
-                                        Course:"Machine learning",
-                                        Professor:"Prof Jon",
+                                        Course:"CS5350 - Applied Geometric Representation and Computation",
+                                        Professor:"Timothy Sakarov",
                                         Lecture_Hours:"5:00pm-7:00pm",
-                                        Location:"Snell Library 135",
+                                        Location:"Nightingale Hall 56",
                                         Type:"Networks",
                                         Hours:12,
                                         T1:55,
@@ -178,10 +178,10 @@
 
                                     },
                                     {
-                                        Course:"Cloud computing",
-                                        Professor:"Prof Jon",
+                                        Course:"CS6350 - Empirical Research Methods",
+                                        Professor:"Peter Matthew",
                                         Lecture_Hours:"5:00pm-7:00pm",
-                                        Location:"Snell Library 155",
+                                        Location:"Ell Hall 155",
                                         Type:"Software Engineering,Database",
                                         Hours:10,
                                         T1:55,
@@ -198,10 +198,10 @@
                             {
 
                                 vm.courseData=[{
-                                    Course:"Map reduce2",
-                                    Professor:"Prof Jon",
+                                    Course:"CS5100 - Foundations of Artificial Intelligence",
+                                    Professor:"Peter Pat",
                                     Lecture_Hours:"5:00pm-7:00pm",
-                                    Location:"Snell Library 125",
+                                    Location:"Forsyth Hall 90",
                                     Type:"Database,Airtificial intelligence",
                                     Hours:8,
                                     T1:55,
@@ -212,8 +212,8 @@
 
                                 },
                                     {
-                                        Course:"Machine learning2",
-                                        Professor:"Prof Jon",
+                                        Course:"CS5355 - Robotic Science and Systems",
+                                        Professor:"Alice Anne",
                                         Lecture_Hours:"5:00pm-7:00pm",
                                         Location:"Snell Library 135",
                                         Type:"Networks",
@@ -226,10 +226,10 @@
 
                                     },
                                     {
-                                        Course:"Cloud computing2",
-                                        Professor:"Prof Jon",
+                                        Course:"CS6110 - Knowledge-Based Systems",
+                                        Professor:"Anna Williams",
                                         Lecture_Hours:"5:00pm-7:00pm",
-                                        Location:"Snell Library 155",
+                                        Location:"Snell Library 455",
                                         Type:"Software Engineering,Database",
                                         Hours:10,
                                         T1:55,
@@ -246,10 +246,10 @@
                             {
 
                                 vm.courseData=[{
-                                    Course:"Map reduce3",
-                                    Professor:"Prof Jon",
+                                    Course:"CS5700 - Fundamentals of Computer Networking",
+                                    Professor:"Cling Pat",
                                     Lecture_Hours:"5:00pm-7:00pm",
-                                    Location:"Snell Library 125",
+                                    Location:"Snell Library 25",
                                     Type:"Database,Airtificial intelligence",
                                     Hours:8,
                                     T1:55,
@@ -260,10 +260,10 @@
 
                                 },
                                     {
-                                        Course:"Machine learning3",
-                                        Professor:"Prof Jon",
+                                        Course:"CS5750 - Social Computing",
+                                        Professor:"Ram Raj",
                                         Lecture_Hours:"5:00pm-7:00pm",
-                                        Location:"Snell Library 135",
+                                        Location:"Ryders 67",
                                         Type:"Networks",
                                         Hours:12,
                                         T1:55,
@@ -274,10 +274,10 @@
 
                                     },
                                     {
-                                        Course:"Cloud computing3",
-                                        Professor:"Prof Jon",
+                                        Course:"CS6710 - Wireless Network",
+                                        Professor:"Fara Tiyara",
                                         Lecture_Hours:"5:00pm-7:00pm",
-                                        Location:"Snell Library 155",
+                                        Location:"Hartig Hall 155",
                                         Type:"Software Engineering,Database",
                                         Hours:10,
                                         T1:55,
@@ -293,10 +293,10 @@
                                 vm.recommendData[0].research_paper==="Agree")
                             {
                                 vm.courseData=[{
-                                    Course:"Map reduce4",
-                                    Professor:"Prof Jon",
+                                    Course:"CS5200 - Database Management Systems",
+                                    Professor:"Jon David",
                                     Lecture_Hours:"5:00pm-7:00pm",
-                                    Location:"Snell Library 125",
+                                    Location:"West Village 125",
                                     Type:"Database,Airtificial intelligence",
                                     Hours:8,
                                     T1:55,
@@ -307,10 +307,10 @@
 
                                 },
                                     {
-                                        Course:"Machine learning4",
-                                        Professor:"Prof Jon",
+                                        Course:"CS6140 - Machine Learning",
+                                        Professor:"Williams Clever",
                                         Lecture_Hours:"5:00pm-7:00pm",
-                                        Location:"Snell Library 135",
+                                        Location:"East Village 135",
                                         Type:"Networks",
                                         Hours:12,
                                         T1:55,
@@ -321,10 +321,10 @@
 
                                     },
                                     {
-                                        Course:"Cloud computing4",
-                                        Professor:"Prof Jon",
+                                        Course:"CS6200 - Information Retrieval",
+                                        Professor:"Andrew Bernerd",
                                         Lecture_Hours:"5:00pm-7:00pm",
-                                        Location:"Snell Library 155",
+                                        Location:"Richards Hall 95",
                                         Type:"Software Engineering,Database",
                                         Hours:10,
                                         T1:55,
@@ -339,10 +339,10 @@
                             }
                             else{
                                 vm.courseData=[{
-                                    Course:"Map reduce5",
-                                    Professor:"Prof Jon",
+                                    Course:"CS5610 - Web Development",
+                                    Professor:"Andrea Williams",
                                     Lecture_Hours:"5:00pm-7:00pm",
-                                    Location:"Snell Library 125",
+                                    Location:"Cargill Hall 90",
                                     Type:"Database,Airtificial intelligence",
                                     Hours:8,
                                     T1:55,
@@ -353,10 +353,10 @@
 
                                 },
                                     {
-                                        Course:"Machine learning5",
-                                        Professor:"Prof Jon",
+                                        Course:"CS6510 - Advanced Software Development",
+                                        Professor:"Abraham Lincoln",
                                         Lecture_Hours:"5:00pm-7:00pm",
-                                        Location:"Snell Library 135",
+                                        Location:"Egan Center 78",
                                         Type:"Networks",
                                         Hours:12,
                                         T1:55,
@@ -367,10 +367,10 @@
 
                                     },
                                     {
-                                        Course:"Cloud computing5",
-                                        Professor:"Prof Jon",
+                                        Course:"CS6520 - Methods of Software Development",
+                                        Professor:"Mike Jon",
                                         Lecture_Hours:"5:00pm-7:00pm",
-                                        Location:"Snell Library 155",
+                                        Location:"Shillman Hall 320",
                                         Type:"Software Engineering,Database",
                                         Hours:10,
                                         T1:55,

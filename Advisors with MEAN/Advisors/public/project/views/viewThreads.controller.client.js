@@ -24,7 +24,7 @@
         if(vm.courseCategory === "Security")
             $scope.courses = ["CS5770 - Software Vulnerabilities and Security", "CS6540 - Foundations of Formal Methods and Software Analysis", "CS6740 - Network Security"];
         if(vm.courseCategory === "Game Design")
-            $scope.courses = ["CS5150 - Game Artificial Intelligence", "CS5310 - Computer Graphics", "CS5340 - Computer/Human Interaction"];
+            $scope.courses = ["CS5150 - Game Artificial Intelligence", "CS5310 - Computer Graphics", "CS5850 - Building Game Engines"];
         if(vm.courseCategory === "Systems")
             $scope.courses = ["CS5620 - Computer Architecture", "CS5650 - High Performance Computing", "CS6610 - Parallel Computing"];
         if(vm.courseCategory === "Programming Languages")
