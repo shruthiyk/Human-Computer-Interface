@@ -11,9 +11,14 @@ html{
   background: powderblue;
   color: navy;
   border-radius: 15%;
-  padding:2px;
+  padding:1px;
+  font-size: 10px;
+  font-style: bold;
 }
 
+.tbl{
+  border: 2px solid grey;
+}
 
   .center-block {
       display: block;
