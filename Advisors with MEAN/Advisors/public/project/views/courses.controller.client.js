@@ -15,7 +15,7 @@
 
         $scope.filterOptions = {
             stores: [
-                {id : 2, name : 'Show all', ID: 6 },
+                {id : 2, name : 'Filter By Specialization', ID: 6 },
                 {id : 3, name : 'Database', ID: 5 },
                 {id : 4, name : 'Networks', ID: 4 },
                 {id : 5, name : 'Software Engineering', ID: 3 },
@@ -42,7 +42,7 @@
         //Filter 2 for hours
         $scope.filterOptions1 = {
             stores1: [
-                {id : 2, name : 'Show all', ID: 99 },
+                {id : 2, name : 'Average Study Time Per Week', ID: 99 },
                 {id : 3, name : '4-8 Hours', ID: 8 },
                 {id : 4, name : '8-12 Hours', ID: 12 },
                 {id : 5, name : '12-16 hours', ID: 16 }
