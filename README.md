@@ -24,8 +24,8 @@ For Windows machine: Assuming that MongoDB version 3.6 was installed in your C:\
 
 6. Open your terminal and type mongod.
 7. a. Open another terminal and navigate to inside the project folder on terminal, where you would see a package.json file. [\farha-neu.github.io\Advisors with MEAN\Advisors]  
-b. Type ```npm install``` for installing all the project dependencies and hit enter.
-c. Then type ```node server.js``` and hit enter to get the app running on local host.  
+b. Type ```npm install``` for installing all the project dependencies and hit enter.  
+c. Then type ```node server.js``` and press enter to get the app running on local host.    
 8. Once the server loads, hit the following URL : http://localhost:4000 in your browser. 
 
 And you are all set to use the application.
