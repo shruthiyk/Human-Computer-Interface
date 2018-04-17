@@ -123,7 +123,7 @@
           <p><i class="fa fa-clock-o" aria-hidden="true"></i> <strong>Lecture Hours</strong> : {{item.Lecture_Hours}}</p>
           <p><i class="fa fa-map-marker" aria-hidden="true"></i> <strong>Location</strong> : {{item.Location}}</p>
           <p><i class="fa fa-book" aria-hidden="true"></i> <strong>Course Link</strong> : <a href="https://sites.google.com/site/is4300sp18/schedule" target="_blank">Spring 2018</a></p>
-          <p><a href="">View {{item.Course}} Discussions</a></p>
+          <p><a href="#/user/{{model.userId}}/discussionBoard/{{item.Type}}/viewThreads/{{item.Course}}" type="submit">View {{item.Course}} Discussions</a></p>
          </div>
 
           <div class="score">

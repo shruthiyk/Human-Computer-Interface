@@ -20,7 +20,10 @@
                 {id : 4, name : 'Networks', ID: 4 },
                 {id : 5, name : 'Software Engineering', ID: 3 },
                 {id : 6, name : 'Security', ID: 2 },
-                {id : 7, name : 'AI', ID: 1 }
+                {id : 7, name : 'Artificial Intelligence', ID: 1 }, 
+                {id : 8, name : 'Human Computer Interaction', ID: 7},
+                {id : 9, name : 'Graphics', ID: 8},
+                {id : 10, name :'Systems', ID: 9}
             ]
         };
 
@@ -91,13 +94,13 @@
                                     Professor:"Jon Williams",
                                     Lecture_Hours:"5:00pm-7:00pm",
                                     Location:"Cargill Hall 125",
-                                    Type:"Database,Airtificial intelligence",
+                                    Type:"Graphics",
                                     Hours:8,
                                     T1:95,
                                     T2:5,
                                     T3:0,
                                     T4:0,
-                                    ID:5
+                                    ID:8
 
                                 },
                                     {
@@ -119,13 +122,13 @@
                                         Professor:"Sarah Dutile",
                                         Lecture_Hours:"5:00pm-7:00pm",
                                         Location:"Cargill Hall 125",
-                                        Type:"Software Engineering,Database",
+                                        Type:"Systems",
                                         Hours:10,
                                         T1:55,
                                         T2:35,
                                         T3:9,
                                         T4:1,
-                                        ID:5
+                                        ID:9
 
                                     },
                                     {
@@ -133,7 +136,7 @@
                                         Professor:"Kendall Borkin",
                                         Lecture_Hours:"5:00pm-7:00pm",
                                         Location:"Snell Engineering 355",
-                                        Type:"Databases",
+                                        Type:"Database",
                                         Hours:10,
                                         T1:55,
                                         T2:45,
@@ -150,7 +153,7 @@
                             {
 
                                 vm.courseData=[{
-                                    Course:"CS5340 - Computer/Human Interaction",
+                                    Course:"CS5340 - Computer Human Interaction",
                                     Professor:"David Williams",
                                     Lecture_Hours:"5:00pm-7:00pm",
                                     Location:"Shillman Hall 78",
@@ -160,7 +163,7 @@
                                     T2:35,
                                     T3:9,
                                     T4:1,
-                                    ID:5
+                                    ID:7
 
                                 },
                                     {
@@ -174,7 +177,7 @@
                                         T2:35,
                                         T3:9,
                                         T4:1,
-                                        ID:1
+                                        ID:7
 
                                     },
                                     {
@@ -182,13 +185,13 @@
                                         Professor:"Peter Matthew",
                                         Lecture_Hours:"5:00pm-7:00pm",
                                         Location:"Ell Hall 155",
-                                        Type:"Software Engineering,Database",
+                                        Type:"Human Computer Interaction",
                                         Hours:10,
                                         T1:55,
                                         T2:35,
                                         T3:9,
                                         T4:1,
-                                        ID:5
+                                        ID:7
 
                                     }
                                 ]
@@ -202,13 +205,13 @@
                                     Professor:"Peter Pat",
                                     Lecture_Hours:"5:00pm-7:00pm",
                                     Location:"Forsyth Hall 90",
-                                    Type:"Database,Airtificial intelligence",
+                                    Type:"Artificial Intelligence",
                                     Hours:8,
                                     T1:55,
                                     T2:35,
                                     T3:9,
                                     T4:1,
-                                    ID:5
+                                    ID:1
 
                                 },
                                     {
@@ -216,13 +219,13 @@
                                         Professor:"Alice Anne",
                                         Lecture_Hours:"5:00pm-7:00pm",
                                         Location:"Snell Library 135",
-                                        Type:"Networks",
+                                        Type:"Artificial Intelligence",
                                         Hours:12,
                                         T1:55,
                                         T2:35,
                                         T3:9,
                                         T4:1,
-                                        ID:5
+                                        ID:1
 
                                     },
                                     {
@@ -230,13 +233,13 @@
                                         Professor:"Anna Williams",
                                         Lecture_Hours:"5:00pm-7:00pm",
                                         Location:"Snell Library 455",
-                                        Type:"Software Engineering,Database",
+                                        Type:"Artificial Intelligence",
                                         Hours:10,
                                         T1:55,
                                         T2:35,
                                         T3:9,
                                         T4:1,
-                                        ID:5
+                                        ID:1
 
                                     }
                                 ]
@@ -250,13 +253,13 @@
                                     Professor:"Cling Pat",
                                     Lecture_Hours:"5:00pm-7:00pm",
                                     Location:"Snell Library 25",
-                                    Type:"Database,Airtificial intelligence",
+                                    Type:"Networks",
                                     Hours:8,
                                     T1:55,
                                     T2:35,
                                     T3:9,
                                     T4:1,
-                                    ID:5
+                                    ID:4
 
                                 },
                                     {
@@ -270,7 +273,7 @@
                                         T2:35,
                                         T3:9,
                                         T4:1,
-                                        ID:5
+                                        ID:4
 
                                     },
                                     {
@@ -278,13 +281,13 @@
                                         Professor:"Fara Tiyara",
                                         Lecture_Hours:"5:00pm-7:00pm",
                                         Location:"Hartig Hall 155",
-                                        Type:"Software Engineering,Database",
+                                        Type:"Networks",
                                         Hours:10,
                                         T1:55,
                                         T2:35,
                                         T3:9,
                                         T4:1,
-                                        ID:5
+                                        ID:4
 
                                     }
                                 ]
@@ -297,7 +300,7 @@
                                     Professor:"Jon David",
                                     Lecture_Hours:"5:00pm-7:00pm",
                                     Location:"West Village 125",
-                                    Type:"Database,Airtificial intelligence",
+                                    Type:"Database",
                                     Hours:8,
                                     T1:55,
                                     T2:35,
@@ -311,7 +314,7 @@
                                         Professor:"Williams Clever",
                                         Lecture_Hours:"5:00pm-7:00pm",
                                         Location:"East Village 135",
-                                        Type:"Networks",
+                                        Type:"Database",
                                         Hours:12,
                                         T1:55,
                                         T2:35,
@@ -325,7 +328,7 @@
                                         Professor:"Andrew Bernerd",
                                         Lecture_Hours:"5:00pm-7:00pm",
                                         Location:"Richards Hall 95",
-                                        Type:"Software Engineering,Database",
+                                        Type:"Database",
                                         Hours:10,
                                         T1:55,
                                         T2:35,
@@ -343,13 +346,13 @@
                                     Professor:"Andrea Williams",
                                     Lecture_Hours:"5:00pm-7:00pm",
                                     Location:"Cargill Hall 90",
-                                    Type:"Database,Airtificial intelligence",
+                                    Type:"Software Engineering",
                                     Hours:8,
                                     T1:55,
                                     T2:35,
                                     T3:9,
                                     T4:1,
-                                    ID:5
+                                    ID:3
 
                                 },
                                     {
@@ -357,13 +360,13 @@
                                         Professor:"Abraham Lincoln",
                                         Lecture_Hours:"5:00pm-7:00pm",
                                         Location:"Egan Center 78",
-                                        Type:"Networks",
+                                        Type:"Software Engineering",
                                         Hours:12,
                                         T1:55,
                                         T2:35,
                                         T3:9,
                                         T4:1,
-                                        ID:1
+                                        ID:3
 
                                     },
                                     {
@@ -371,13 +374,13 @@
                                         Professor:"Mike Jon",
                                         Lecture_Hours:"5:00pm-7:00pm",
                                         Location:"Shillman Hall 320",
-                                        Type:"Software Engineering,Database",
+                                        Type:"Software Engineering",
                                         Hours:10,
                                         T1:55,
                                         T2:35,
                                         T3:9,
                                         T4:1,
-                                        ID:5
+                                        ID:3
 
                                     }
                                 ]

@@ -10,7 +10,7 @@
         vm.hasData1=hasData1;
 
         if(vm.courseCategory === "Human Computer Interaction")
-            $scope.courses = ["CS5340 - Computer/Human Interaction", "CS5350 - Applied Geometric Representation and Computation", "CS6350 - Empirical Research Methods"];
+            $scope.courses = ["CS5340 - Computer Human Interaction", "CS5350 - Applied Geometric Representation and Computation", "CS6350 - Empirical Research Methods"];
         if(vm.courseCategory === "Artificial Intelligence")
             $scope.courses = ["CS5100 - Foundations of Artificial Intelligence", "CS5355 - Robotic Science and Systems", "CS6110 - Knowledge-Based Systems"];
         if(vm.courseCategory === "Networks")
