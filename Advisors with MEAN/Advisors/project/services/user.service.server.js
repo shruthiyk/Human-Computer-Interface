@@ -251,6 +251,7 @@ module.exports = function(app, models) {
             );
     }
 
+
     function deleteUser(req, res) {
         var id = req.params.userId;
         userModel

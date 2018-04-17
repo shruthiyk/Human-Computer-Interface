@@ -24,8 +24,6 @@
             })
             .when("/forgotPassword", {
                 templateUrl: "/project/views/forgot-password.html"
-                //controller: "LoginController",
-                //controllerAs: "model"
             })
             .when("/user/:userId/questionnare", {
                 templateUrl: "/project/views/questionaire.html",
@@ -62,6 +60,11 @@
                 controller: "viewCourseThreadController",
                 controllerAs: "model"
             })
+            .when("/user/:userId/discussionBoard/:courseCategory/viewThreads/:course/postingNewThread", {
+                templateUrl: "/project/views/postingNewThreadFromCourse.html",
+                controller: "postingNewThreadControllerFromCourse",
+                controllerAs: "model"
+            })
             .when("/user/:userId/thread/:threadId", {
                 templateUrl: "/project/views/thread.html",
                 controller: "ThreadController",
@@ -71,11 +74,6 @@
                 templateUrl: "/project/views/threadCommenting.html",
                 controller: "ThreadCommentingController",
                 controllerAs: "model"
-            })
-            .when("/queryConfirmation", {
-                templateUrl: "/project/views/queryCofirmation.html"
-                //controller: "LoginController",
-                //controllerAs: "model"
             })
             .when("/:userId/grades", {
                 templateUrl: "/project/views/grades.html"

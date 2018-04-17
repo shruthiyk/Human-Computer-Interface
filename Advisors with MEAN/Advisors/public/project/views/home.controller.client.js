@@ -22,6 +22,12 @@
                 .then(
                     function(response){
                         vm.threads = response.data;
+                        vm.hasThreads = true;
+                        vm.message = false;
+                        if(vm.threads == ""){
+                            vm.hasThreads = false;
+                            vm.message = true;
+                        }
                     }
                 )
         }

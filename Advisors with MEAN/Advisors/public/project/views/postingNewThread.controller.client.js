@@ -11,10 +11,9 @@
 
         vm.createThread = createThread;
         vm.fullDateTime = fullDateTime;
-        
 
         if(vm.courseCategory === "Human Computer Interaction")
-            $scope.courses = ["CS5340 - Computer/Human Interaction", "CS5350 - Applied Geometric Representation and Computation", "CS6350 - Empirical Research Methods"];
+            $scope.courses = ["CS5340 - Computer Human Interaction", "CS5350 - Applied Geometric Representation and Computation", "CS6350 - Empirical Research Methods"];
         if(vm.courseCategory === "Artificial Intelligence")
             $scope.courses = ["CS5100 - Foundations of Artificial Intelligence", "CS5355 - Robotic Science and Systems", "CS6110 - Knowledge-Based Systems"];
         if(vm.courseCategory === "Networks")
@@ -26,15 +25,15 @@
         if(vm.courseCategory === "Graphics")
             $scope.courses = ["CS5310 - Computer Graphics", "CS5320 - Digital Image Processing", "CS5330 - Pattern Recognition and Computer Vision"];
         if(vm.courseCategory === "Security")
-            $scope.courses = ["All Courses", "CS5770 - Software Vulnerabilities and Security", "CS6540 - Foundations of Formal Methods and Software Analysis", "CS6740 - Network Security"];
+            $scope.courses = ["CS5770 - Software Vulnerabilities and Security", "CS6540 - Foundations of Formal Methods and Software Analysis", "CS6740 - Network Security"];
         if(vm.courseCategory === "Game Design")
-            $scope.courses = ["All Courses", "CS5150 - Game Artificial Intelligence", "CS5310 - Computer Graphics", "CS5850 - Building Game Engines"];
+            $scope.courses = ["CS5150 - Game Artificial Intelligence", "CS5310 - Computer Graphics", "CS5850 - Building Game Engines"];
         if(vm.courseCategory === "Systems")
-            $scope.courses = ["All Courses", "CS5620 - Computer Architecture", "CS5650 - High Performance Computing", "CS6610 - Parallel Computing"];
+            $scope.courses = ["CS5620 - Computer Architecture", "CS5650 - High Performance Computing", "CS6610 - Parallel Computing"];
         if(vm.courseCategory === "Programming Languages")
-            $scope.courses = ["All Courses", "CS5400 - Principles of Programming Language", "CS6410 - Compilers", "CS6412 - Semantics of Programming Language"];
+            $scope.courses = ["CS5400 - Principles of Programming Language", "CS6410 - Compilers", "CS6412 - Semantics of Programming Language"];
         if(vm.courseCategory === "Theory")
-            $scope.courses = ["All Courses", "CS6610 - Parallel Computing", "CS6750 - Cryptography and Communications Security", "CS6800 - Application of Information Theory"];
+            $scope.courses = ["CS6610 - Parallel Computing", "CS6750 - Cryptography and Communications Security", "CS6800 - Application of Information Theory"];
 
         function init() {
             UserService

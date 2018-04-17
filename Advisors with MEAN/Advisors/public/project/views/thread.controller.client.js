@@ -85,17 +85,26 @@
                             .then(
                                 function (response) {
                                     $window.location.reload();
-                                    var newUser = {"reputationPoints": vm.user.reputationPoints + 1};
                                     UserService
-                                        .updateUser(vm.userId, newUser)
+                                        .findUserById(vm.getComment.user)
                                         .then(
                                             function(response){
-                                                
-                                            },
-                                            function(error){
-                                                vm.error = error.data;
+                                                vm.commentUser = response.data;
+                                                var newUser = {"reputationPoints": vm.commentUser.reputationPoints + 1};
+                                                UserService
+                                                    .updateUser(vm.commentUser._id, newUser)
+                                                    .then(
+                                                        function(response){
+
+                                                        },
+                                                        function(error){
+                                                            vm.error = error.data;
+                                                        }
+                                                    )
                                             }
                                         )
+
+
                                 },
                                 function (error) {
                                     vm.error = error.data;
@@ -119,15 +128,22 @@
                             .then(
                                 function (response) {
                                     $window.location.reload();
-                                    var newUser = {"reputationPoints": vm.user.reputationPoints - 1};
                                     UserService
-                                        .updateUser(vm.userId, newUser)
+                                        .findUserById(vm.getComment.user)
                                         .then(
                                             function(response){
+                                                vm.commentUser = response.data;
+                                                var newUser = {"reputationPoints": vm.commentUser.reputationPoints - 1};
+                                                UserService
+                                                    .updateUser(vm.commentUser._id, newUser)
+                                                    .then(
+                                                        function(response){
 
-                                            },
-                                            function(error){
-                                                vm.error = error.data;
+                                                        },
+                                                        function(error){
+                                                            vm.error = error.data;
+                                                        }
+                                                    )
                                             }
                                         )
                                 },

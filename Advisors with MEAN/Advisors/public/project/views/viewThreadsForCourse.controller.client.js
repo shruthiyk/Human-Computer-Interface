@@ -10,6 +10,7 @@
         vm.course = $routeParams.course;
         vm.hasData1=hasData1;
 
+
         if(vm.courseCategory === "Human Computer Interaction")
             $scope.courses = ["CS5340 - Computer Human Interaction", "CS5350 - Applied Geometric Representation and Computation", "CS6350 - Empirical Research Methods"];
         if(vm.courseCategory === "Artificial Intelligence")

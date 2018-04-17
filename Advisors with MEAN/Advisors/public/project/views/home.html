@@ -61,26 +61,33 @@
         </div>
       </div>
 
-     <div class="card mb-3">
-        <!-- <div class="card-header">
-          <i class="fa fa-question-circle"></i> Your Threads
-        </div> -->
 
 
-       <div class="table-responsive">
-         <table class="table table-striped">
-           <tr>
-             <th>Your Threads</th>
-             <th>Views</th>
-           </tr>
-           <tr ng-repeat="thread in model.threads">
-             <td><span ngIf={{thread.numberOfComments}} class="answer">{{ thread.numberOfComments }} comments</span><a href="#/user/{{model.userId}}/thread/{{thread._id}}"> {{ thread.query }} </a><a href="#/user/{{model.userId}}/discussionBoard/{{thread.courseCategory}}/viewThreads/{{thread.course}}" class="tag">#{{ thread.course.slice(0,6) }}</a></td>
-             <td>{{ thread.views }}</td>
-           </tr>
-         </table>
+       <div ng-show="model.message">
+         <br>
+         <h5>You have not created any threads</h5>
+         </div>
+
+       <div ng-show="model.hasThreads">
+         <div class="card mb-3">
+         <div class="table-responsive">
+           <table class="table table-striped">
+             <tr>
+               <th>Your Threads</th>
+               <th>Views</th>
+             </tr>
+             <tr ng-repeat="thread in model.threads">
+               <td><span ngIf={{thread.numberOfComments}} class="answer">{{ thread.numberOfComments }} comments</span><a href="#/user/{{model.userId}}/thread/{{thread._id}}"> {{ thread.query }} </a><a href="#/user/{{model.userId}}/discussionBoard/{{thread.courseCategory}}/viewThreads/{{thread.course}}" class="tag">#{{ thread.course.slice(0,6) }} </a></td>
+               <td>{{ thread.views }}</td>
+             </tr>
+           </table>
+         </div>
+         </div>
        </div>
 
-     </div>
+
+
+
     </div>
 </div>
     <!-- /.container-fluid-->
