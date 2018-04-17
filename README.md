@@ -19,3 +19,9 @@ For Windows machine: Assuming that MongoDB version 3.6 was installed in your C:\
 |FACEBOOK_CALLBACK_URL|123| 
 |FACEBOOK_CLIENT_ID|123|
 |FACEBOOK_CLIENT_SECRET|123|  
+
+
+| First Header  | Second Header |
+| ------------- | ------------- |
+| Content Cell  | Content Cell  |
+| Content Cell  | Content Cell  |
