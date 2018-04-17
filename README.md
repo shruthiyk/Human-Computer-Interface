@@ -9,12 +9,11 @@ Steps to configure CGAA on local machine
 For Windows machine: Assuming that MongoDB version 3.6 was installed in your C:\Program Files, add C:\Program Files\MongoDB\Server\3.6\bin\ to your system variable.
 4. Test that MongoDB starts by typing mongod at the command line. The command line will print several lines.
 5. Include the following user variables on your machine:
-Variable Name                    Variable Value
---------------------------------------------------------------------------------
-SESSION_SECRET                    secretKey
-FACEBOOK_ASSGN_CALLBACK_URL       http://10.0.0.92:3000/auth/facebook/callback
-FACEBOOK_ASSGN_CLIENT_ID          123
-FACEBOOK_ASSGN_CLIENT_SECRET      123
-FACEBOOK_CALLBACK_URL             123
-FACEBOOK_CLIENT_ID                123
-FACEBOOK_CLIENT_SECRET            123
+Variable Name                Variable Value  
+SESSION_SECRET                    secretKey  
+FACEBOOK_ASSGN_CALLBACK_URL       http://10.0.0.92:3000/auth/facebook/callback  
+FACEBOOK_ASSGN_CLIENT_ID          123  
+FACEBOOK_ASSGN_CLIENT_SECRET      123  
+FACEBOOK_CALLBACK_URL             123  
+FACEBOOK_CLIENT_ID                123  
+FACEBOOK_CLIENT_SECRET            123  
