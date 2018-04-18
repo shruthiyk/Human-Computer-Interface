@@ -64,9 +64,17 @@
 
 
        <div ng-show="model.message">
-         <br>
-         <h5>You have not created any threads</h5>
-         </div>
+        <div class="card mb-3">
+         <table class="table table-striped">
+             <tr>
+               <th>Your Threads</th>
+               <th>Views</th>
+             </tr>
+             <tr>
+               <td><h4>You have not created any threads</h4></td>
+             </tr>
+           </table>   
+         </div></div>
 
        <div ng-show="model.hasThreads">
          <div class="card mb-3">
