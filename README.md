@@ -1,5 +1,5 @@
 ## Project: CCIS GRADUATE ACADEMIC ADVISOR  ##
-Team Members : Adidi K, Farha Javed, Pranav, Rakesh and Shruthi Y.K.
+**Team Members : Adidi K, Farha Javed, Pranav, Rakesh and Shruthi Y.K.**
 **Steps to configure CGAA on local machine**
 1. Clone this git repository using the steps mentioned on the link below: https://help.github.com/articles/cloning-a-repository/.
 2. **Installing Node.js:**  
